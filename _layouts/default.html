@@ -1,0 +1,125 @@
+<!-- _layouts/default.html -->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+    {% include sidebar.html %}
+    <div class="wrap">
+        <div class="masthead">
+            <div class="container">
+                <h1>{{ page.title }}</h1>
+                {% if page.description %}
+                <p>{{ page.description }}</p>
+                {% endif %}
+            </div>
+        </div>
+
+        {% if page.full_width %}
+        <div class="content">
+            {{ content }}
+        </div>
+        {% else %}
+        <div class="container content">
+            {{ content }}
+        </div>
+        {% endif %}
+    </div>
+
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const content = document.querySelector(".content");
+            const sidebarTOC = document.getElementById("dynamic-toc");
+
+            if (!content || !sidebarTOC) return;
+
+            const headings = content.querySelectorAll("h1, h2, h3");
+            if (headings.length === 0) return;
+
+            const list = document.createElement("ul");
+            list.style.listStyle = "none";
+            list.style.paddingLeft = "0";
+
+            headings.forEach((heading) => {
+                const level = parseInt(heading.tagName.substring(1));
+                const text = heading.textContent;
+                const id = heading.id || text.toLowerCase().replace(/[^\w]+/g, '-');
+
+                heading.id = id; // ensure anchor exists
+
+                const li = document.createElement("li");
+                li.style.marginLeft = `${(level - 1) * 1.2}rem`;
+
+                const a = document.createElement("a");
+                a.href = `#${id}`;
+                a.textContent = text;
+                a.style.textDecoration = "none";
+                a.style.color = "white";
+                a.style.fontSize = "0.85rem";
+
+                li.appendChild(a);
+                list.appendChild(li);
+            });
+
+            sidebarTOC.innerHTML = "<strong>On this page</strong>";
+            sidebarTOC.appendChild(list);
+        });
+    </script> -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const content = document.querySelector(".content");
+            const sidebarTOC = document.getElementById("dynamic-toc");
+
+            if (!content || !sidebarTOC) return;
+
+            const headings = content.querySelectorAll("h1, h2, h3");
+            if (headings.length === 0) return;
+
+            const list = document.createElement("ul");
+            list.style.listStyle = "disc";
+            list.style.paddingLeft = "1.5rem";
+
+            headings.forEach((heading) => {
+                const level = parseInt(heading.tagName.substring(1));
+                const text = heading.textContent;
+                const id = heading.id || text.toLowerCase().replace(/[^\w]+/g, '-');
+
+                heading.id = id; // ensure anchor exists
+
+                const li = document.createElement("li");
+                li.style.marginLeft = `${(level - 1) * 0.5}rem`; // slight indent for nested headings
+
+                const a = document.createElement("a");
+                a.href = `#${id}`;
+                a.textContent = text;
+                a.style.textDecoration = "none";
+                a.style.color = "white";
+                a.style.fontSize = "0.85rem";
+
+                li.appendChild(a);
+                list.appendChild(li);
+            });
+
+            const wrapper = document.createElement("div");
+            wrapper.style.border = "1px solid #ccc";
+            wrapper.style.padding = "0.5rem";
+            wrapper.style.marginBottom = "0.5rem";
+            wrapper.style.background = "rgba(255,255,255,0.05)";
+
+            const title = document.createElement("div");
+            title.innerHTML = "<strong><u>On this page</u></strong>";
+            wrapper.appendChild(title);
+            wrapper.appendChild(list);
+
+            sidebarTOC.innerHTML = "";
+            sidebarTOC.appendChild(wrapper);
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!-- _includes/catalogue_table.html -->
+{% if include.title %}
+<h2>{{ include.title }}</h2>
+{% endif %}
+
+<!-- ✅ Fullscreen wrapper start -->
+<div class="fullscreen-container" id="{{ include.datafile | slugify }}-wrapper">
+
+    <!-- ✅ Fullscreen toggle button placed above and left-aligned -->
+    <div class="fullscreen-toggle-bar">
+        <button class="fullscreen-toggle" onclick="toggleFullscreen('{{ include.datafile | slugify }}-wrapper')">
+            🔲 Fullscreen
+        </button>
+    </div>
+
+    <!-- 👇 Existing content wrapped inside the fullscreen container 👇 -->
+    <div class="scroll-sync-container">
+        <div class="scrollbar-top"></div>
+        <div class="catalogue-table-container">
+            <table class="catalogue">
+                <thead>
+                    <tr>
+                        <th>Custodian Code</th>
+                        <th>Custodian Name</th>
+                        <th>Dataset name</th>
+                        <th>License</th>
+                        <th>WebMap</th>
+                        <th>Download URL</th>
+                        <th>API Type</th>
+                        <th>API URL</th>
+                        <th>ID</th>
+                        <th>Name Field</th>
+                        <th>Legislation Act</th>
+                        <th>Legislation Section</th>
+                        <th>Protection Type</th>
+                        <th>Reserve Purpose</th>
+                        <th>Comment</th>
+                        <th>Stated Restrictions</th>
+                        <th>Action Required</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in site.data[include.datafile] %}
+                    <tr>
+                        <td>{{ item.["Custodian code"]}}</td>
+                        <td>{{ item.["Custodian name"]}}</td>
+                        <td>{{ item["Dataset name"] }}</td>
+                        <td>{{ item.License | markdownify }}</td>
+                        <td>
+                            <div class="link-cell">
+                                {% assign webmap = item.WebMap | strip %}
+                                {% if webmap != "" and webmap != "-" %}
+                                <a href="{{ webmap }}" target="_blank">Webmap</a>
+                                {% else %}
+                                -
+                                {% endif %}
+                            </div>
+                        </td>
+                        <td>
+                            <div class="link-cell">
+                                {% assign download = item["Download URL"] | strip %}
+                                {% if download != "" and download != "-" %}
+                                <a href="{{ download }}" target="_blank">Download</a>
+                                {% else %}
+                                -
+                                {% endif %}
+                            </div>
+                        </td>
+                        <td>{{ item["API Type"] }}</td>
+                        <td>
+                            <div class="link-cell">
+                                {% assign api = item["API URL"] | strip %}
+                                {% if api != "" and api != "-" %}
+                                <a href="{{ api }}" target="_blank">API</a>
+                                {% else %}
+                                -
+                                {% endif %}
+                            </div>
+                        </td>
+                        <td>{{ item.ID }}</td>
+                        <td>{{ item["Name Field"] }}</td>
+                        <td>{{ item["Legislation Act"] }}</td>
+                        <td>{{ item["Legislation Section"] }}</td>
+                        <td>{{ item["Protection Type"] }}</td>
+                        <td>{{ item["Reserve Purpose"] }}</td>
+                        <td>{{ item.Comment }}</td>
+                        <td>{{ item["Stated Restrictions"] }}</td>
+                        <td>{{ item["Action Required"] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- 👆 End scroll-sync-container 👆 -->
+</div>
+<!-- ✅ End fullscreen-container -->
+
+<!-- Fullscreen JavaScript -->
+<script>
+    function toggleFullscreen(id) {
+        const el = document.getElementById(id);
+        el.classList.toggle('fullscreen-active');
+
+        const btn = el.querySelector('.fullscreen-toggle');
+        btn.textContent = el.classList.contains('fullscreen-active')
+            ? '❌ Exit Fullscreen'
+            : '🔲 Fullscreen';
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const containers = document.querySelectorAll(".scroll-sync-container");
+
+        containers.forEach(container => {
+            const topScroll = container.querySelector(".scrollbar-top");
+            const tableScroll = container.querySelector(".catalogue-table-container");
+
+            if (!topScroll || !tableScroll) return;
+
+            // Dynamically set the scrollbar-top width to match the scrollable area
+            const scrollBarSpacer = topScroll.querySelector("::before");
+            topScroll.scrollLeft = tableScroll.scrollLeft;
+
+            // Sync scroll events both ways
+            topScroll.addEventListener("scroll", () => {
+                tableScroll.scrollLeft = topScroll.scrollLeft;
+            });
+
+            tableScroll.addEventListener("scroll", () => {
+                topScroll.scrollLeft = tableScroll.scrollLeft;
+            });
+
+            // NEW: Resize observer to adjust ::before width
+            const fakeDiv = document.createElement("div");
+            fakeDiv.style.width = tableScroll.scrollWidth + "px";
+            fakeDiv.style.height = "1px";
+            topScroll.innerHTML = "";
+            topScroll.appendChild(fakeDiv);
+        });
+    });
+
+</script>

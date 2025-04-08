@@ -1,0 +1,69 @@
+<div class="sidebar" id="sidebar" style="display: flex; flex-direction: column; height: 100vh;">
+    <div>
+        <div style="background-color: #fff; padding: 0.75rem; border-radius: 0; margin-bottom: 1rem;">
+            <p style="margin: 0; font-size: 1.1rem; color: #000; font-weight: bold;">
+                PAN-NZ Data Improvement
+            </p>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a class="sidebar-nav-item{% if page.url == '/' %} active{% endif %}"
+                href="{{ site.baseurl }}/"><strong>Introduction</strong></a>
+
+            <a class="sidebar-nav-item{% if page.path == 'guidelines.md' %} active{% endif %}"
+                href="{{ site.baseurl }}/guidelines.html"><strong>Guidelines (Draft)</strong></a>
+
+            <a class="sidebar-nav-item{% if page.path == 'contributing.md' %} active{% endif %}"
+                href="{{ site.baseurl }}/contributing/index.html"><strong>Contribute / Contact</strong></a>
+
+            <a href="{{ site.baseurl }}/data_catalogues.html"
+                class="sidebar-nav-item{% if page.path == 'data_catalogues/index.html' %} active{% endif %}">
+                <strong>Data Catalogues</strong>
+            </a>
+
+            <ul style="list-style-type: none; padding-left: 1em;">
+                <li>
+                    <a class="sidebar-nav-item{% if page.path == 'national_datasets_catalogue.md' %} active{% endif %}"
+                        href="{{ site.baseurl }}/national_datasets_catalogue/index.html">► National Datasets</a>
+                </li>
+                <li>
+                    <a class="sidebar-nav-item{% if page.path == 'parks_and_reserves_catalogue.md' %} active{% endif %}"
+                        href="{{ site.baseurl }}/parks_and_reserves_catalogue/index.html">► Parks &amp; Reserves</a>
+                </li>
+                <li>
+                    <a class="sidebar-nav-item{% if page.path == 'sna_catalogue.md' %} active{% endif %}"
+                        href="{{ site.baseurl }}/sna_catalogue/index.html">► SNAs</a>
+                </li>
+            </ul>
+
+            <!-- <br> -->
+        </nav>
+
+        <div class="sidebar-item" id="dynamic-toc">
+            <!-- Headings from current page will appear here -->
+        </div>
+    </div>
+
+    <!-- Logo at very bottom -->
+    <div style="padding: 1rem; text-align: center; margin-top: auto;">
+        <div style="margin-bottom: 1rem;">
+            <p style="font-size: 0.8rem; margin: 0 0 0.25rem; color: #ccc;">Developed by:</p>
+            <img src="{{ site.baseurl }}/IMG/mwlr.png" alt="MWLR Logo" style="max-width: 100%; height: auto;" />
+        </div>
+
+        <div>
+            <p style="font-size: 0.8rem; margin: 0 0 0.25rem; color: #ccc;">Funded by:</p>
+            <img src="{{ site.baseurl }}/IMG/mfe.png" alt="MfE Logo" style="max-width: 100%; height: auto;" />
+        </div>
+
+        <div style="margin-top: 1rem;">
+            <a href="https://github.com/manaakiwhenua/PANNZ-source-data" target="_blank"
+                style="color: #ccc; font-size: 0.85rem; text-decoration: none;">
+                View source on GitHub →
+            </a>
+        </div>
+    </div>
+
+
+
+</div>

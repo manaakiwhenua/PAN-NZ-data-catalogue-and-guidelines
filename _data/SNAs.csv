@@ -1,0 +1,83 @@
+Custodian,Dataset name,License,WebMap,Download URL,API Type,API URL,ID,Name Field,Legislation Act,Legislation Section,Protection Type,Reserve Purpose,Comment,Stated Restrictions ,Action Required
+1 Northland Regional Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+1 Far North District,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+2 Whangarei District,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+3 Kaipara District,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+2 Auckland Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+3 Waikato Regional Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+11 Thames-Coromandel District,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+12 Hauraki District,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+13 Waikato District,Significant Natural Area (Decisions),[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),-,https://data.waikatodistrict.govt.nz/layer/107126-significant-natural-area-decisions/,OGC WFS,https://data.waikatodistrict.govt.nz/services;key=[api_token]/wfs/layer-107126/?service=WFS&request=GetCapabilities,polid,-,-,-,-,-,This data is provided for use in the District Plan only.,-,-
+15 Matamata-Piako District,-,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://experience.arcgis.com/experience/704d3df5ea3140f4b7008b961599a90f,-,-,-,-,-,-,-,-,-,Viewable in MPDC GIS viewer,-,-
+16 Hamilton City,-,-,-,-,-,-,-,-,-,-,-,-,covered by Waikato District dataset ,-,-
+17 Waipa District,-,-,-,-,-,-,-,-,-,-,-,-,covered by Waikato District dataset ,-,-
+18 ?torohanga District,-,-,-,-,-,-,-,-,-,-,-,-,covered by Waikato District dataset ,-,-
+19 South Waikato District,SignificantNaturalAreasSouthWaikato,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://southwaikatodc-open-data-portal-southwaikatodc.opendata.arcgis.com/datasets/583f8bbf5d3147449d49e5c044c30c17/explore?layer=1,-,ArcGIS REST Feature Service,https://services9.arcgis.com/pQ2VGNXWHZ4WkdmW/arcgis/rest/services/Significant_Natural_Areas/FeatureServer/1/,-,-,-,-,-,-,-,-,-
+20 Waitomo District,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+21 Taupo District,Significant Natural Area,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://www.arcgis.com/home/item.html?id=3f727fabd18b4185a3fcd2f927144b0d,-,-,-,-,DBS_Name,-,-,-,-,... While you are free to crop export and repurpose the data we ask that you attribute the Taup? District Council and clearly state that your work is a derivative and not the authoritative data source. Please include this statement when distributing any work derived from this data:,-,-
+4 Bay of Plenty Regional Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+22 Western Bay of Plenty District,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+23 Tauranga City,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+24 Rotorua District,Significant Natural Area,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),-,https://data-waikatolass.opendata.arcgis.com/datasets/f6d7eac945974ec18b42ad0e3c310726_0/explore,ArcGIS REST Feature Service,https://services6.arcgis.com/NIWVPpy3nWPIOE2J/arcgis/rest/services/Significant_Natural_Area/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson,OBJECT_ID_1,Site_Name,-,-,-,-,-,-,-
+25 Whakat?ne District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+26 Kawerau District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+27 ?p?tiki District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+28 Gisborne District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+28 Gisborne District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+28 Gisborne District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+28 Gisborne District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+6 Hawke's Bay Regional Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+29 Wairoa District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+30 Hastings District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+31 Napier City Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+32 Central Hawke's Bay District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+7 Taranaki Regional Council  ,Untitled map,-,https://www.arcgis.com/apps/mapviewer/index.html?layers=c9367dee1f964234bcdfc113037ef836,-,ArcGIS REST Feature Service,https://services.arcgis.com/MMPHUPU6MnEt0lEK/arcgis/rest/services/Significant_Natural_Area_Polygon/FeatureServer/3,-,-,-,-,-,-,-,-,no license
+33 New Plymouth District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,provided by above Taranaki layer,-,-
+34 Stratford District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,provided by above Taranaki layer,-,-
+35 South Taranaki District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,provided by above Taranaki layer,-,-
+8 Manawat?-Whanganui Regional Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+36 Ruapehu District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+37 Whanganui District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+38 Rangit?kei District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+39 Manawat? District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+40 Palmerston North City Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+41 Tararua District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+9 Greater Wellington Regional Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+42 Horowhenua District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+43 K?piti Coast District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+44 Porirua City Council  ,Significant Natural Areas (Variation 1),-,-,https://data-pcc.opendata.arcgis.com/datasets/significant-natural-areas-variation-1/explore,ArcGIS REST Feature Service,https://services1.arcgis.com/kIwRm3UCyRHYbM8a/arcgis/rest/services/Significant_Natural_Areas_Variation_1/FeatureServer/0,-,-,-,-,-,-,-,-,License missing
+45 Upper Hutt City Council  ,DRAFT Significant Natural Areas & Landscape Areas Viewer,-,https://uhcc.maps.arcgis.com/apps/webappviewer/index.html?id=f9c096b90a5a49e58f658ad460fa503d,-,-,-,-,-,-,-,-,-,Draft SNAs,Draft SNAs,no license. not downloadable. no api
+46 Lower Hutt City Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+47 Wellington City Council  ,Significant Natural Areas - Draft District Plan (DDP),-,https://data-wcc.opendata.arcgis.com/datasets/420153583b1d4889b4be4dc76b7fe6ac,-,-,https://gis.wcc.govt.nz/arcgis/rest/services/DraftDistrictPlan/DraftDistrictPlan/MapServer/46/,-,-,-,-,-,-,-,-,License missing
+48 Masterton District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+49 Carterton District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+50 South Wairarapa District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+12 West Coast Regional Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+55 Buller District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+56 Grey District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+57 Westland District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+13 Canterbury Regional Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+54 Kaik?ura District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+58 Hurunui District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+59 Waimakariri District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+60 Christchurch City Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+62 Selwyn District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+63 Ashburton District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+64 Timaru District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+65 Mackenzie District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+66 Waimate District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+14 Otago Regional Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+68 Waitaki District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+69 Central Otago District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+70 Queenstown-Lakes District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+71 Dunedin City Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+72 Clutha District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+15 Southland Regional Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+73 Southland District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+74 Gore District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+75 Invercargill City Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+16 Tasman District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+51 Tasman District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+52 Nelson City Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+18 Marlborough District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+67 Chatham Islands Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-

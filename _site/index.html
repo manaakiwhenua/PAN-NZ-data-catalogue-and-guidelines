@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>PAN-NZ Dataset Catalogue | PANNZ-source-data</title>
+<title>PAN-NZ Data Stocktake and Guidelines | PANNZ-source-data</title>
 <meta name="generator" content="Jekyll v3.10.0" />
-<meta property="og:title" content="PAN-NZ Dataset Catalogue" />
+<meta property="og:title" content="PAN-NZ Data Stocktake and Guidelines" />
 <meta property="og:locale" content="en_US" />
 <link rel="canonical" href="http://localhost:4000/" />
 <meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="PANNZ-source-data" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="PAN-NZ Dataset Catalogue" />
+<meta property="twitter:title" content="PAN-NZ Data Stocktake and Guidelines" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","headline":"PAN-NZ Dataset Catalogue","name":"PANNZ-source-data","url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","headline":"PAN-NZ Data Stocktake and Guidelines","name":"PANNZ-source-data","url":"http://localhost:4000/"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=c54e3c394df5a9130499ca5d9c44739afed3e10d">
+    <link rel="stylesheet" href="/assets/css/style.css?v=6154aa27d5833be06a5f3e31ce68d4a4c169ef5a">
     <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
 <!-- Setup Google Analytics -->
@@ -39,2944 +39,622 @@
       <h1><a href="http://localhost:4000/">PANNZ-source-data</a></h1>
       
 
-      <h2 id="pan-nz-protected-area-source-dataset">PAN-NZ Protected Area Source Dataset</h2>
+      <h1 id="pan-nz-data-stocktake-and-guidelines">PAN-NZ Data Stocktake and Guidelines</h1>
 
-<blockquote>
-  <p>This catalogue is automatically rendered from <code class="language-plaintext highlighter-rouge">_data/Parks_and_Reserves.csv</code>.</p>
-</blockquote>
+<h2 id="todo">TODo</h2>
+<p>Still outstanding:</p>
+<ul class="task-list">
+  <li>[] Explain why we are using github - it is a collaborative document….</li>
+  <li>[] Though limitations
+    <ul>
+      <li>[] We ar enot using a fully fledged metadata catalog - this 
+is a limited funded project</li>
+    </ul>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />note, in the metadata table we have not included ESPG as it
+is not easily accessable in the arc products</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />A section illustrating why local govt data in important. imahge of the holes without it</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />didcuss coveannts e.g. https://www.fndc.govt.nz/Council/district-plan/Conservation-covenants
+    <ul class="task-list">
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Whangarei District Council has required the covenanting of 613 areas, totalling</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />9https://www.nrc.govt.nz/media/aealvfz0/protected-natural-areas-in-northland.pdf</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />2,266.0 h</li>
+    </ul>
+  </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Disccus recent engagement ot indicate keenness e.g. 600+ at webinars</li>
+</ul>
+
+<h2 id="contents">Contents</h2>
+<ul>
+  <li><a href="#pan-nz-data-stocktake-and-guidelines">PAN-NZ Data Stocktake and Guidelines</a>
+    <ul>
+      <li><a href="#todo">TODo</a></li>
+      <li><a href="#contents">Contents</a></li>
+      <li><a href="#pan-nz-context">PAN-NZ Context</a>
+        <ul>
+          <li><a href="#document-purpose">Document Purpose</a></li>
+          <li><a href="#pan-nz">PAN-NZ</a></li>
+          <li><a href="#definition-of-protected-area-for-this-stage-of-pan-nz">Definition of Protected Area (for this stage of PAN-NZ)</a></li>
+          <li><a href="#data-interoperability-principles">Data Interoperability Principles</a></li>
+        </ul>
+      </li>
+      <li><a href="#pan-nz-source-data-guidelines">PAN-NZ Source Data Guidelines</a>
+        <ul>
+          <li><a href="#why-follow-these-standards">Why Follow These Standards?</a></li>
+          <li><a href="#data-access">Data access</a>
+            <ul>
+              <li><a href="#1-licensing">1. Licensing</a></li>
+              <li><a href="#licensing-conditions-exluding-protected-area-data-being-included-in-pan-nz">Licensing conditions exluding protected area data being included in PAN-NZ</a></li>
+              <li><a href="#2-data-access">2. Data Access</a></li>
+              <li><a href="#3-metadata">3. Metadata</a></li>
+              <li><a href="#3-discoverability">3. Discoverability</a></li>
+              <li><a href="#4-privacy">4. Privacy</a></li>
+            </ul>
+          </li>
+          <li><a href="#data-attributes">Data Attributes</a>
+            <ul>
+              <li><a href="#1-pan-nz-schema">1. PAN-NZ Schema</a></li>
+              <li><a href="#2-protection-name">2. Protection Name</a></li>
+              <li><a href="#3-legal-act">3. Legal Act</a></li>
+              <li><a href="#4-legal-section">4. Legal Section</a></li>
+              <li><a href="#5-local-purpose-type">5. Local Purpose Type</a></li>
+              <li><a href="#6-protection-type">6. Protection Type</a></li>
+              <li><a href="#7-persistent-identifier">7. Persistent Identifier</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#potential-pan-nz-datasets">Potential PAN-NZ Datasets</a>
+    <ul>
+      <li><a href="#national">National</a></li>
+      <li><a href="#regional">Regional</a>
+        <ul>
+          <li><a href="#parks-and-reserves">Parks and Reserves</a></li>
+          <li><a href="#sna">SNA</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>Data catalogues:</p>
+<ul>
+  <li>
+    <h2 id="contents-1">Contents</h2>
+  </li>
+  <li><a href="parks_and_reserves_catalogue/">Parks and Reserves Catalogue</a></li>
+</ul>
+
+<h2 id="pan-nz-context">PAN-NZ Context</h2>
+<p>The below sections cover key concepts related to PAN-NZ (Protected Areas Network – New Zealand)</p>
+
+<h3 id="document-purpose">Document Purpose</h3>
+<p>The purpose of this document is two fold:</p>
+
+<ul>
+  <li>
+    <p>To maintain a record of all known sources of Aotearoa New Zealand protected area datasets and their current state.</p>
+  </li>
+  <li>
+    <p>To provide guidelines to data holders to support the inclusion of their data in the national 
+Protected Areas Network of New Zealand (PAN-NZ).</p>
+  </li>
+</ul>
+
+<p>The ultimate goal is to lift the quality, completeness, and accessibility of the PAN-NZ spatial 
+dataset while supporting low-effort, frequent national data integration and publishing.</p>
+
+<h3 id="pan-nz">PAN-NZ</h3>
+<p>PAN-NZ (Protected Areas Network – New Zealand) is a national initiative that improves how protected 
+areas are documented, understood, and accessed through spatial data. Developed by Manaaki Whenua – 
+Landcare Research, with funding from the Ministry for the Environment (MfE), PAN-NZ provides a 
+consolidated national view of legal protections across Aotearoa New Zealand.</p>
+
+<p>The programme aims to support better planning, monitoring, and reporting by:</p>
+<ul>
+  <li>Consolidating spatial and descriptive protected data from central government, local government 
+and non-profits organisation sources.</li>
+  <li>Update the national protected areas information frequently</li>
+  <li>Classifying areas according to legal designations and IUCN categories. This allows the filtering and sorting
+of protection areas based on the degree of protection afforded to supported bio-diversity.</li>
+  <li>Enabling discovery and interpretation of protected area data through a national catalogue of datasets.</li>
+  <li>Engaging with data holders to improve the clarity, openness, and completeness of data.</li>
+</ul>
+
+<p>By increasing transparency and improving data quality, PAN-NZ helps decision-makers, researchers, 
+iwi/Māori, and the public better understand the extent and types of protected areas in New Zealand.</p>
+
+<h3 id="definition-of-protected-area-for-this-stage-of-pan-nz">Definition of Protected Area (for this stage of PAN-NZ)</h3>
+<p>For the purposes of PAN-NZ, a protected area is defined as a geographically defined area 
+that is recognised and managed through legislation or other formal instruments to achieve 
+long-term protection of natural, cultural, or recreational values. This broad definition 
+ensures inclusive national coverage of the many ways protection is implemented across 
+Aotearoa New Zealand.</p>
+
+<p>However, users can refine the dataset to suit more specific definitions—such as the 
+formal IUCN definition of a protected area—by applying filters like IUCN category, 
+legal basis, or protection type.</p>
+
+<h3 id="data-interoperability-principles">Data Interoperability Principles</h3>
+<p>Interoperability means that data should be easy to discover, access, and integrate from the 
+very first point of contact. We are not imposing rigid field names or internal database 
+changes on data providers. Instead, our focus is on ensuring that the data is shared 
+in a way that doesn’t require users to dig deep, reverse-engineer formats, or 
+chase down contacts just to make use of it.</p>
+
+<p>To support this, we encourage the following:</p>
+<ul>
+  <li>Standard metadata to describe the dataset clearly</li>
+  <li>Open formats such as GeoJSON, Shapefile, or GeoPackage (GPKG)</li>
+  <li>Stable API endpoints, ideally using open standards like OGC WFS and OGC API</li>
+  <li>Clear documentation that explains field meanings and usage</li>
+  <li>Consistent attribute naming, where possible</li>
+</ul>
+
+<h2 id="pan-nz-source-data-guidelines">PAN-NZ Source Data Guidelines</h2>
+<p>These guidelines outline the minimum data requirements for data holders to ensure their 
+protected areas data can be incorporated into PAN-NZ.</p>
+<h3 id="why-follow-these-standards">Why Follow These Standards?</h3>
+<p>Aotearoa New Zealand has a rich and diverse network of protected areas — from national parks and 
+reserves to QEII covenants and local council-protected sites. However, the ability to
+ understand and represent these areas consistently at a national level depends on the
+  quality and compatibility of the underlying data.</p>
+
+<p>That’s where you come in.</p>
+
+<p>The Protected Areas Network of New Zealand (PAN-NZ) is a national initiative that brings 
+together datasets from local and central government, and NGOs. By contributing your data in a consistent format, you are helping to:</p>
+<ul>
+  <li>Improve national visibility of protected areas in your region</li>
+  <li>Support stronger environmental reporting, both domestically and to international 
+frameworks like the IUCN and the Kunming-Montreal 30x30 target.</li>
+  <li>Empower local communities, councils, and planners with better spatial information</li>
+  <li>Enable more effective land-use planning and biodiversity protection across regional boundaries</li>
+  <li>Improve economic efficiency by clearly identifying areas where development is restricted, 
+helping councils, developers, and infrastructure planners focus effort and investment in appropriate locations</li>
+</ul>
+
+<p>The standards outlined in this document aren’t here to create extra burden — they are designed to 
+reduce duplication, streamline integration, and make it easier to update data going forward. 
+In many cases, small changes to metadata or access settings can have a big impact.</p>
+
+<p>By aligning your datasets with these guidelines, you’re not just supplying data — 
+you’re contributing to a nationally significant information layer that supports environmental 
+stewardship across Aotearoa.</p>
+
+<p>Requirements: 
+Below are the data requirements that a protected area dataset must meet to be added to the national
+PAN-NZ dataset</p>
+
+<h3 id="data-access">Data access</h3>
+<p>PAN-NZ relies on timely, transparent, and open access to protected area data. To 
+ensure datasets can be efficiently discovered, evaluated, and integrated into 
+the national dataset, data holders should meet the access-related requirements
+outlined in the below sections</p>
+
+<h4 id="1-licensing">1. Licensing</h4>
+
+<p>Open licensing enables datasets to be combined at a national level without legal barriers or ambiguity as to how the data 
+an be used. It ensures that PAN-NZ can be openly published, shared, and integrated with other public data.</p>
+
+<p>Each dataset must have a clearly stated data licence that allows for reuse and redistribution. Preferably, 
+this should be the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 (CC BY 4.0) licence</a>. 
+The license should be supplied as part of the datasets metadata (TODO// see section …metadata) and be clearly 
+displayed at the point of access. This approach is consistent with the [New Zealand Governm-d 50to release 
+data under open terms to maximise its value and reuse.</p>
+
+<p><img src="/IMG/example_licensing.png" alt="PAN-NZ Diagram" />
+<strong>Above:</strong> An example of a protected areas source dataset with its licence clearly displayed at the point of 
+access that allow for download for reuse. Example as per <a href="https://hub.arcgis.com/datasets/658697bb70c345f48d21cc002ecc0bef_1/explore">Hawke’s Bay Regional Parks</a></p>
+
+<h4 id="licensing-conditions-exluding-protected-area-data-being-included-in-pan-nz">Licensing conditions exluding protected area data being included in PAN-NZ</h4>
+<p>Below are common reasons that licensing excludes data from being included in the national PAN-NZ data layer
+ meaning the protected areas in that dataset will not appear in the national layer, limiting their visibility 
+ to policymakers, researchers, and the public.</p>
+<ul>
+  <li><strong>No License:</strong> If no licence is provided, PAN-NZ cannot include the dataset due to the ambiguity around the 
+conditions of use concerning the dataset.</li>
+  <li><strong>Too Restrictive of a License</strong>: Some license allow degrees of public reuse but are too restrictive to inclusion on PAN-NZ. For example some protected
+area dataset are licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>	-NoNDerivatives (See the terms of
+use in image directly below). This is problematic as PAN-NZ is a derivative, and data under this license therefore can not be 
+included.</li>
+</ul>
+
+<p><img src="IMG/cc-by-40-ND.png" alt="PAN-NZ Diagram" width="450" /></p>
+
+<p><strong>Above:</strong> TODO//</p>
+
+<p>If your organisation uses a different licence, or if there are restrictions on reuse, please provide clear
+ documentation explaining the terms. We’re happy to work with you to understand options and 
+ ensure your data can be included.</p>
+
+<h4 id="2-data-access">2. Data Access</h4>
+<p>PAN-NZ requires source datasets to be accessible with minimal effort for both those accessing and supplying the data.</p>
+
+<p>Preferred methods of access (in order of preference):</p>
+<ul>
+  <li>
+    <p><strong>API access:</strong>
+  Data supplied via an API can be fetched programmatically and automatically integrated into PAN-NZ. This allows 
+  for regular updates, ensuring the national dataset remains current and accurately reflects the latest information.
+   API access includes data supplied through OGC (Open Geospatial Consortium) standards such as WFS (Web Feature Service), as well as RESTful APIs.</p>
+  </li>
+  <li>
+    <p><strong>Direct download:</strong>
+  If an API is not feasible, datasets should be made available through a direct download link—ideally via an 
+  open data portal or a stable URL. This allows a PAN-NZ administrator to manually download the dataset. However,
+   as it does not support automation, it is considered less efficient than API access.</p>
+
+    <p>Both API and direct download options have the added benefit of discoverability. Services that support these 
+  access methods are typically indexed by search engines, making them easier for PAN-NZ administrators to find
+   when searching for protected area data sources.</p>
+  </li>
+  <li>
+    <p><strong>Download on request:</strong>
+  If neither of the above options is available, the PAN-NZ administrator may need to contact the data provider 
+  directly to request access. This approach requires significantly more effort for both parties. Additionally,
+   because the dataset is not discoverable online, it risks being excluded from the national dataset simply
+  because the administrator may not know it exists—or whom to contact to obtain it.</p>
+  </li>
+</ul>
+
+<h4 id="3-metadata">3. Metadata</h4>
+
+<p>Metadata helps others understand and correctly interpret your dataset. While a full ISO 19115 record is ideal, 
+PAN-NZ requires a minimum metadata profile with the following fields:</p>
 
 <table>
   <thead>
     <tr>
-      <th>Custodian</th>
-      <th>Dataset name</th>
-      <th>License</th>
-      <th>WebMap</th>
-      <th>Download URL</th>
-      <th>API Type</th>
-      <th>API URL</th>
-      <th>ID</th>
-      <th>Name Field</th>
-      <th>Legislation Act</th>
-      <th>Legislation Section</th>
-      <th>Protection Type</th>
-      <th>Reserve Purpose</th>
-      <th>Comment</th>
-      <th>Stated Restrictions</th>
-      <th>Action Required</th>
+      <th>Field</th>
+      <th>Description</th>
     </tr>
   </thead>
   <tbody>
-  
     <tr>
-      <td>1 Northland Regional Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
+      <td>Title</td>
+      <td>Name of the dataset</td>
     </tr>
-  
     <tr>
-      <td>1 Far North District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
+      <td>Description</td>
+      <td>Short explanation of the dataset’s purpose and contents</td>
     </tr>
-  
     <tr>
-      <td>2 Whangarei District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
+      <td>Creator / Owner</td>
+      <td>The organisation responsible for maintaining the dataset</td>
     </tr>
-  
     <tr>
-      <td>3 Kaipara District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
+      <td>Contact Email</td>
+      <td>A contact person for questions or updates</td>
     </tr>
-  
     <tr>
-      <td>2 Auckland Council  </td>
-      <td>Park Extents</td>
-      <td>-</td>
-      <td>-</td>
-      <td>https://data-aucklandcouncil.opendata.arcgis.com/datasets/park-extents/explore</td>
-      <td>ArcGIS REST Feature Service</td>
-      <td>https://services1.arcgis.com/n4yPwebTjJCmXB6W/arcgis/rest/services/Park_Extents/FeatureServer</td>
-      <td>OBJECTID</td>
-      <td>Site Description</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>there is a field (AssetGroup) that has the following values:  Park;Holiday;Stormwater;Regional;Active Cemetery;Owned NotMaint. This allows the extraction of regional parks but is not fine enough detail </td>
-      <td></td>
-      <td>Can this data be made more descriptive else is there a dataset that can be made availale that list local government parks and reserves?</td>
+      <td>Licence</td>
+      <td>The reuse licence applied to the dataset</td>
     </tr>
-  
     <tr>
-      <td>3 Waikato Regional Council  </td>
-      <td>Reserve</td>
-      <td>[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)</td>
-      <td>-</td>
-      <td>https://data-waikatolass.opendata.arcgis.com/datasets/60f870473c8a4b119a71a032f80c848a_0/explore?location=-38.083192%2C176.081183%2C12.38</td>
-      <td>ArcGIS REST Feature Service</td>
-      <td>https://services3.arcgis.com/Oou6z70yKcGvIDxP/arcgis/rest/services/Reserve/FeatureServer/0</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>does appear to cover all TAs</td>
-      <td></td>
-      <td>-</td>
+      <td>Date Updated</td>
+      <td>Most recent date of data revision or publication</td>
     </tr>
-  
     <tr>
-      <td>11 Thames-Coromandel District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
+      <td>Geographic Extent</td>
+      <td>Area covered (e.g. “Tasman District”, or bounding box in WGS84)</td>
     </tr>
-  
     <tr>
-      <td>12 Hauraki District Council  </td>
-      <td>Hauraki District Council Parks and Reserves Boundary</td>
-      <td>-</td>
-      <td>-</td>
-      <td>https://data-waikatolass.opendata.arcgis.com/datasets/fc938517a2d348c5988b58135d5ed4f5_0/explore</td>
-      <td>ArcGIS REST Feature Service</td>
-      <td>https://services9.arcgis.com/ph39VKR5KFKf0WbU/arcgis/rest/services/Reserve_Boundary/FeatureServer/0</td>
-      <td>FID</td>
-      <td>name</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
+      <td>Projection</td>
+      <td>Spatial reference system (e.g. NZTM2000 or EPSG:2193)</td>
     </tr>
-  
     <tr>
-      <td>13 Waikato District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
+      <td>Format</td>
+      <td>File format used (e.g. GeoPackage, Shapefile)</td>
     </tr>
-  
-    <tr>
-      <td>15 Matamata-Piako District Council  </td>
-      <td>Reserve</td>
-      <td>-</td>
-      <td>-</td>
-      <td>https://data-waikatolass.opendata.arcgis.com/datasets/2484dd11b62444f6b95c57455e1b223d_0/explore?location=-37.687835%2C175.655763%2C10.64</td>
-      <td>ArcGIS REST Feature Service</td>
-      <td>https://services6.arcgis.com/EU3vB12T67eDdisL/arcgis/rest/services/Reserve/FeatureServer/0</td>
-      <td>ID1</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>No License Provided</td>
-    </tr>
-  
-    <tr>
-      <td>16 Hamilton City Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>17 Waipa District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>18 ?torohanga District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>19 South Waikato District Council  </td>
-      <td>ReserveAreasSouthWaikato</td>
-      <td>[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)</td>
-      <td>-</td>
-      <td>https://southwaikatodc-open-data-portal-southwaikatodc.opendata.arcgis.com/datasets/0cdbcf77df5049b1999fa683ac36e928/explore</td>
-      <td>ArcGIS REST Feature Service</td>
-      <td>https://services9.arcgis.com/pQ2VGNXWHZ4WkdmW/arcgis/rest/services/ReserveAreasSouthWaikato/FeatureServer/0</td>
-      <td>FID</td>
-      <td>-</td>
-      <td>Resserve Type</td>
-      <td>Resserve Type</td>
-      <td>-</td>
-      <td>-</td>
-      <td>Reserve type includes tpye, act and section e.g Conservation Park - s.19 Conservation Act 1987</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>20 Waitomo District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>21 Taup? District Council  </td>
-      <td>Taup? District Reserves</td>
-      <td>[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)</td>
-      <td>-</td>
-      <td>https://hub.arcgis.com/datasets/50797c9071f147b09827ad6bfdc91976/explore</td>
-      <td>ArcGIS REST Feature Service</td>
-      <td>https://maps.taupodc.govt.nz/server/rest/services/property/Reserve/FeatureServer/</td>
-      <td>asset_id</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>4 Bay of Plenty Regional Council  </td>
-      <td>BOPRC Regional Parks</td>
-      <td>-</td>
-      <td>-</td>
-      <td>https://maps.boprc.govt.nz/datasets/BOPRC::boprc-regional-parks/explore</td>
-      <td>ArcGIS REST Feature Service</td>
-      <td>https://gis.boprc.govt.nz/server2/rest/services/BayOfPlentyMaps/Boundaries/MapServer/15/</td>
-      <td>OBJECTID</td>
-      <td>Name</td>
-      <td>**Implicit</td>
-      <td>**Implicit</td>
-      <td>**Implicit</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>request open license</td>
-    </tr>
-  
-    <tr>
-      <td>22 Western Bay of Plenty District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>23 Tauranga City Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>24 Rotorua Lakes Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>25 Whakat?ne District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>26 Kawerau District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>27 ?p?tiki District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>28 Gisborne District Council  </td>
-      <td>Recreation Reserves</td>
-      <td>[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)</td>
-      <td>-</td>
-      <td>https://geoportal-gizzy.opendata.arcgis.com/datasets/gizzy::parks-and-reserves/explore?layer=3</td>
-      <td>ArcGIS REST Feature Service</td>
-      <td>https://services7.arcgis.com/8G10QCd84QpdcTJ9/arcgis/rest/services/parks_reserves/FeatureServer/3/</td>
-      <td>OBJECTID</td>
-      <td>NAME</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>Request info: are these all recreation reserves as under the reserves act?</td>
-    </tr>
-  
-    <tr>
-      <td>28 Gisborne District Council  </td>
-      <td>Neighbourhood Reserves</td>
-      <td>[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)</td>
-      <td>-</td>
-      <td>https://geoportal-gizzy.opendata.arcgis.com/datasets/gizzy::parks-and-reserves/explore?layer=2</td>
-      <td>ArcGIS REST Feature Service</td>
-      <td>https://services7.arcgis.com/8G10QCd84QpdcTJ9/arcgis/rest/services/parks_reserves/FeatureServer/2/</td>
-      <td>OBJECTID</td>
-      <td>NAME</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>28 Gisborne District Council  </td>
-      <td>Amenity Reserves</td>
-      <td>[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)</td>
-      <td>-</td>
-      <td>https://geoportal-gizzy.opendata.arcgis.com/datasets/gizzy::parks-and-reserves/explore?layer=0</td>
-      <td>ArcGIS REST Feature Service</td>
-      <td>https://services7.arcgis.com/8G10QCd84QpdcTJ9/arcgis/rest/services/parks_reserves/FeatureServer/0/</td>
-      <td>OBJECTID</td>
-      <td>NAME</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>28 Gisborne District Council  </td>
-      <td>Heritage Reserves</td>
-      <td>[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)</td>
-      <td>-</td>
-      <td>https://geoportal-gizzy.opendata.arcgis.com/datasets/gizzy::parks-and-reserves/explore?layer=1</td>
-      <td>ArcGIS REST Feature Service</td>
-      <td>https://services7.arcgis.com/8G10QCd84QpdcTJ9/arcgis/rest/services/parks_reserves/FeatureServer/1/</td>
-      <td>OBJECTID</td>
-      <td>NAME</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>6 Hawke's Bay Regional Council  </td>
-      <td>Hawke's Bay Regional Parks</td>
-      <td>[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)</td>
-      <td>-</td>
-      <td>https://hub.arcgis.com/datasets/658697bb70c345f48d21cc002ecc0bef_1/explore</td>
-      <td>ArcGIS REST Feature Service</td>
-      <td>https://gis.hbrc.govt.nz/server/rest/services/ExternalServices/Recreational/MapServer/1/</td>
-      <td>OBJECTID</td>
-      <td>Name</td>
-      <td>**Implicit</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>29 Wairoa District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>30 Hastings District Council  </td>
-      <td>Hastings DC Parks and Reserves</td>
-      <td>[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)</td>
-      <td>-</td>
-      <td>https://hastings-dc-open-data-hdcgis.hub.arcgis.com/datasets/22de4770a29043d1873b91fa9ae60d86_0/explore</td>
-      <td>ArcGIS REST Feature Service</td>
-      <td>https://services1.arcgis.com/8L3DQUzjrkgEmDpQ/arcgis/rest/services/OpenData_ParksReserves/FeatureServer/0</td>
-      <td>OBJECTID</td>
-      <td>Reserve_Name</td>
-      <td>-</td>
-      <td>-</td>
-      <td>Category</td>
-      <td>-</td>
-      <td>Distinct Category: LinkageUrban;SportRecreation;CivicSpace;Community;OpenSpaceMaintained;Cultural;PublicGardens;LinkageEcological;OpenSpaceNatural</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>31 Napier City Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>32 Central Hawke's Bay District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>7 Taranaki Regional Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>https://maps.trc.govt.nz/LocalMapsViewer/?map=8c336441e5d44a699354ef777d8ac868</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>This webmap viewers includes a protected areas layer. This is not publically downloadable. This layer appears to not add any new information on to of the central government datasets (infact it may be one of these)</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>33 New Plymouth District Council  </td>
-      <td>NPDC Infrastructure : Parks - Reserve</td>
-      <td>[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)</td>
-      <td>-</td>
-      <td>https://arc-gis-hub-home-arcgishub.hub.arcgis.com/datasets/8db10ed20467482ba215074cefa1bf89_0/explore</td>
-      <td>ArcGIS REST Feature Service</td>
-      <td>https://services2.arcgis.com/JthOmqz8HxPqljUO/arcgis/rest/services/OpenData_Infrastructure_Parks/FeatureServer/0</td>
-      <td>OBJECTID</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>RESTYPE</td>
-      <td>-</td>
-      <td>RESTYPE has only two distinct values: : NOT;OWN</td>
-      <td></td>
-      <td>requiest infoamtion as to how areas are protected</td>
-    </tr>
-  
-    <tr>
-      <td>34 Stratford District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>35 South Taranaki District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>8 Manawat?-Whanganui Regional Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>36 Ruapehu District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>37 Whanganui District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>38 Rangit?kei District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>39 Manawat? District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>40 Palmerston North City Council  </td>
-      <td>PNCC Parks &amp; Reserves</td>
-      <td>[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)</td>
-      <td>-</td>
-      <td>https://data-pncc.opendata.arcgis.com/datasets/PNCC::pncc-parks-reserves/explore</td>
-      <td>ArcGIS REST Feature Service</td>
-      <td>-</td>
-      <td>OBJECTID</td>
-      <td>RESERVE_NAME</td>
-      <td>-</td>
-      <td>-</td>
-      <td>USE_CLASS_DESC</td>
-      <td>-</td>
-      <td>USE_CLASS_DESC distinct values: DOG CONTROL;ROAD;SPORTS;NULL;SEWAGE TREATMENT;LEASED GOLF;LEASED;CAMPING;CEMETERY;LEASED BOWLING;DRAINAGE;LEASED HOUSING;ESPLANADE STRIP;LEASED PLAYCENTRE;LEASED TENNIS;RECREATION;LEASED SCOUTS;LEASED WALKWAY;NONE;LEASED CANINE;LEASED GRAZING;FORMAL</td>
-      <td></td>
-      <td>requiest infoamtion as to how areas are protected</td>
-    </tr>
-  
-    <tr>
-      <td>41 Tararua District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>9 Greater Wellington Regional Council  </td>
-      <td>GWRC Regional Parks</td>
-      <td>[CC-BY-NC-4.0](https://creativecommons.org/licenses/by-nc/4.0/)</td>
-      <td>-</td>
-      <td>https://data-gwrc.opendata.arcgis.com/datasets/3321c0687e614838b77641e604a0c9a4_21/explore</td>
-      <td>ArcGIS REST Feature Service</td>
-      <td>https://mapping.gw.govt.nz/arcgis/rest/services/GW/Parks_P/MapServer/21/</td>
-      <td>OBJECTID</td>
-      <td>NAME</td>
-      <td>**Implicit</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>Our work is for a commercial contract. I suspect this means we can not include data under the non-commerical contract</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>9 Greater Wellington Regional Council  </td>
-      <td>Managed Open Space</td>
-      <td>[CC-BY-ND-4.0](https://creativecommons.org/licenses/by-nd/4.0/)</td>
-      <td>-</td>
-      <td>https://data-gwrc.opendata.arcgis.com/datasets/9b431d9ca2db4ebfabb8dbf5c4d0b6c7_34/explore</td>
-      <td>ArcGIS REST Feature Service</td>
-      <td>https://mapping.gw.govt.nz/arcgis/rest/services/GW/The_Region_P/MapServer/34/</td>
-      <td>OBJECTID</td>
-      <td>Open_Space_Name</td>
-      <td>-</td>
-      <td>-</td>
-      <td>Primary_Function</td>
-      <td>-</td>
-      <td>Primary Function distinct values Organised Sports/Activities - Informal Rec/Leisure;Enviro/Heritage;Other;N/A;Informal Recreation/Leisure;Informal Recreation/Leisure - Enviro/Heritage;Organised Sports/Activities</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>42 Horowhenua District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>43 K?piti Coast District Council  </td>
-      <td>Reserves</td>
-      <td>[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>44 Porirua City Council  </td>
-      <td>Reserves</td>
-      <td>[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)</td>
-      <td>https://data-pcc.opendata.arcgis.com/maps/dfdf2ccd9a4a415c815d8cda85006bb6/about</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>45 Upper Hutt City Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>46 Lower Hutt City Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>47 Wellington City Council  </td>
-      <td>WCC Parks and Reserves</td>
-      <td>[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)</td>
-      <td>-</td>
-      <td>https://data-wcc.opendata.arcgis.com/datasets/wcc-parks-and-reserves/explore?location=-41.341541%2C174.784555%2C13.71</td>
-      <td>ArcGIS REST Feature Service</td>
-      <td>https://gis.wcc.govt.nz/arcgis/rest/services/Parks/ParksReserves/MapServer/2</td>
-      <td>OBJECTID</td>
-      <td>name_</td>
-      <td>-</td>
-      <td>-</td>
-      <td>sitetypeid</td>
-      <td>-</td>
-      <td>sitetype has the follow disticnt values:  L6;L5;L7;L12;L1;L3;L9;L10;L2</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>48 Masterton District Council  </td>
-      <td>ParksAndRecreation/ParksReservesPublic</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>ArcGIS REST Feature Service</td>
-      <td>https://gis.mstn.govt.nz/arcgis/rest/services/ParksAndRecreation/ParksReservesPublic/MapServer</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>Distinct Purpse value: Park;0.0784;Esplanade Reserve;Recreatioinal Reserve;False</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>49 Carterton District Council  </td>
-      <td>ParksAndRecreation/ParksReservesPublic</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>ArcGIS REST Feature Service</td>
-      <td>https://gis.mstn.govt.nz/arcgis/rest/services/ParksAndRecreation/ParksReservesPublic/MapServer</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>Distinct Purpse value: Park;0.0784;Esplanade Reserve;Recreatioinal Reserve;False</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>50 South Wairarapa District Council  </td>
-      <td>ParksAndRecreation/ParksReservesPublic</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>ArcGIS REST Feature Service</td>
-      <td>https://gis.mstn.govt.nz/arcgis/rest/services/ParksAndRecreation/ParksReservesPublic/MapServer</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>Distinct Purpse value: Park;0.0784;Esplanade Reserve;Recreatioinal Reserve;False</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>12 West Coast Regional Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>55 Buller District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>56 Grey District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>57 Westland District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>13 Canterbury Regional Council  </td>
-      <td>Parks</td>
-      <td>[CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/)</td>
-      <td>-</td>
-      <td>https://opendata.canterburymaps.govt.nz/datasets/ecan::parks/explore</td>
-      <td>OGC WFS</td>
-      <td>https://gis.ecan.govt.nz/arcgis/services/Public/Canterbury_Maps/MapServer/WFSServer?request=GetCapabilities&amp;service=WFS</td>
-      <td>ID</td>
-      <td>Common Name</td>
-      <td>-</td>
-      <td>-</td>
-      <td>Park_Type</td>
-      <td>-</td>
-      <td>distinct Park_types Botanic;Reserve;Community;Other;Sports ground;Regional</td>
-      <td></td>
-      <td>Useful for extrsaxting regional parks - Need further protection info for other types</td>
-    </tr>
-  
-    <tr>
-      <td>54 Kaik?ura District Council  </td>
-      <td>Parks</td>
-      <td>[CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/)</td>
-      <td>-</td>
-      <td>https://opendata.canterburymaps.govt.nz/datasets/ecan::parks/explore</td>
-      <td>OGC WFS</td>
-      <td>https://gis.ecan.govt.nz/arcgis/services/Public/Canterbury_Maps/MapServer/WFSServer?request=GetCapabilities&amp;service=WFS</td>
-      <td>ID</td>
-      <td>Common Name</td>
-      <td>-</td>
-      <td>-</td>
-      <td>Park_Type</td>
-      <td>-</td>
-      <td>distinct Park_types Botanic;Reserve;Community;Other;Sports ground;Regional</td>
-      <td></td>
-      <td>Useful for extrsaxting regional parks - Need further protection info for other types</td>
-    </tr>
-  
-    <tr>
-      <td>58 Hurunui District Council  </td>
-      <td>Parks</td>
-      <td>[CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/)</td>
-      <td>-</td>
-      <td>https://opendata.canterburymaps.govt.nz/datasets/ecan::parks/explore</td>
-      <td>OGC WFS</td>
-      <td>https://gis.ecan.govt.nz/arcgis/services/Public/Canterbury_Maps/MapServer/WFSServer?request=GetCapabilities&amp;service=WFS</td>
-      <td>ID</td>
-      <td>Common Name</td>
-      <td>-</td>
-      <td>-</td>
-      <td>Park_Type</td>
-      <td>-</td>
-      <td>distinct Park_types Botanic;Reserve;Community;Other;Sports ground;Regional</td>
-      <td></td>
-      <td>Useful for extrsaxting regional parks - Need further protection info for other types</td>
-    </tr>
-  
-    <tr>
-      <td>59 Waimakariri District Council  </td>
-      <td>Parks</td>
-      <td>[CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/)</td>
-      <td>-</td>
-      <td>https://opendata.canterburymaps.govt.nz/datasets/ecan::parks/explore</td>
-      <td>OGC WFS</td>
-      <td>https://gis.ecan.govt.nz/arcgis/services/Public/Canterbury_Maps/MapServer/WFSServer?request=GetCapabilities&amp;service=WFS</td>
-      <td>ID</td>
-      <td>Common Name</td>
-      <td>-</td>
-      <td>-</td>
-      <td>Park_Type</td>
-      <td>-</td>
-      <td>distinct Park_types Botanic;Reserve;Community;Other;Sports ground;Regional</td>
-      <td></td>
-      <td>Useful for extrsaxting regional parks - Need further protection info for other types</td>
-    </tr>
-  
-    <tr>
-      <td>60 Christchurch City Council  </td>
-      <td>Parks</td>
-      <td>[CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/)</td>
-      <td>-</td>
-      <td>https://opendata.canterburymaps.govt.nz/datasets/ecan::parks/explore</td>
-      <td>OGC WFS</td>
-      <td>https://gis.ecan.govt.nz/arcgis/services/Public/Canterbury_Maps/MapServer/WFSServer?request=GetCapabilities&amp;service=WFS</td>
-      <td>ID</td>
-      <td>Common Name</td>
-      <td>-</td>
-      <td>-</td>
-      <td>Park_Type</td>
-      <td>-</td>
-      <td>distinct Park_types Botanic;Reserve;Community;Other;Sports ground;Regional</td>
-      <td></td>
-      <td>Useful for extrsaxting regional parks - Need further protection info for other types</td>
-    </tr>
-  
-    <tr>
-      <td>62 Selwyn District Council  </td>
-      <td>Parks</td>
-      <td>[CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/)</td>
-      <td>-</td>
-      <td>https://opendata.canterburymaps.govt.nz/datasets/ecan::parks/explore</td>
-      <td>OGC WFS</td>
-      <td>https://gis.ecan.govt.nz/arcgis/services/Public/Canterbury_Maps/MapServer/WFSServer?request=GetCapabilities&amp;service=WFS</td>
-      <td>ID</td>
-      <td>Common Name</td>
-      <td>-</td>
-      <td>-</td>
-      <td>Park_Type</td>
-      <td>-</td>
-      <td>distinct Park_types Botanic;Reserve;Community;Other;Sports ground;Regional</td>
-      <td></td>
-      <td>Useful for extrsaxting regional parks - Need further protection info for other types</td>
-    </tr>
-  
-    <tr>
-      <td>63 Ashburton District Council  </td>
-      <td>Parks</td>
-      <td>[CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/)</td>
-      <td>-</td>
-      <td>https://opendata.canterburymaps.govt.nz/datasets/ecan::parks/explore</td>
-      <td>OGC WFS</td>
-      <td>https://gis.ecan.govt.nz/arcgis/services/Public/Canterbury_Maps/MapServer/WFSServer?request=GetCapabilities&amp;service=WFS</td>
-      <td>ID</td>
-      <td>Common Name</td>
-      <td>-</td>
-      <td>-</td>
-      <td>Park_Type</td>
-      <td>-</td>
-      <td>distinct Park_types Botanic;Reserve;Community;Other;Sports ground;Regional</td>
-      <td></td>
-      <td>Useful for extrsaxting regional parks - Need further protection info for other types</td>
-    </tr>
-  
-    <tr>
-      <td>64 Timaru District Council  </td>
-      <td>Parks</td>
-      <td>[CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/)</td>
-      <td>-</td>
-      <td>https://opendata.canterburymaps.govt.nz/datasets/ecan::parks/explore</td>
-      <td>OGC WFS</td>
-      <td>https://gis.ecan.govt.nz/arcgis/services/Public/Canterbury_Maps/MapServer/WFSServer?request=GetCapabilities&amp;service=WFS</td>
-      <td>ID</td>
-      <td>Common Name</td>
-      <td>-</td>
-      <td>-</td>
-      <td>Park_Type</td>
-      <td>-</td>
-      <td>distinct Park_types Botanic;Reserve;Community;Other;Sports ground;Regional</td>
-      <td></td>
-      <td>Useful for extrsaxting regional parks - Need further protection info for other types</td>
-    </tr>
-  
-    <tr>
-      <td>65 Mackenzie District Council  </td>
-      <td>Parks</td>
-      <td>[CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/)</td>
-      <td>-</td>
-      <td>https://opendata.canterburymaps.govt.nz/datasets/ecan::parks/explore</td>
-      <td>OGC WFS</td>
-      <td>https://gis.ecan.govt.nz/arcgis/services/Public/Canterbury_Maps/MapServer/WFSServer?request=GetCapabilities&amp;service=WFS</td>
-      <td>ID</td>
-      <td>Common Name</td>
-      <td>-</td>
-      <td>-</td>
-      <td>Park_Type</td>
-      <td>-</td>
-      <td>distinct Park_types Botanic;Reserve;Community;Other;Sports ground;Regional</td>
-      <td></td>
-      <td>Useful for extrsaxting regional parks - Need further protection info for other types</td>
-    </tr>
-  
-    <tr>
-      <td>66 Waimate District Council  </td>
-      <td>Parks</td>
-      <td>[CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/)</td>
-      <td>-</td>
-      <td>https://opendata.canterburymaps.govt.nz/datasets/ecan::parks/explore</td>
-      <td>OGC WFS</td>
-      <td>https://gis.ecan.govt.nz/arcgis/services/Public/Canterbury_Maps/MapServer/WFSServer?request=GetCapabilities&amp;service=WFS</td>
-      <td>ID</td>
-      <td>Common Name</td>
-      <td>-</td>
-      <td>-</td>
-      <td>Park_Type</td>
-      <td>-</td>
-      <td>distinct Park_types Botanic;Reserve;Community;Other;Sports ground;Regional</td>
-      <td></td>
-      <td>Useful for extrsaxting regional parks - Need further protection info for other types</td>
-    </tr>
-  
-    <tr>
-      <td>14 Otago Regional Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>68 Waitaki District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>69 Central Otago District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>70 Queenstown-Lakes District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>71 Dunedin City Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>72 Clutha District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>15 Southland Regional Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>73 Southland District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>74 Gore District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>75 Invercargill City Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>16 Tasman District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>51 Tasman District Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>52 Nelson City Council  </td>
-      <td>Council Reserve</td>
-      <td>-</td>
-      <td>-</td>
-      <td>https://arc-gis-hub-home-arcgishub.hub.arcgis.com/datasets/NelsonCity::tasman-and-nelson-region-map-viewer-wfl1-1/explore?layer=7&amp;location=-41.290012%2C173.638024%2C9.81</td>
-      <td>ArcGIS REST Feature Service</td>
-      <td>https://services1.arcgis.com/Y4k7lyf2XTGeQC6V/arcgis/rest/services/Tasman_and_Nelson_Region___Map_Viewer_WFL1/FeatureServer/7/</td>
-      <td>OID</td>
-      <td>ReserveName</td>
-      <td>-</td>
-      <td>-</td>
-      <td>Reserve type</td>
-      <td>-</td>
-      <td>Distinct ReserveType:  Conservation Reserve;Urban Open Space/Amenity Reserve;NULL;Proposed Local Purpose Reserve;Local Purpose Reserve;Rural Recreation and Esplanade Reserve;Recreation Reserve;Scenic Reserve;Esplanade Reserve;Walkway Reserve;Landscape Reserve;Public Garden;Easement;Sportsground;Local Purpose;Unclassified;Neighbourhood Park;Esplanade Foreshore Reserve</td>
-      <td></td>
-      <td>License missing</td>
-    </tr>
-  
-    <tr>
-      <td>18 Marlborough District Council  </td>
-      <td>Parks and Open Spaces</td>
-      <td>[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)</td>
-      <td>-</td>
-      <td>https://data-marlborough.opendata.arcgis.com/datasets/parks-and-open-spaces-1/explore</td>
-      <td>OGC WFS</td>
-      <td>https://gis.marlborough.govt.nz/server/services/OpenData/OpenData2/MapServer/WFSServer?request=GetCapabilities&amp;service=WFS</td>
-      <td>-</td>
-      <td>ReserveName</td>
-      <td>-</td>
-      <td>-</td>
-      <td>Type</td>
-      <td>-</td>
-      <td>Distinct Type: Reserve/Sports Park;Reserve;Skate Park;Sports Park</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td>67 Chatham Islands Council  </td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td></td>
-      <td>-</td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  
   </tbody>
 </table>
+
+<p>If your dataset is listed in a formal metadata catalogue (e.g. Koordinates, ArcGIS Hub), include a link to the catalogue entry.</p>
+
+<h4 id="3-discoverability">3. Discoverability</h4>
+<p>To support discoverability, councils can take several simple but effective steps to ensure their 
+protected area datasets are visible and accessible to national initiatives like PAN-NZ:</p>
+<ul>
+  <li>Publish data on open data portals such as their regional open data platforms, Koordinates, or 
+data.govt.nz. These platforms are regularly indexed by search engines and commonly used by national data administrators.</li>
+  <li>Ensure datasets have clear and descriptive metadata, including titles, descriptions, update frequencies, 
+spatial coverage, and keywords such as “protected area,” “conservation land,” or “significant natural area.”
+Well-tagged metadata increases the likelihood that the dataset will surface in search results.</li>
+  <li>Use consistent naming and formatting, particularly for datasets that are regularly updated. Avoid generic names
+ like “Layer1.shp” in favour of more meaningful titles like “Waikato_Significant_Natural_Areas_2024.”</li>
+  <li>Enable stable, shareable links to datasets—either as downloadable files or via API endpoints. This makes it 
+easier for PAN-NZ administrators to access and revisit the data as needed.</li>
+  <li>Include contact details or data stewards in metadata records, so that even if direct download or 
+API access is not available, the right person can be easily identified and contacted.</li>
+</ul>
+
+<p>By taking these steps, councils can help ensure their datasets are not only accessible, but also visible and
+usable within national frameworks—contributing to a more complete and accurate picture of protected areas across Aotearoa.</p>
+
+<h4 id="4-privacy">4. Privacy</h4>
+<p>PAN-NZ aims to build an open and accessible national dataset of protected areas while upholding privacy obligations under the Privacy Act 2020. Data submitted for inclusion in PAN-NZ should not contain any personal or identifying information about individuals, including:</p>
+<ul>
+  <li>Personal names (e.g. landowners or donors)</li>
+  <li>Private addresses</li>
+  <li>Contact details (e.g. phone numbers or email addresses)</li>
+</ul>
+
+<p>What this means for contributors:</p>
+<ul>
+  <li>Ensure all shared datasets are free of personal or sensitive information, unless express permission has been obtained and documented.</li>
+  <li>If a dataset includes a contact person for managing or administering the protected area, ensure that the contact is a role-based or organisational contact, not an individual’s personal details.</li>
+</ul>
+
+<p>General guidance:</p>
+<ul>
+  <li>Where data involves land held in private title, confirm that the information is publicly available or anonymised.</li>
+  <li>If in doubt, contact your organisation’s privacy officer or legal advisor to confirm the dataset is compliant with the Privacy Act before sharing with PAN-NZ.</li>
+</ul>
+
+<p>By respecting privacy from the outset, we ensure that PAN-NZ remains a trustworthy, inclusive, and legally sound platform for environmental data.</p>
+
+<h3 id="data-attributes">Data Attributes</h3>
+<p>The section below lists the minimum set of attributes needed to describe a protected area in a way that’s
+meaningful and usable within PAN-NZ.</p>
+
+<h4 id="1-pan-nz-schema">1. PAN-NZ Schema</h4>
+<p>The PAN-NZ schema defines a minimal set of attributes needed to describe protected areas consistently
+ across New Zealand. These attributes help ensure clarity, traceability, and integration into the national dataset.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field Name</th>
+      <th>Description</th>
+      <th>Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">persistent_id</code></td>
+      <td>A unique and persistent identifier for the protected area.</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">name</code></td>
+      <td>The commonly used or official name of the protected area.</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">protection_legislation_act</code></td>
+      <td>The name of the legislation under which the area is protected.</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">protection_legislation_section</code></td>
+      <td>The specific section or clause of the act relevant to the protection.</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">protection_type</code></td>
+      <td>The type or category of protection (e.g., reserve, covenant, SNA).</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">local reserve</code></td>
+      <td>The purpose of reserves under Section 22 (government purpose reserve) and section 23 (local purpose reserve) of the Reserved Act 1977</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The sections below provide further explanation of each required attribute, outlining its purpose, associated requirements, and how it contributes to the PAN-NZ dataset.</p>
+
+<h4 id="2-protection-name">2. Protection Name</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>PAN-NZ Schema Name</th>
+      <th>Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>name</td>
+      <td>yes - where recorded</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>If the managing entity assigns names to protected areas, they should be included. Providing a recognisable name helps users refer to each area via a common name, rather than relying on IDs alone.</p>
+
+<h4 id="3-legal-act">3. Legal Act</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>PAN-NZ Schema Name</th>
+      <th>Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>legislation_act</td>
+      <td>yes - where not implicit</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Datasets should specify the legislative act under which each area is protected. This field provides the legal context needed to confirm protection status and supports classification into IUCN categories. Without this information 
+the degree to which the areas is protected can not be communicated.</p>
+
+<p>However it is noted some datasets the legislation is implicit and this will suffice. For example for a dataset named “Regional Parks”
+it may be inferred that the protected areas are under the Local Government Act 2002 and Section 139 Regional Park. This is the reason that required status is “yes - where not implicit”</p>
+
+<p>Best practices:</p>
+
+<ul>
+  <li>Use the full name of the Act (e.g. Reserves Act 1977), not abbreviations like “RA77”.</li>
+  <li>Each spatial extent should be associated with one act. That is if an area is associated with different legislative acts, 
+each area with a different legislative act should have its own spatial extents.</li>
+</ul>
+
+<p>Examples of common legislative action can be found in the below section</p>
+
+<h4 id="4-legal-section">4. Legal Section</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>PAN-NZ Schema Name</th>
+      <th>Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>legislation_section</td>
+      <td>yes - where not implicit</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Where applicable, include the specific section in the Act that establishes the legal protection.
+This field provides the legal context needed to confirm protection status and supports classification into IUCN categories.</p>
+
+<p>Ideally this is in the format of <code class="language-plaintext highlighter-rouge">S_&lt;Section Number&gt;_&lt;NAME&gt;</code></p>
+
+<p>The below table provides an example of a subset of the legislative Act and 
+Sections that are commonly captured by PAN-NZ</p>
+
+<p>Note, the convention of using capitals. This due to major central government dataset applying this 
+convention to their legislation_section in their data. Lower can is also acceptable and 
+data pipelines can consider this information as the same.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Legislation Act</th>
+      <th style="text-align: left">Legislation Section</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">CONSERVATION_ACT_1987</td>
+      <td style="text-align: left">S19_CONSERVATION_PARK</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">CONSERVATION_ACT_1987</td>
+      <td style="text-align: left">S20_WILDERNESS_AREA</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">CONSERVATION_ACT_1987</td>
+      <td style="text-align: left">S21_ECOLOGICAL_AREA</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">CONSERVATION_ACT_1987</td>
+      <td style="text-align: left">S22_SANCTUARY_AREA</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">CONSERVATION_ACT_1987</td>
+      <td style="text-align: left">S23A_AMENITY_AREA</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">CONSERVATION_ACT_1987</td>
+      <td style="text-align: left">S23B_WILDLIFE_MANAGEMENT_AREA</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">CONSERVATION_ACT_1987</td>
+      <td style="text-align: left">S25_STEWARDSHIP_AREA</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">LOCAL_GOVERNMENT_ACT_2002</td>
+      <td style="text-align: left">S139_REGIONAL_PARK</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">QUEEN_ELIZABETH_II_NATIONAL_TRUST_ACT_1977</td>
+      <td style="text-align: left">S22_QEII_OPEN_SPACE_COVENANT</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">RESERVES_ACT_1977</td>
+      <td style="text-align: left">S17_RECREATION_RESERVE</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">RESERVES_ACT_1977</td>
+      <td style="text-align: left">S19_1_A_SCENIC_RESERVE</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">RESERVES_ACT_1977</td>
+      <td style="text-align: left">S19_1_B_SCENIC_RESERVE</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">RESERVES_ACT_1977</td>
+      <td style="text-align: left">S23_LOCAL_PURPOSE_RESERVE</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">RESERVES_ACT_1977</td>
+      <td style="text-align: left">S17_RECREATION_RESERVE</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WILDLIFE_ACT_1953</td>
+      <td style="text-align: left">S14_WILDLIFE_REFUGE</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WILDLIFE_ACT_1953</td>
+      <td style="text-align: left">S9_WILDLIFE_SANCTUARY</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="5-local-purpose-type">5. Local Purpose Type</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>PAN-NZ Schema Name</th>
+      <th>Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>reserve_purpose</td>
+      <td>No - only for areas under section 22 and 23 under the Reserves Act 1977</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Under the Reserves Act 1977, for areas protected under Section 22 (Government Purpose Reserve) and Section 23 (Local Purpose Reserve), the specific purpose of the reserve should be recorded in the reserve_purpose field. These types of reserves are used for a wide range of purposes — from wetland protection to gravel extraction — and capturing this detail helps clarify the intent and degree of protection. This information is essential for understanding how and why an area is protected.</p>
+
+<h4 id="6-protection-type">6. Protection Type</h4>
+<p>| PAN-NZ Schema Name | Required |
+| —————— | ——– |
+| protection_type    | No       |</p>
+
+<p>This field is not required, but some datasets include a type field that describes the protection. Where the legal act and section are not available, this field can be used to infer the likely legislative basis for the protection.</p>
+
+<p>While this is not the preferred approach—as it can introduce ambiguity and errors when mapping types to legislation—it may be used when no other legal context is available. In such cases, the type field can still provide valuable insight into the nature of the protection, even if it lacks formal precision.</p>
+
+<p>This field should describe the kind of protection conferred by the legal status. for example as “Scenic Reserve”, “Wildlife Sanctuary “, or “Recreation Reserve”.</p>
+
+<h4 id="7-persistent-identifier">7. Persistent Identifier</h4>
+<p>Requirements:
+| PAN-NZ Schema Name | Required |
+| —————— | ——– |
+| id                 | yes      |</p>
+
+<p>Each protected area record should ideally include a persistent, unique identifier (ID). This ensures records can be tracked across updates and matched across systems.</p>
+
+<p>Other standards to be aware of
+https://www.linz.govt.nz/sites/default/files/2023-12/24a%2020%2020-B-0299%20-%20Attachment%20-%20NZGB%20Standard%20for%20Crown%20Protected%20Area%20Names%20FINAL%20-%20WKS.pdf</p>
+
+<h1 id="potential-pan-nz-datasets">Potential PAN-NZ Datasets</h1>
+
+<h2 id="national">National</h2>
+
+<h2 id="regional">Regional</h2>
+
+<h3 id="parks-and-reserves">Parks and Reserves</h3>
+
+<h3 id="sna">SNA</h3>
+
 
 
       

@@ -48,6 +48,10 @@ Still outstanding:
     - [Parks and Reserves](#parks-and-reserves)
     - [SNA](#sna)
 
+Data catalogues:
+* ## Contents
+- [Parks and Reserves Catalogue](parks_and_reserves_catalogue/)
+
 ## PAN-NZ Context
 The below sections cover key concepts related to PAN-NZ (Protected Areas Network – New Zealand)
 

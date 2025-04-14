@@ -19,9 +19,9 @@ Custodian,Dataset name,License,WebMap,Download URL,API Type,API URL,ID,Name Fiel
 22 Western Bay of Plenty District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 23 Tauranga City Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 24 Rotorua Lakes Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-25 Whakat?ne District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+25 Whakatāne District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 26 Kawerau District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-27 ?p?tiki District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+27 Ōpōtiki District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 28 Gisborne District Council  ,Recreation Reserves,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),-,https://geoportal-gizzy.opendata.arcgis.com/datasets/gizzy::parks-and-reserves/explore?layer=3,ArcGIS REST Feature Service,https://services7.arcgis.com/8G10QCd84QpdcTJ9/arcgis/rest/services/parks_reserves/FeatureServer/3/,OBJECTID,NAME,-,-,-,-,-,-,Request info: are these all recreation reserves as under the reserves act?
 28 Gisborne District Council  ,Neighbourhood Reserves,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),-,https://geoportal-gizzy.opendata.arcgis.com/datasets/gizzy::parks-and-reserves/explore?layer=2,ArcGIS REST Feature Service,https://services7.arcgis.com/8G10QCd84QpdcTJ9/arcgis/rest/services/parks_reserves/FeatureServer/2/,OBJECTID,NAME,-,-,-,-,-,-,-
 28 Gisborne District Council  ,Amenity Reserves,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),-,https://geoportal-gizzy.opendata.arcgis.com/datasets/gizzy::parks-and-reserves/explore?layer=0,ArcGIS REST Feature Service,https://services7.arcgis.com/8G10QCd84QpdcTJ9/arcgis/rest/services/parks_reserves/FeatureServer/0/,OBJECTID,NAME,-,-,-,-,-,-,-
@@ -35,11 +35,11 @@ Custodian,Dataset name,License,WebMap,Download URL,API Type,API URL,ID,Name Fiel
 33 New Plymouth District Council  ,NPDC Infrastructure : Parks - Reserve,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),-,https://arc-gis-hub-home-arcgishub.hub.arcgis.com/datasets/8db10ed20467482ba215074cefa1bf89_0/explore,ArcGIS REST Feature Service,https://services2.arcgis.com/JthOmqz8HxPqljUO/arcgis/rest/services/OpenData_Infrastructure_Parks/FeatureServer/0,OBJECTID,-,-,-,RESTYPE,-,RESTYPE has only two distinct values: : NOT;OWN,-,requiest infoamtion as to how areas are protected
 34 Stratford District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 35 South Taranaki District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-8 Manawat?-Whanganui Regional Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+8 Manawatū-Whanganui Regional Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 36 Ruapehu District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 37 Whanganui District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-38 Rangit?kei District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-39 Manawat? District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+38 Rangitīkei  District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+39 Manawatū District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 40 Palmerston North City Council  ,PNCC Parks & Reserves,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),-,https://data-pncc.opendata.arcgis.com/datasets/PNCC::pncc-parks-reserves/explore,ArcGIS REST Feature Service,-,OBJECTID,RESERVE_NAME,-,-,USE_CLASS_DESC,-,USE_CLASS_DESC distinct values: DOG CONTROL;ROAD;SPORTS;NULL;SEWAGE TREATMENT;LEASED GOLF;LEASED;CAMPING;CEMETERY;LEASED BOWLING;DRAINAGE;LEASED HOUSING;ESPLANADE STRIP;LEASED PLAYCENTRE;LEASED TENNIS;RECREATION;LEASED SCOUTS;LEASED WALKWAY;NONE;LEASED CANINE;LEASED GRAZING;FORMAL,-,requiest infoamtion as to how areas are protected
 41 Tararua District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 9 Greater Wellington Regional Council  ,GWRC Regional Parks,[CC-BY-NC-4.0](https://creativecommons.org/licenses/by-nc/4.0/),-,https://data-gwrc.opendata.arcgis.com/datasets/3321c0687e614838b77641e604a0c9a4_21/explore,ArcGIS REST Feature Service,https://mapping.gw.govt.nz/arcgis/rest/services/GW/Parks_P/MapServer/21/,OBJECTID,NAME,**Implicit,-,-,-,Our work is for a commercial contract. I suspect this means we can not include data under the non-commerical contract,-,-
@@ -58,7 +58,7 @@ Custodian,Dataset name,License,WebMap,Download URL,API Type,API URL,ID,Name Fiel
 56 Grey District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 57 Westland District Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 13 Canterbury Regional Council  ,Parks,[CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/),-,https://opendata.canterburymaps.govt.nz/datasets/ecan::parks/explore,OGC WFS,https://gis.ecan.govt.nz/arcgis/services/Public/Canterbury_Maps/MapServer/WFSServer?request=GetCapabilities&service=WFS,ID,Common Name,-,-,Park_Type,-,distinct Park_types Botanic;Reserve;Community;Other;Sports ground;Regional,-,Useful for extrsaxting regional parks - Need further protection info for other types
-54 Kaik?ura District Council  ,Parks,[CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/),-,https://opendata.canterburymaps.govt.nz/datasets/ecan::parks/explore,OGC WFS,https://gis.ecan.govt.nz/arcgis/services/Public/Canterbury_Maps/MapServer/WFSServer?request=GetCapabilities&service=WFS,ID,Common Name,-,-,Park_Type,-,distinct Park_types Botanic;Reserve;Community;Other;Sports ground;Regional,-,Useful for extrsaxting regional parks - Need further protection info for other types
+54 Kaikōura District Council  ,Parks,[CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/),-,https://opendata.canterburymaps.govt.nz/datasets/ecan::parks/explore,OGC WFS,https://gis.ecan.govt.nz/arcgis/services/Public/Canterbury_Maps/MapServer/WFSServer?request=GetCapabilities&service=WFS,ID,Common Name,-,-,Park_Type,-,distinct Park_types Botanic;Reserve;Community;Other;Sports ground;Regional,-,Useful for extrsaxting regional parks - Need further protection info for other types
 58 Hurunui District Council  ,Parks,[CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/),-,https://opendata.canterburymaps.govt.nz/datasets/ecan::parks/explore,OGC WFS,https://gis.ecan.govt.nz/arcgis/services/Public/Canterbury_Maps/MapServer/WFSServer?request=GetCapabilities&service=WFS,ID,Common Name,-,-,Park_Type,-,distinct Park_types Botanic;Reserve;Community;Other;Sports ground;Regional,-,Useful for extrsaxting regional parks - Need further protection info for other types
 59 Waimakariri District Council  ,Parks,[CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/),-,https://opendata.canterburymaps.govt.nz/datasets/ecan::parks/explore,OGC WFS,https://gis.ecan.govt.nz/arcgis/services/Public/Canterbury_Maps/MapServer/WFSServer?request=GetCapabilities&service=WFS,ID,Common Name,-,-,Park_Type,-,distinct Park_types Botanic;Reserve;Community;Other;Sports ground;Regional,-,Useful for extrsaxting regional parks - Need further protection info for other types
 60 Christchurch City Council  ,Parks,[CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/),-,https://opendata.canterburymaps.govt.nz/datasets/ecan::parks/explore,OGC WFS,https://gis.ecan.govt.nz/arcgis/services/Public/Canterbury_Maps/MapServer/WFSServer?request=GetCapabilities&service=WFS,ID,Common Name,-,-,Park_Type,-,distinct Park_types Botanic;Reserve;Community;Other;Sports ground;Regional,-,Useful for extrsaxting regional parks - Need further protection info for other types
@@ -82,73 +82,3 @@ Custodian,Dataset name,License,WebMap,Download URL,API Type,API URL,ID,Name Fiel
 52 Nelson City Council  ,Council Reserve,-,-,https://arc-gis-hub-home-arcgishub.hub.arcgis.com/datasets/NelsonCity::tasman-and-nelson-region-map-viewer-wfl1-1/explore?layer=7&location=-41.290012%2C173.638024%2C9.81,ArcGIS REST Feature Service,https://services1.arcgis.com/Y4k7lyf2XTGeQC6V/arcgis/rest/services/Tasman_and_Nelson_Region___Map_Viewer_WFL1/FeatureServer/7/,OID,ReserveName,-,-,Reserve type,-,Distinct ReserveType:  Conservation Reserve;Urban Open Space/Amenity Reserve;NULL;Proposed Local Purpose Reserve;Local Purpose Reserve;Rural Recreation and Esplanade Reserve;Recreation Reserve;Scenic Reserve;Esplanade Reserve;Walkway Reserve;Landscape Reserve;Public Garden;Easement;Sportsground;Local Purpose;Unclassified;Neighbourhood Park;Esplanade Foreshore Reserve,-,License missing
 18 Marlborough District Council  ,Parks and Open Spaces,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),-,https://data-marlborough.opendata.arcgis.com/datasets/parks-and-open-spaces-1/explore,OGC WFS,https://gis.marlborough.govt.nz/server/services/OpenData/OpenData2/MapServer/WFSServer?request=GetCapabilities&service=WFS,-,ReserveName,-,-,Type,-,Distinct Type: Reserve/Sports Park;Reserve;Skate Park;Sports Park,-,-
 67 Chatham Islands Council  ,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,
- ,,,,,,,,,,,,,,,

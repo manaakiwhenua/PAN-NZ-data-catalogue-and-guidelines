@@ -4,9 +4,10 @@ title: PAN-NZ Dataset Catalogue
 permalink: /parks_and_reserves_catalogue/
 ---
 
-## PAN-NZ Protected Area Source Dataset
+## Local Government Parks and Reserve Catalogue
 
 > This catalogue is automatically rendered from `_data/Parks_and_Reserves.csv`.
+
 
 <style>
 .scroll-sync-container {
@@ -73,20 +74,18 @@ table.catalogue thead th {
 }
 
 /* Limit width for long-text columns */
-table.catalogue td:nth-child(5),
-table.catalogue td:nth-child(7),
-table.catalogue td:nth-child(14),
+table.catalogue td:nth-child(14), /*  Comment */
 table.catalogue td:nth-child(15),
 table.catalogue td:nth-child(16) {
-  max-width: 300px;
-  overflow-wrap: break-word;
+  max-width: 3000px;
+  /* overflow-wrap: break-word; */
 }
 
 table.catalogue th:nth-child(4),
 table.catalogue th:nth-child(5),
 table.catalogue th:nth-child(6),
 table.catalogue th:nth-child(7) {
-  min-width: 120px;
+  min-width: 170px;
 }
 
 .catalogue-table-container::-webkit-scrollbar {
@@ -102,6 +101,8 @@ table.catalogue th:nth-child(7) {
   background-color: #f5f5f5;
 }
 </style>
+
+<p><a href="/" style="font-weight: bold; text-decoration: none;">← Back to Guidelines</a></p>
 
 <div class="scroll-sync-container">
   <div class="scrollbar-top"></div>
@@ -132,8 +133,9 @@ table.catalogue th:nth-child(7) {
         <tr>
           <td>{{ item.Custodian }}</td>
           <td>{{ item["Dataset name"] }}</td>
-          <td>{{ item.License }}</td>
-          <td>{% if item.WebMap %}<a href="{{ item.WebMap }}" target="_blank">Link</a>{% endif %}</td>
+          <td>{{ item.License | markdownify }}</td>
+          <td> 
+            {% if item.WebMap and item.WebMap != "-" %} <a href="{{ item.WebMap }}" target="_blank">Webmap Link</a> {% endif %} </td>
           <td>{% if item["Download URL"] %}<a href="{{ item["Download URL"] }}" target="_blank">Download</a>{% endif %}</td>
           <td>{{ item["API Type"] }}</td>
           <td>{% if item["API URL"] %}<a href="{{ item["API URL"] }}" target="_blank">API</a>{% endif %}</td>
@@ -169,3 +171,5 @@ table.catalogue th:nth-child(7) {
     }
   });
 </script>
+
+<p><a href="/" style="font-weight: bold; text-decoration: none;">← Back to Guidelines</a></p>

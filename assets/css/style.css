@@ -1,0 +1,51 @@
+/* Basic page reset */
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Fixed sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 20rem;
+    background-color: #202020;
+    color: #fff;
+    overflow-y: auto;
+    height: 100vh;
+    padding: 1rem 0;
+}
+
+/* Sidebar content */
+.sidebar-item {
+    padding: 0 1rem;
+}
+
+.sidebar-nav {
+    margin-top: 1rem;
+}
+
+.sidebar-nav-item {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar-nav-item.active,
+.sidebar-nav-item:hover {
+    background-color: #333;
+}
+
+/* Main content area shifted to the right */
+.wrap {
+    margin-left: 14rem;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}

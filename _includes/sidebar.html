@@ -1,0 +1,24 @@
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-item">
+        <p>{{ site.description }}</p>
+    </div>
+
+    <nav class="sidebar-nav">
+
+        <p><strong>PAN-NZ Homepage</strong></p>
+
+        <a class="sidebar-nav-item{% if page.url == '/' %} active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
+        <a class="sidebar-nav-item{% if page.url == '/about.html' %} active{% endif %}"
+            href="{{ '/about.html' | relative_url }}">About</a>
+        <p></p>
+
+    </nav>
+
+    <div class="sidebar-item" id="dynamic-toc">
+        <!-- Headings from current page will appear here -->
+    </div>
+    <!-- 
+    <div class="sidebar-item">
+        <p>&copy; {{ site.time | date: "%Y" }}. All rights reserved.</p>
+    </div> -->
+</div>

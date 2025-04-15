@@ -1,3 +1,18 @@
+---
+layout: default
+title: PAN-NZ-Source-Data
+# permalink: /
+---
+
+# Introduction 
+These pages include information to support custodians of protected areas data to 
+ensure they understand what is required ot have their data included in the national 
+protected area dataset
+
+This includes the 
+
+
+
 # PAN-NZ Data Stocktake and Guidelines
 
 ## TODo
@@ -17,6 +32,7 @@ Still outstanding:
 - [ ] Disccus recent engagement ot indicate keenness e.g. 600+ at webinars
 
 ## Contents
+- [Introduction](#introduction)
 - [PAN-NZ Data Stocktake and Guidelines](#pan-nz-data-stocktake-and-guidelines)
   - [TODo](#todo)
   - [Contents](#contents)

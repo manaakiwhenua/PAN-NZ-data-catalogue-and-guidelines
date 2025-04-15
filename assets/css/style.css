@@ -59,3 +59,89 @@ body {
     /* match sidebar width */
     box-sizing: border-box;
 }
+
+/* Catalogue Table */
+.scroll-sync-container {
+    position: relative;
+}
+
+.scrollbar-top {
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 16px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    background: #f5f5f5;
+}
+
+.scrollbar-top::before {
+    content: '';
+    display: block;
+    width: 2000px;
+    height: 1px;
+}
+
+.catalogue-table-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+}
+
+table.catalogue {
+    min-width: 2000px;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+    table-layout: auto;
+    width: 100%;
+}
+
+table.catalogue th,
+table.catalogue td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    vertical-align: center;
+    /* ← was top */
+    text-align: center;
+    /* ← center-align text in all cells */
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+table.catalogue th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+    text-align: left;
+    min-width: 100px;
+}
+
+table.catalogue tr:nth-child(even) {
+    background-color: #f6f6f6;
+}
+
+table.catalogue thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f9f9f9;
+    z-index: 2;
+}
+
+table.catalogue td:nth-child(14),
+table.catalogue td:nth-child(15),
+table.catalogue td:nth-child(16) {
+    min-width: 400px;
+}
+
+table.catalogue th:nth-child(4),
+table.catalogue th:nth-child(5),
+table.catalogue th:nth-child(6),
+table.catalogue th:nth-child(7) {
+    min-width: 170px;
+}
+
+.link-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}

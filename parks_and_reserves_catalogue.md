@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: wide
 title: PAN-NZ Dataset Catalogue
 permalink: /parks_and_reserves_catalogue/
 ---
@@ -102,7 +102,6 @@ table.catalogue th:nth-child(7) {
 }
 </style>
 
-<p><a href="/" style="font-weight: bold; text-decoration: none;">← Back to Guidelines</a></p>
 
 <div class="scroll-sync-container">
   <div class="scrollbar-top"></div>
@@ -172,4 +171,3 @@ table.catalogue th:nth-child(7) {
   });
 </script>
 
-<p><a href="/" style="font-weight: bold; text-decoration: none;">← Back to Guidelines</a></p>

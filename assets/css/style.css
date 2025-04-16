@@ -160,6 +160,8 @@ td {
     border: 1px solid #ccc;
     padding: 8px;
     text-align: left;
+    font-size: 0.875rem;
+
 }
 
 th {

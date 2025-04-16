@@ -5,6 +5,7 @@ title: PAN-NZ Draft Data Guidelines
 ---
 
 
+
 <!-- ## Data Interoperability Principles
 Interoperability means that data should be easy to discover, access, and integrate from the 
 very first point of contact. We are not imposing rigid field names or internal database 
@@ -352,12 +353,11 @@ Each protected area record should ideally include a persistent, unique identifie
 In summary, datasets submitted for inclusion in PAN-NZ must meet the following criteria:
 
 - **Licensing:** Clearly stated open license (CC BY 4.0 preferred)
-- **Data Access:** Accessible via API, direct download, or clearly documented contact details
+- **Data Access:** Accessible via API, direct download
 - **Metadata:** A minimal metadata profile clearly describing your dataset
 - **Discoverability:** Indexed on open data platforms, consistent naming, stable URLs
 - **Privacy:** Personal and sensitive information removed
-- **Attributes:** Meet the minimum attribute schema including persistent IDs, protection legislation, and protection purpose
-- TODO/// What else?
+- **Attributes:** Meet the minimum attribute schema including persistent IDs, protection name, protection legislation details
 
 Following these guidelines ensures your protected areas data can be effectively integrated, represented, and used at the national level.
 

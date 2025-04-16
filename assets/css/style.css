@@ -100,9 +100,7 @@ table.catalogue td {
     border: 1px solid #ccc;
     padding: 8px;
     vertical-align: center;
-    /* ← was top */
     text-align: center;
-    /* ← center-align text in all cells */
     word-break: break-word;
     white-space: pre-wrap;
 }

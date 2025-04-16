@@ -4,6 +4,8 @@ title: Protected Areas Network New Zealand (PAN-NZ) Data Improvement Project
 # permalink: /
 ---
 
+---
+
 ## Introduction 
 The Ministry for the Environment (MfE) and Manaaki Whenua – Landcare Research (MWLR) are jointly 
 advancing the Protected Areas Network of New Zealand (PAN-NZ), a national spatial dataset 
@@ -29,6 +31,8 @@ The overarching goal is to enable an up-to-date national picture of protections 
 planning, decision making, research, and progress tracking toward international 
 commitments such as the “30 by 30” biodiversity target.
 
+---
+
 
 ## Use of GitHub
 This site is hosted using GitHub Pages to support transparency, collaboration, and rapid deployment. 
@@ -42,11 +46,15 @@ collaboration across agencies and regions as the Protected Areas Network continu
 For more on details on contributing and providing feedback please visit 
 the [Contribute / Contact]({{ site.baseurl }}/contributing/index.html) page. 
 
+---
+
 ## Guidelines
 As part of this initiative, guidelines have been developed to define the minimum requirements that
 protected area datasets must meet to be included in the PAN-NZ national view of legal protections.
 
 These guidelines can be found on the [guidelines]({{ site.baseurl }}/guidelines/index.html) page.
+
+---
 
 
 ## Data catalogues
@@ -61,6 +69,9 @@ These catalogues have several purposes:
 
 For more on these catalogues please visit the
 [data catalogues]({{ site.baseurl }}/data_catalogues/index.html) page.
+
+---
+
 
 <!-- 
 

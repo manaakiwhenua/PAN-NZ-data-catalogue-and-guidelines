@@ -253,10 +253,10 @@ and Section 139 Regional Park. This is the reason that required status is "yes -
 Best practices:
 
 * Use the full name of the Act (e.g. Reserves Act 1977), not abbreviations like "RA77".
-* Each spatial extent should be associated with one act. That is, if an area is associated 
-  with different legislative acts, each area with a different legislative act should have its own spatial extents. 
+* Each spatial extent should correspond to a single legislative act. If multiple acts apply, 
+separate spatial features should be created for each.
 
-Examples of common legislative action can be found in the below section
+Examples of common protected area related legislation can be found in the below section
 
 <br>
 
@@ -272,11 +272,11 @@ This field provides the legal context needed to confirm protection status and su
 
 Ideally this is in the format of `S_<Section Number>_<NAME>`
 
-The below table provides an example of a subset of the legislative Act and 
+The below table provides an example of a subset of the legislative Acts and 
 Sections that are commonly captured by PAN-NZ 
 
 Note, the convention of using capitals. This due to major central government dataset applying this 
-convention to their legislation_section in their data. Lower can is also acceptable and 
+convention to their legislation_section attribute in their data. Lowercase is also acceptable as
 data pipelines can consider this information as the same. 
 
 
@@ -307,37 +307,45 @@ data pipelines can consider this information as the same.
 | ------------------ | ----------------------------------------------------------------------- |
 | reserve_purpose    | No - only for areas under section 22 and 23 under the Reserves Act 1977 |
 
-Under the Reserves Act 1977, for areas protected under Section 22 (Government Purpose Reserve) and Section 23 (Local Purpose Reserve), the specific purpose of the reserve should be recorded in the reserve_purpose field. These types of reserves are used for a wide range of purposes — from wetland protection to gravel extraction — and capturing this detail helps clarify the intent and degree of protection. This information is essential for understanding how and why an area is protected.
+Under the Reserves Act 1977, for areas protected under Section 22 (Government Purpose Reserve) and 
+Section 23 (Local Purpose Reserve), the specific purpose of the reserve should be recorded in 
+the `reserve_purpose` field. These types of reserves are used for a wide range of purposes
+ from wetland protection to gravel extraction and capturing this detail helps clarify the 
+ intent and degree of protection. This information is essential for understanding 
+ how and why an area is protected.
 
 <br>
 
 ### 6. Protection Type
+
 | PAN-NZ Schema Name | Required |
 | ------------------ | -------- |
 | protection_type    | No       |
 
-This field is not required, but some datasets include a type field that describes the protection. Where the legal act and section are not available, this field can be used to infer the likely legislative basis for the protection.
+This field is not required, but some datasets include a type field that describes the
+ protection. Where the legal act and section are not available, this field can be 
+ used to infer the legislative basis for the protection.
 
-While this is not the preferred approach—as it can introduce ambiguity and errors when mapping types to legislation—it may be used when no other legal context is available. In such cases, the type field can still provide valuable insight into the nature of the protection, even if it lacks formal precision.
+While this is not the preferred approach as it can introduce ambiguity and errors
+ when mapping types to legislation it may be used when no other legal context is 
+ available. 
 
-This field should describe the kind of protection conferred by the legal status. for example as "Scenic Reserve", "Wildlife Sanctuary ", or "Recreation Reserve".
+This field should describe the kind of protection conferred by the legal status.
+for example as "Scenic Reserve", "Wildlife Sanctuary ", or "Recreation Reserve".
+
+The PAN-NZ data aggregation process will for example extract "WILDLIFE_ACT_1953
+S9_WILDLIFE_SANCTUARY" where the type is provided but no legal act or section information
+is available. 
 
 <br>
 
 ### 7. Persistent Identifier
-Requirements:
+
 | PAN-NZ Schema Name | Required |
 | ------------------ | -------- |
 | id                 | yes      |
 
 Each protected area record should ideally include a persistent, unique identifier (ID). This ensures records can be tracked across updates and matched across systems.
-
-
-
-
-
-Other standards to be aware of
-https://www.linz.govt.nz/sites/default/files/2023-12/24a%2020%2020-B-0299%20-%20Attachment%20-%20NZGB%20Standard%20for%20Crown%20Protected%20Area%20Names%20FINAL%20-%20WKS.pdf
 
 ## Summary of PAN-NZ Minimum Requirements
 
@@ -349,11 +357,7 @@ In summary, datasets submitted for inclusion in PAN-NZ must meet the following c
 - **Discoverability:** Indexed on open data platforms, consistent naming, stable URLs
 - **Privacy:** Personal and sensitive information removed
 - **Attributes:** Meet the minimum attribute schema including persistent IDs, protection legislation, and protection purpose
-- **Data Quality:** Accurate and consistent spatial boundaries
-- **Temporal Information:** Include establishment or expiry dates where relevant
-- **Indigenous Data Rights:** Respect Māori data sovereignty and cultural considerations
-- **Coordinate System:** Use consistent CRS (EPSG:2193 preferred)
-- **Contact:** Provide clear contact information for dataset support
+- TODO/// What else?
 
 Following these guidelines ensures your protected areas data can be effectively integrated, represented, and used at the national level.
 

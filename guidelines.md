@@ -25,6 +25,7 @@ These guidelines outline the minimum data requirements for data holders to ensur
 protected areas data can be incorporated into PAN-NZ. 
 
 # Why Follow These Standards?
+---
 Aotearoa New Zealand has a rich and diverse network of protected areas — from national parks and 
 reserves to QEII covenants and local council-protected sites. However, the ability to
  understand and represent these areas consistently at a national level depends on the
@@ -51,12 +52,15 @@ By aligning your datasets with these guidelines, you're not just supplying data,
 you're contributing to a nationally significant information layer that supports environmental 
 stewardship across Aotearoa.
 
+<br>
 # Requirements: 
+---
 Below are the data requirements that a protected area dataset must meet to be added to the national
 PAN-NZ dataset 
 
-
+<br>
 ## Data access
+---
 To ensure datasets can be easily discovered, evaluated, and integrated into 
 the national dataset, data holders should meet the access-related requirements
 as outlined in the below sections
@@ -100,9 +104,9 @@ included.
 
 <br>
 
-<!-- <div style="text-align: center;"> -->
+<div style="text-align: center;">
 <img src="IMG/cc-by-40-ND.png" alt="PAN-NZ Diagram" width="500" style="border: 1px solid #ccc; padding: 4px;"/>
-<!-- </div> -->
+</div>
 
 **Above:** The [CC-BY-4.0-NoNDerivatives](https://creativecommons.org/licenses/by-nd/4.0/) license which excludes
 derivatives as a result of remixing, transforming or building upon the original data. Such license
@@ -193,6 +197,7 @@ By respecting privacy from the outset, we ensure that PAN-NZ remains a trustwort
 
 <br>
 ## Data Attributes
+---
 The section below lists the minimum set of attributes needed to describe a protected area in a way that’s
 meaningful and usable within PAN-NZ.
 
@@ -222,7 +227,19 @@ The sections below provide further explanation of each required attribute, outli
 
 <br>
 
-### 2. Protection Name
+
+
+### 2. Persistent Identifier
+
+| PAN-NZ Schema Name | Required |
+| ------------------ | -------- |
+| id                 | yes      |
+
+Each protected area record should ideally include a persistent, unique identifier (ID). This ensures records can be tracked across updates and matched across systems.
+
+<br>
+
+### 3. Protection Name
 
 | PAN-NZ Schema Name | Required             |
 | ------------------ | -------------------- |
@@ -235,7 +252,7 @@ such as management plans that commonly refer to protected areas by name.
 
 <br>
 
-### 3. Legal Act
+### 4. Legal Act
 
 | PAN-NZ Schema Name | Required                 |
 | ------------------ | ------------------------ |
@@ -261,7 +278,7 @@ Examples of common protected area related legislation can be found in the below 
 
 <br>
 
-### 4. Legal Section
+### 5. Legal Section
 
 | PAN-NZ Schema Name  | Required                 |
 | ------------------- | ------------------------ |
@@ -302,7 +319,7 @@ data pipelines can consider this information as the same.
 
 <br>
 
-### 5. Local Purpose Type
+### 6. Local Purpose Type
 
 | PAN-NZ Schema Name | Required                                                                |
 | ------------------ | ----------------------------------------------------------------------- |
@@ -317,7 +334,7 @@ the `reserve_purpose` field. These types of reserves are used for a wide range o
 
 <br>
 
-### 6. Protection Type
+### 7. Protection Type
 
 | PAN-NZ Schema Name | Required |
 | ------------------ | -------- |
@@ -338,18 +355,11 @@ The PAN-NZ data aggregation process will for example extract "WILDLIFE_ACT_1953
 S9_WILDLIFE_SANCTUARY" where the type is provided but no legal act or section information
 is available. 
 
+
 <br>
 
-### 7. Persistent Identifier
-
-| PAN-NZ Schema Name | Required |
-| ------------------ | -------- |
-| id                 | yes      |
-
-Each protected area record should ideally include a persistent, unique identifier (ID). This ensures records can be tracked across updates and matched across systems.
-
 ## Summary of PAN-NZ Minimum Requirements
-
+---
 In summary, datasets submitted for inclusion in PAN-NZ must meet the following criteria:
 
 - **Licensing:** Clearly stated open license (CC BY 4.0 preferred)

@@ -17,10 +17,18 @@
                 {% endif %}
             </div>
         </div>
+
+        {% if page.full_width %}
+        <div class="content">
+            {{ content }}
+        </div>
+        {% else %}
         <div class="container content">
             {{ content }}
         </div>
+        {% endif %}
     </div>
+
 
     <!-- <script>
         document.addEventListener("DOMContentLoaded", function () {

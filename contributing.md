@@ -17,6 +17,7 @@ with relevant insights, there are several ways to contribute.
 
 If you've identified an error, have a suggestion, or wish to discuss an improvement:
 
+- Create a GitHub login if you do not already have one
 - Visit our GitHub repository: [manaakiwhenua/PANNZ-source-data](https://github.com/manaakiwhenua/PANNZ-source-data)
 - Open a new [Issue](https://github.com/manaakiwhenua/PANNZ-source-data/issues) 
 - You will be prompted to select a "issue template" - Please select either the Guidelines or Dataset template
@@ -32,10 +33,13 @@ provide your feedback.
 
 ## ✏️ Edit the Catalogue via Pull Request
 
-To suggest changes directly to the dataset (e.g., `Parks_and_Reserves.csv`):
+If you are familiar with GitHub, please feel free to suggest changes directly 
+to the catalogue data (e.g., [/_data/Parks_and_Reserves.csv](/_data/Parks_and_Reserves.csv))
+via (TODO// fix link once merged to `main`) [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests):
 
-1. Fork the repository
-2. Edit the relevant CSV file in `_data/`
+1. Clone the [repository](https://github.com/manaakiwhenua/PANNZ-source-data)
+2. Edit the relevant CSV file in `_data/` (These csv files are served to the data catalogues and 
+   thus all edits should be made here.
 3. Submit a Pull Request with a summary of your changes
 
 We'll review and follow up with any clarifications before merging.
@@ -49,7 +53,7 @@ We'll review and follow up with any clarifications before merging.
 
 ## 📧 Or Contact Us via Email
 
-If you'd prefer not to use GitHub, or if your feedback requires a more detailed discussion, you can email:
+If you'd prefer not to use GitHub, you can email:
 
 **bellisss@landcareresearch.co.nz**
 

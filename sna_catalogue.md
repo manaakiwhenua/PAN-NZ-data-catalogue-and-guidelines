@@ -1,11 +1,12 @@
 ---
 layout: default
-title: SNA Dataset Catalogue
+title: SNA Data Sources
 permalink: /sna_catalogue/
 ---
 
-## Significant Natural Area Source Catalogue
+<!-- ## Significant Natural Area Source Catalogue -->
 
+TODO// Preamble
 
 <div class="tip-box">
   <strong>Note:</strong> This catalogue is automatically rendered from 

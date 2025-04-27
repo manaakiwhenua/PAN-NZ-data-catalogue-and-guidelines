@@ -1,27 +1,29 @@
 ---
 layout: default
-title: PAN-NZ National Dataset Catalogue
+#title: National Datasets
 permalink: /national_datasets_catalogue/
 ---
 
 
-## National Protected Area Catalogue
+## National Source Data sets
 
-> 
+Below is the protected area data candidates we are aware of for compiling PAN-NZ.
+Ensure you please "Fullscreen" to view this data 
 
-
-<p>
-This page provides national-level protected area datasets from across Aotearoa New Zealand...
-</p>
 
 <div class="tip-box">
-  <strong>Note:</strong> This catalogue is automatically rendered from `_data/national_protected_areas.csv`.
+  <strong>Note:</strong> This catalogue is automatically rendered from 
+  <a href="_data/national_protected_areas.csv">TODO// Update link to csv once merged with master</a> .
+</div>
+
+
+<div class="tip-box">
+  <strong>Contributing:</strong> Please see 
+  <a href="{{ site.baseurl }}/contributing/index.html">Contribute / Contact</a> 
+  for information on contributing and how you can update this table.
 </div>
 
 
 
-<!-- ✅ Full-width table section -->
-<div class="wide-container">
-    
-  {% include catalogue_table.html title="National Protected Area Datasets" datafile="national_protected_areas" %}
-</div>
+
+  {% include catalogue_table.html title="National Data Sources" datafile="national_protected_areas" %}

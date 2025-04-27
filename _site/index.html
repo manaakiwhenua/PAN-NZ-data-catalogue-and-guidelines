@@ -1,665 +1,267 @@
+<!-- _layouts/default.html -->
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en-us">
 
-<!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>PAN-NZ Data Stocktake and Guidelines | PANNZ-source-data</title>
-<meta name="generator" content="Jekyll v3.10.0" />
-<meta property="og:title" content="PAN-NZ Data Stocktake and Guidelines" />
-<meta property="og:locale" content="en_US" />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="PANNZ-source-data" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="PAN-NZ Data Stocktake and Guidelines" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","headline":"PAN-NZ Data Stocktake and Guidelines","name":"PANNZ-source-data","url":"http://localhost:4000/"}</script>
-<!-- End Jekyll SEO tag -->
+<head>
+    <link rel="stylesheet" href="/PANNZ-source-data/assets/css/style.css">
+</head>
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=6154aa27d5833be06a5f3e31ce68d4a4c169ef5a">
-    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+<body>
+    <div class="sidebar" id="sidebar" style="display: flex; flex-direction: column; height: 100vh;">
+    <div>
+        <div style="background-color: #fff; padding: 0.75rem; border-radius: 0; margin-bottom: 1rem;">
+            <p style="margin: 0; font-size: 1.1rem; color: #000; font-weight: bold;">
+                PAN-NZ Data Improvement
+            </p>
+        </div>
 
-<!-- Setup Google Analytics -->
+        <nav class="sidebar-nav">
+            <a class="sidebar-nav-item active"
+                href="/PANNZ-source-data/"><strong>Intro</strong></a>
 
+            <a class="sidebar-nav-item"
+                href="/PANNZ-source-data/guidelines.html"><strong>Guidelines (Draft)</strong></a>
 
+            <a class="sidebar-nav-item"
+                href="/PANNZ-source-data/contributing/index.html"><strong>Contribute / Contact</strong></a>
 
-<!-- You can set your favicon here -->
-<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+            <a href="/PANNZ-source-data/data_catalogues.html"
+                class="sidebar-nav-item">
+                <strong>Data Catalogues</strong>
+            </a>
 
-<!-- end custom head snippets -->
-
-  </head>
-  <body>
-    <div class="container-lg px-3 my-5 markdown-body">
-      
-      <h1><a href="http://localhost:4000/">PANNZ-source-data</a></h1>
-      
-
-      <h1 id="pan-nz-data-stocktake-and-guidelines">PAN-NZ Data Stocktake and Guidelines</h1>
-
-<h2 id="todo">TODo</h2>
-<p>Still outstanding:</p>
-<ul class="task-list">
-  <li>[] Explain why we are using github - it is a collaborative document….</li>
-  <li>[] Though limitations
-    <ul>
-      <li>[] We ar enot using a fully fledged metadata catalog - this 
-is a limited funded project</li>
-    </ul>
-  </li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />note, in the metadata table we have not included ESPG as it
-is not easily accessable in the arc products</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />A section illustrating why local govt data in important. imahge of the holes without it</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />didcuss coveannts e.g. https://www.fndc.govt.nz/Council/district-plan/Conservation-covenants
-    <ul class="task-list">
-      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Whangarei District Council has required the covenanting of 613 areas, totalling</li>
-      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />9https://www.nrc.govt.nz/media/aealvfz0/protected-natural-areas-in-northland.pdf</li>
-      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />2,266.0 h</li>
-    </ul>
-  </li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Disccus recent engagement ot indicate keenness e.g. 600+ at webinars</li>
-</ul>
-
-<h2 id="contents">Contents</h2>
-<ul>
-  <li><a href="#pan-nz-data-stocktake-and-guidelines">PAN-NZ Data Stocktake and Guidelines</a>
-    <ul>
-      <li><a href="#todo">TODo</a></li>
-      <li><a href="#contents">Contents</a></li>
-      <li><a href="#pan-nz-context">PAN-NZ Context</a>
-        <ul>
-          <li><a href="#document-purpose">Document Purpose</a></li>
-          <li><a href="#pan-nz">PAN-NZ</a></li>
-          <li><a href="#definition-of-protected-area-for-this-stage-of-pan-nz">Definition of Protected Area (for this stage of PAN-NZ)</a></li>
-          <li><a href="#data-interoperability-principles">Data Interoperability Principles</a></li>
-        </ul>
-      </li>
-      <li><a href="#pan-nz-source-data-guidelines">PAN-NZ Source Data Guidelines</a>
-        <ul>
-          <li><a href="#why-follow-these-standards">Why Follow These Standards?</a></li>
-          <li><a href="#data-access">Data access</a>
-            <ul>
-              <li><a href="#1-licensing">1. Licensing</a></li>
-              <li><a href="#licensing-conditions-exluding-protected-area-data-being-included-in-pan-nz">Licensing conditions exluding protected area data being included in PAN-NZ</a></li>
-              <li><a href="#2-data-access">2. Data Access</a></li>
-              <li><a href="#3-metadata">3. Metadata</a></li>
-              <li><a href="#3-discoverability">3. Discoverability</a></li>
-              <li><a href="#4-privacy">4. Privacy</a></li>
+            <ul style="list-style-type: none; padding-left: 1em;">
+                <li>
+                    <a class="sidebar-nav-item"
+                        href="/PANNZ-source-data/national_datasets_catalogue/index.html">► National Datasets</a>
+                </li>
+                <li>
+                    <a class="sidebar-nav-item"
+                        href="/PANNZ-source-data/parks_and_reserves_catalogue/index.html">► Parks &amp; Reserves</a>
+                </li>
+                <li>
+                    <a class="sidebar-nav-item"
+                        href="/PANNZ-source-data/sna_catalogue/index.html">► SNAs</a>
+                </li>
             </ul>
-          </li>
-          <li><a href="#data-attributes">Data Attributes</a>
-            <ul>
-              <li><a href="#1-pan-nz-schema">1. PAN-NZ Schema</a></li>
-              <li><a href="#2-protection-name">2. Protection Name</a></li>
-              <li><a href="#3-legal-act">3. Legal Act</a></li>
-              <li><a href="#4-legal-section">4. Legal Section</a></li>
-              <li><a href="#5-local-purpose-type">5. Local Purpose Type</a></li>
-              <li><a href="#6-protection-type">6. Protection Type</a></li>
-              <li><a href="#7-persistent-identifier">7. Persistent Identifier</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><a href="#potential-pan-nz-datasets">Potential PAN-NZ Datasets</a>
-    <ul>
-      <li><a href="#national">National</a></li>
-      <li><a href="#regional">Regional</a>
-        <ul>
-          <li><a href="#parks-and-reserves">Parks and Reserves</a></li>
-          <li><a href="#sna">SNA</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
 
-<p>Data catalogues:</p>
-<ul>
-  <li>
-    <h2 id="contents-1">Contents</h2>
-  </li>
-  <li><a href="parks_and_reserves_catalogue/">Parks and Reserves Catalogue</a></li>
-</ul>
+            <!-- <br> -->
+        </nav>
 
-<h2 id="pan-nz-context">PAN-NZ Context</h2>
-<p>The below sections cover key concepts related to PAN-NZ (Protected Areas Network – New Zealand)</p>
-
-<h3 id="document-purpose">Document Purpose</h3>
-<p>The purpose of this document is two fold:</p>
-
-<ul>
-  <li>
-    <p>To maintain a record of all known sources of Aotearoa New Zealand protected area datasets and their current state.</p>
-  </li>
-  <li>
-    <p>To provide guidelines to data holders to support the inclusion of their data in the national 
-Protected Areas Network of New Zealand (PAN-NZ).</p>
-  </li>
-</ul>
-
-<p>The ultimate goal is to lift the quality, completeness, and accessibility of the PAN-NZ spatial 
-dataset while supporting low-effort, frequent national data integration and publishing.</p>
-
-<h3 id="pan-nz">PAN-NZ</h3>
-<p>PAN-NZ (Protected Areas Network – New Zealand) is a national initiative that improves how protected 
-areas are documented, understood, and accessed through spatial data. Developed by Manaaki Whenua – 
-Landcare Research, with funding from the Ministry for the Environment (MfE), PAN-NZ provides a 
-consolidated national view of legal protections across Aotearoa New Zealand.</p>
-
-<p>The programme aims to support better planning, monitoring, and reporting by:</p>
-<ul>
-  <li>Consolidating spatial and descriptive protected data from central government, local government 
-and non-profits organisation sources.</li>
-  <li>Update the national protected areas information frequently</li>
-  <li>Classifying areas according to legal designations and IUCN categories. This allows the filtering and sorting
-of protection areas based on the degree of protection afforded to supported bio-diversity.</li>
-  <li>Enabling discovery and interpretation of protected area data through a national catalogue of datasets.</li>
-  <li>Engaging with data holders to improve the clarity, openness, and completeness of data.</li>
-</ul>
-
-<p>By increasing transparency and improving data quality, PAN-NZ helps decision-makers, researchers, 
-iwi/Māori, and the public better understand the extent and types of protected areas in New Zealand.</p>
-
-<h3 id="definition-of-protected-area-for-this-stage-of-pan-nz">Definition of Protected Area (for this stage of PAN-NZ)</h3>
-<p>For the purposes of PAN-NZ, a protected area is defined as a geographically defined area 
-that is recognised and managed through legislation or other formal instruments to achieve 
-long-term protection of natural, cultural, or recreational values. This broad definition 
-ensures inclusive national coverage of the many ways protection is implemented across 
-Aotearoa New Zealand.</p>
-
-<p>However, users can refine the dataset to suit more specific definitions—such as the 
-formal IUCN definition of a protected area—by applying filters like IUCN category, 
-legal basis, or protection type.</p>
-
-<h3 id="data-interoperability-principles">Data Interoperability Principles</h3>
-<p>Interoperability means that data should be easy to discover, access, and integrate from the 
-very first point of contact. We are not imposing rigid field names or internal database 
-changes on data providers. Instead, our focus is on ensuring that the data is shared 
-in a way that doesn’t require users to dig deep, reverse-engineer formats, or 
-chase down contacts just to make use of it.</p>
-
-<p>To support this, we encourage the following:</p>
-<ul>
-  <li>Standard metadata to describe the dataset clearly</li>
-  <li>Open formats such as GeoJSON, Shapefile, or GeoPackage (GPKG)</li>
-  <li>Stable API endpoints, ideally using open standards like OGC WFS and OGC API</li>
-  <li>Clear documentation that explains field meanings and usage</li>
-  <li>Consistent attribute naming, where possible</li>
-</ul>
-
-<h2 id="pan-nz-source-data-guidelines">PAN-NZ Source Data Guidelines</h2>
-<p>These guidelines outline the minimum data requirements for data holders to ensure their 
-protected areas data can be incorporated into PAN-NZ.</p>
-<h3 id="why-follow-these-standards">Why Follow These Standards?</h3>
-<p>Aotearoa New Zealand has a rich and diverse network of protected areas — from national parks and 
-reserves to QEII covenants and local council-protected sites. However, the ability to
- understand and represent these areas consistently at a national level depends on the
-  quality and compatibility of the underlying data.</p>
-
-<p>That’s where you come in.</p>
-
-<p>The Protected Areas Network of New Zealand (PAN-NZ) is a national initiative that brings 
-together datasets from local and central government, and NGOs. By contributing your data in a consistent format, you are helping to:</p>
-<ul>
-  <li>Improve national visibility of protected areas in your region</li>
-  <li>Support stronger environmental reporting, both domestically and to international 
-frameworks like the IUCN and the Kunming-Montreal 30x30 target.</li>
-  <li>Empower local communities, councils, and planners with better spatial information</li>
-  <li>Enable more effective land-use planning and biodiversity protection across regional boundaries</li>
-  <li>Improve economic efficiency by clearly identifying areas where development is restricted, 
-helping councils, developers, and infrastructure planners focus effort and investment in appropriate locations</li>
-</ul>
-
-<p>The standards outlined in this document aren’t here to create extra burden — they are designed to 
-reduce duplication, streamline integration, and make it easier to update data going forward. 
-In many cases, small changes to metadata or access settings can have a big impact.</p>
-
-<p>By aligning your datasets with these guidelines, you’re not just supplying data — 
-you’re contributing to a nationally significant information layer that supports environmental 
-stewardship across Aotearoa.</p>
-
-<p>Requirements: 
-Below are the data requirements that a protected area dataset must meet to be added to the national
-PAN-NZ dataset</p>
-
-<h3 id="data-access">Data access</h3>
-<p>PAN-NZ relies on timely, transparent, and open access to protected area data. To 
-ensure datasets can be efficiently discovered, evaluated, and integrated into 
-the national dataset, data holders should meet the access-related requirements
-outlined in the below sections</p>
-
-<h4 id="1-licensing">1. Licensing</h4>
-
-<p>Open licensing enables datasets to be combined at a national level without legal barriers or ambiguity as to how the data 
-an be used. It ensures that PAN-NZ can be openly published, shared, and integrated with other public data.</p>
-
-<p>Each dataset must have a clearly stated data licence that allows for reuse and redistribution. Preferably, 
-this should be the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 (CC BY 4.0) licence</a>. 
-The license should be supplied as part of the datasets metadata (TODO// see section …metadata) and be clearly 
-displayed at the point of access. This approach is consistent with the [New Zealand Governm-d 50to release 
-data under open terms to maximise its value and reuse.</p>
-
-<p><img src="/IMG/example_licensing.png" alt="PAN-NZ Diagram" />
-<strong>Above:</strong> An example of a protected areas source dataset with its licence clearly displayed at the point of 
-access that allow for download for reuse. Example as per <a href="https://hub.arcgis.com/datasets/658697bb70c345f48d21cc002ecc0bef_1/explore">Hawke’s Bay Regional Parks</a></p>
-
-<h4 id="licensing-conditions-exluding-protected-area-data-being-included-in-pan-nz">Licensing conditions exluding protected area data being included in PAN-NZ</h4>
-<p>Below are common reasons that licensing excludes data from being included in the national PAN-NZ data layer
- meaning the protected areas in that dataset will not appear in the national layer, limiting their visibility 
- to policymakers, researchers, and the public.</p>
-<ul>
-  <li><strong>No License:</strong> If no licence is provided, PAN-NZ cannot include the dataset due to the ambiguity around the 
-conditions of use concerning the dataset.</li>
-  <li><strong>Too Restrictive of a License</strong>: Some license allow degrees of public reuse but are too restrictive to inclusion on PAN-NZ. For example some protected
-area dataset are licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>	-NoNDerivatives (See the terms of
-use in image directly below). This is problematic as PAN-NZ is a derivative, and data under this license therefore can not be 
-included.</li>
-</ul>
-
-<p><img src="IMG/cc-by-40-ND.png" alt="PAN-NZ Diagram" width="450" /></p>
-
-<p><strong>Above:</strong> TODO//</p>
-
-<p>If your organisation uses a different licence, or if there are restrictions on reuse, please provide clear
- documentation explaining the terms. We’re happy to work with you to understand options and 
- ensure your data can be included.</p>
-
-<h4 id="2-data-access">2. Data Access</h4>
-<p>PAN-NZ requires source datasets to be accessible with minimal effort for both those accessing and supplying the data.</p>
-
-<p>Preferred methods of access (in order of preference):</p>
-<ul>
-  <li>
-    <p><strong>API access:</strong>
-  Data supplied via an API can be fetched programmatically and automatically integrated into PAN-NZ. This allows 
-  for regular updates, ensuring the national dataset remains current and accurately reflects the latest information.
-   API access includes data supplied through OGC (Open Geospatial Consortium) standards such as WFS (Web Feature Service), as well as RESTful APIs.</p>
-  </li>
-  <li>
-    <p><strong>Direct download:</strong>
-  If an API is not feasible, datasets should be made available through a direct download link—ideally via an 
-  open data portal or a stable URL. This allows a PAN-NZ administrator to manually download the dataset. However,
-   as it does not support automation, it is considered less efficient than API access.</p>
-
-    <p>Both API and direct download options have the added benefit of discoverability. Services that support these 
-  access methods are typically indexed by search engines, making them easier for PAN-NZ administrators to find
-   when searching for protected area data sources.</p>
-  </li>
-  <li>
-    <p><strong>Download on request:</strong>
-  If neither of the above options is available, the PAN-NZ administrator may need to contact the data provider 
-  directly to request access. This approach requires significantly more effort for both parties. Additionally,
-   because the dataset is not discoverable online, it risks being excluded from the national dataset simply
-  because the administrator may not know it exists—or whom to contact to obtain it.</p>
-  </li>
-</ul>
-
-<h4 id="3-metadata">3. Metadata</h4>
-
-<p>Metadata helps others understand and correctly interpret your dataset. While a full ISO 19115 record is ideal, 
-PAN-NZ requires a minimum metadata profile with the following fields:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Field</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Title</td>
-      <td>Name of the dataset</td>
-    </tr>
-    <tr>
-      <td>Description</td>
-      <td>Short explanation of the dataset’s purpose and contents</td>
-    </tr>
-    <tr>
-      <td>Creator / Owner</td>
-      <td>The organisation responsible for maintaining the dataset</td>
-    </tr>
-    <tr>
-      <td>Contact Email</td>
-      <td>A contact person for questions or updates</td>
-    </tr>
-    <tr>
-      <td>Licence</td>
-      <td>The reuse licence applied to the dataset</td>
-    </tr>
-    <tr>
-      <td>Date Updated</td>
-      <td>Most recent date of data revision or publication</td>
-    </tr>
-    <tr>
-      <td>Geographic Extent</td>
-      <td>Area covered (e.g. “Tasman District”, or bounding box in WGS84)</td>
-    </tr>
-    <tr>
-      <td>Projection</td>
-      <td>Spatial reference system (e.g. NZTM2000 or EPSG:2193)</td>
-    </tr>
-    <tr>
-      <td>Format</td>
-      <td>File format used (e.g. GeoPackage, Shapefile)</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>If your dataset is listed in a formal metadata catalogue (e.g. Koordinates, ArcGIS Hub), include a link to the catalogue entry.</p>
-
-<h4 id="3-discoverability">3. Discoverability</h4>
-<p>To support discoverability, councils can take several simple but effective steps to ensure their 
-protected area datasets are visible and accessible to national initiatives like PAN-NZ:</p>
-<ul>
-  <li>Publish data on open data portals such as their regional open data platforms, Koordinates, or 
-data.govt.nz. These platforms are regularly indexed by search engines and commonly used by national data administrators.</li>
-  <li>Ensure datasets have clear and descriptive metadata, including titles, descriptions, update frequencies, 
-spatial coverage, and keywords such as “protected area,” “conservation land,” or “significant natural area.”
-Well-tagged metadata increases the likelihood that the dataset will surface in search results.</li>
-  <li>Use consistent naming and formatting, particularly for datasets that are regularly updated. Avoid generic names
- like “Layer1.shp” in favour of more meaningful titles like “Waikato_Significant_Natural_Areas_2024.”</li>
-  <li>Enable stable, shareable links to datasets—either as downloadable files or via API endpoints. This makes it 
-easier for PAN-NZ administrators to access and revisit the data as needed.</li>
-  <li>Include contact details or data stewards in metadata records, so that even if direct download or 
-API access is not available, the right person can be easily identified and contacted.</li>
-</ul>
-
-<p>By taking these steps, councils can help ensure their datasets are not only accessible, but also visible and
-usable within national frameworks—contributing to a more complete and accurate picture of protected areas across Aotearoa.</p>
-
-<h4 id="4-privacy">4. Privacy</h4>
-<p>PAN-NZ aims to build an open and accessible national dataset of protected areas while upholding privacy obligations under the Privacy Act 2020. Data submitted for inclusion in PAN-NZ should not contain any personal or identifying information about individuals, including:</p>
-<ul>
-  <li>Personal names (e.g. landowners or donors)</li>
-  <li>Private addresses</li>
-  <li>Contact details (e.g. phone numbers or email addresses)</li>
-</ul>
-
-<p>What this means for contributors:</p>
-<ul>
-  <li>Ensure all shared datasets are free of personal or sensitive information, unless express permission has been obtained and documented.</li>
-  <li>If a dataset includes a contact person for managing or administering the protected area, ensure that the contact is a role-based or organisational contact, not an individual’s personal details.</li>
-</ul>
-
-<p>General guidance:</p>
-<ul>
-  <li>Where data involves land held in private title, confirm that the information is publicly available or anonymised.</li>
-  <li>If in doubt, contact your organisation’s privacy officer or legal advisor to confirm the dataset is compliant with the Privacy Act before sharing with PAN-NZ.</li>
-</ul>
-
-<p>By respecting privacy from the outset, we ensure that PAN-NZ remains a trustworthy, inclusive, and legally sound platform for environmental data.</p>
-
-<h3 id="data-attributes">Data Attributes</h3>
-<p>The section below lists the minimum set of attributes needed to describe a protected area in a way that’s
-meaningful and usable within PAN-NZ.</p>
-
-<h4 id="1-pan-nz-schema">1. PAN-NZ Schema</h4>
-<p>The PAN-NZ schema defines a minimal set of attributes needed to describe protected areas consistently
- across New Zealand. These attributes help ensure clarity, traceability, and integration into the national dataset.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Field Name</th>
-      <th>Description</th>
-      <th>Required</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">persistent_id</code></td>
-      <td>A unique and persistent identifier for the protected area.</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">name</code></td>
-      <td>The commonly used or official name of the protected area.</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">protection_legislation_act</code></td>
-      <td>The name of the legislation under which the area is protected.</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">protection_legislation_section</code></td>
-      <td>The specific section or clause of the act relevant to the protection.</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">protection_type</code></td>
-      <td>The type or category of protection (e.g., reserve, covenant, SNA).</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">local reserve</code></td>
-      <td>The purpose of reserves under Section 22 (government purpose reserve) and section 23 (local purpose reserve) of the Reserved Act 1977</td>
-      <td>No</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>The sections below provide further explanation of each required attribute, outlining its purpose, associated requirements, and how it contributes to the PAN-NZ dataset.</p>
-
-<h4 id="2-protection-name">2. Protection Name</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>PAN-NZ Schema Name</th>
-      <th>Required</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>name</td>
-      <td>yes - where recorded</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>If the managing entity assigns names to protected areas, they should be included. Providing a recognisable name helps users refer to each area via a common name, rather than relying on IDs alone.</p>
-
-<h4 id="3-legal-act">3. Legal Act</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>PAN-NZ Schema Name</th>
-      <th>Required</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>legislation_act</td>
-      <td>yes - where not implicit</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Datasets should specify the legislative act under which each area is protected. This field provides the legal context needed to confirm protection status and supports classification into IUCN categories. Without this information 
-the degree to which the areas is protected can not be communicated.</p>
-
-<p>However it is noted some datasets the legislation is implicit and this will suffice. For example for a dataset named “Regional Parks”
-it may be inferred that the protected areas are under the Local Government Act 2002 and Section 139 Regional Park. This is the reason that required status is “yes - where not implicit”</p>
-
-<p>Best practices:</p>
-
-<ul>
-  <li>Use the full name of the Act (e.g. Reserves Act 1977), not abbreviations like “RA77”.</li>
-  <li>Each spatial extent should be associated with one act. That is if an area is associated with different legislative acts, 
-each area with a different legislative act should have its own spatial extents.</li>
-</ul>
-
-<p>Examples of common legislative action can be found in the below section</p>
-
-<h4 id="4-legal-section">4. Legal Section</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>PAN-NZ Schema Name</th>
-      <th>Required</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>legislation_section</td>
-      <td>yes - where not implicit</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Where applicable, include the specific section in the Act that establishes the legal protection.
-This field provides the legal context needed to confirm protection status and supports classification into IUCN categories.</p>
-
-<p>Ideally this is in the format of <code class="language-plaintext highlighter-rouge">S_&lt;Section Number&gt;_&lt;NAME&gt;</code></p>
-
-<p>The below table provides an example of a subset of the legislative Act and 
-Sections that are commonly captured by PAN-NZ</p>
-
-<p>Note, the convention of using capitals. This due to major central government dataset applying this 
-convention to their legislation_section in their data. Lower can is also acceptable and 
-data pipelines can consider this information as the same.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">Legislation Act</th>
-      <th style="text-align: left">Legislation Section</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">CONSERVATION_ACT_1987</td>
-      <td style="text-align: left">S19_CONSERVATION_PARK</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">CONSERVATION_ACT_1987</td>
-      <td style="text-align: left">S20_WILDERNESS_AREA</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">CONSERVATION_ACT_1987</td>
-      <td style="text-align: left">S21_ECOLOGICAL_AREA</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">CONSERVATION_ACT_1987</td>
-      <td style="text-align: left">S22_SANCTUARY_AREA</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">CONSERVATION_ACT_1987</td>
-      <td style="text-align: left">S23A_AMENITY_AREA</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">CONSERVATION_ACT_1987</td>
-      <td style="text-align: left">S23B_WILDLIFE_MANAGEMENT_AREA</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">CONSERVATION_ACT_1987</td>
-      <td style="text-align: left">S25_STEWARDSHIP_AREA</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">LOCAL_GOVERNMENT_ACT_2002</td>
-      <td style="text-align: left">S139_REGIONAL_PARK</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">QUEEN_ELIZABETH_II_NATIONAL_TRUST_ACT_1977</td>
-      <td style="text-align: left">S22_QEII_OPEN_SPACE_COVENANT</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">RESERVES_ACT_1977</td>
-      <td style="text-align: left">S17_RECREATION_RESERVE</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">RESERVES_ACT_1977</td>
-      <td style="text-align: left">S19_1_A_SCENIC_RESERVE</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">RESERVES_ACT_1977</td>
-      <td style="text-align: left">S19_1_B_SCENIC_RESERVE</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">RESERVES_ACT_1977</td>
-      <td style="text-align: left">S23_LOCAL_PURPOSE_RESERVE</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">RESERVES_ACT_1977</td>
-      <td style="text-align: left">S17_RECREATION_RESERVE</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">WILDLIFE_ACT_1953</td>
-      <td style="text-align: left">S14_WILDLIFE_REFUGE</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">WILDLIFE_ACT_1953</td>
-      <td style="text-align: left">S9_WILDLIFE_SANCTUARY</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="5-local-purpose-type">5. Local Purpose Type</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>PAN-NZ Schema Name</th>
-      <th>Required</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>reserve_purpose</td>
-      <td>No - only for areas under section 22 and 23 under the Reserves Act 1977</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Under the Reserves Act 1977, for areas protected under Section 22 (Government Purpose Reserve) and Section 23 (Local Purpose Reserve), the specific purpose of the reserve should be recorded in the reserve_purpose field. These types of reserves are used for a wide range of purposes — from wetland protection to gravel extraction — and capturing this detail helps clarify the intent and degree of protection. This information is essential for understanding how and why an area is protected.</p>
-
-<h4 id="6-protection-type">6. Protection Type</h4>
-<p>| PAN-NZ Schema Name | Required |
-| —————— | ——– |
-| protection_type    | No       |</p>
-
-<p>This field is not required, but some datasets include a type field that describes the protection. Where the legal act and section are not available, this field can be used to infer the likely legislative basis for the protection.</p>
-
-<p>While this is not the preferred approach—as it can introduce ambiguity and errors when mapping types to legislation—it may be used when no other legal context is available. In such cases, the type field can still provide valuable insight into the nature of the protection, even if it lacks formal precision.</p>
-
-<p>This field should describe the kind of protection conferred by the legal status. for example as “Scenic Reserve”, “Wildlife Sanctuary “, or “Recreation Reserve”.</p>
-
-<h4 id="7-persistent-identifier">7. Persistent Identifier</h4>
-<p>Requirements:
-| PAN-NZ Schema Name | Required |
-| —————— | ——– |
-| id                 | yes      |</p>
-
-<p>Each protected area record should ideally include a persistent, unique identifier (ID). This ensures records can be tracked across updates and matched across systems.</p>
-
-<p>Other standards to be aware of
-https://www.linz.govt.nz/sites/default/files/2023-12/24a%2020%2020-B-0299%20-%20Attachment%20-%20NZGB%20Standard%20for%20Crown%20Protected%20Area%20Names%20FINAL%20-%20WKS.pdf</p>
-
-<h1 id="potential-pan-nz-datasets">Potential PAN-NZ Datasets</h1>
-
-<h2 id="national">National</h2>
-
-<h2 id="regional">Regional</h2>
-
-<h3 id="parks-and-reserves">Parks and Reserves</h3>
-
-<h3 id="sna">SNA</h3>
-
-
-
-      
+        <div class="sidebar-item" id="dynamic-toc">
+            <!-- Headings from current page will appear here -->
+        </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>anchors.add();</script>
-  </body>
+
+    <!-- Logo at very bottom -->
+    <div style="padding: 1rem; text-align: center; margin-top: auto;">
+        <div style="margin-bottom: 1rem;">
+            <p style="font-size: 0.8rem; margin: 0 0 0.25rem; color: #ccc;">Developed by:</p>
+            <img src="/PANNZ-source-data/IMG/mwlr.png" alt="MWLR Logo" style="max-width: 100%; height: auto;" />
+        </div>
+
+        <div>
+            <p style="font-size: 0.8rem; margin: 0 0 0.25rem; color: #ccc;">Funded by:</p>
+            <img src="/PANNZ-source-data/IMG/mfe.png" alt="MfE Logo" style="max-width: 100%; height: auto;" />
+        </div>
+
+        <div style="margin-top: 1rem;">
+            <a href="https://github.com/manaakiwhenua/PANNZ-source-data" target="_blank"
+                style="color: #ccc; font-size: 0.85rem; text-decoration: none;">
+                View source on GitHub →
+            </a>
+        </div>
+    </div>
+
+
+
+</div>
+    <div class="wrap">
+        <div class="masthead">
+            <div class="container">
+                <h1>Protected Areas Network New Zealand (PAN-NZ) Data Improvement Project</h1>
+                
+            </div>
+        </div>
+
+        
+        <div class="container content">
+            <hr />
+
+<h2 id="introduction">Introduction</h2>
+<p>The Ministry for the Environment (MfE) and Manaaki Whenua – Landcare Research (MWLR) are jointly 
+advancing the Protected Areas Network of New Zealand (PAN-NZ), a national spatial dataset 
+designed to provide a comprehensive and up-to-date view of 
+protected areas across Aotearoa New Zealand.</p>
+
+<p>Although the PAN-NZ database has existed for over a two decades, it has not been publicly released since 2007. Past 
+compilations have been created on an ad hoc basis to support specific projects, limiting its accessibility and 
+long-term utility. More importantly, previous versions have consistently lacked comprehensive coverage, especially of 
+locally held protections.</p>
+
+<p>This initiative seeks to address the key issues that have affected previous releases of PAN-NZ primarily those 
+that have lead to the significant inefficiencies in combining the many source datasets required to create a national-level 
+view of protected areas, and the persistent data gaps resulting from missing data and limitations of data sharing.</p>
+
+<p>This initiative seeks to improve PAN-NZ to ensure regular updates, public availability, and an authoritative dataset by:</p>
+<ol>
+  <li>Developing data standards for protected areas.</li>
+  <li>Enabling discovery and interpretation of protected area data through the cataloging of protected area datasets.</li>
+</ol>
+
+<p>The overarching goal is to enable an up-to-date national picture of protections to inform conservation 
+planning, decision making, research, and progress tracking toward international 
+commitments such as the “30 by 30” biodiversity target.</p>
+
+<hr />
+
+<h2 id="use-of-github">Use of GitHub</h2>
+<p>This site is hosted using GitHub Pages to support transparency, collaboration, and rapid deployment. 
+As the PAN-NZ standards and dataset catalogues are still in draft form, GitHub provides a collaborative 
+environment where contributors can propose changes, raise issues, and suggest improvements through 
+pull requests. It also allows data custodians and stakeholders to openly track discussions around protected 
+area records, improving shared understanding and version control. While this is not a full-featured data catalogue, 
+it represents a practical and scalable starting point within available resources—and crucially, it fosters 
+collaboration across agencies and regions as the Protected Areas Network continues to evolve.</p>
+
+<p>For more on details on contributing and providing feedback please visit 
+the <a href="/PANNZ-source-data/contributing/index.html">Contribute / Contact</a> page.</p>
+
+<hr />
+
+<h2 id="guidelines">Guidelines</h2>
+<p>As part of this initiative, guidelines have been developed to define the minimum requirements that
+protected area datasets must meet to be included in the PAN-NZ national view of legal protections.</p>
+
+<p>These guidelines can be found on the <a href="/PANNZ-source-data/guidelines/index.html">guidelines</a> page.</p>
+
+<hr />
+
+<h2 id="data-catalogues">Data catalogues</h2>
+<p>The data catalogues attempt to capture all protected area datasets held by central and local government as
+well as other administering bodies such as not for profit organisations. The purpose of ths catalogues
+is create a view of all protected area datasets and there status.</p>
+
+<p>These catalogues have several purposes:</p>
+<ul>
+  <li>Under pin the efforts to aggregate the dataset into the national PAN-NZ product</li>
+  <li>Identify datasets that currently cannot be included in PAN-NZ, and outline the steps 
+data holders need to take to make them eligible for inclusion.</li>
+</ul>
+
+<p>For more on these catalogues please visit the
+<a href="/PANNZ-source-data/data_catalogues/index.html">data catalogues</a> page.</p>
+
+<hr />
+
+<!-- 
+
+## Document Purpose
+The purpose of this document is two fold:
+
+* To maintain a record of all known sources of Aotearoa New Zealand protected area datasets and their current state.
+
+* To provide guidelines to data holders to support the inclusion of their data in the national 
+Protected Areas Network of New Zealand (PAN-NZ).
+
+The ultimate goal is to lift the quality, completeness, and accessibility of the PAN-NZ spatial 
+dataset while supporting low-effort, frequent national data integration and publishing. -->
+
+        </div>
+        
+    </div>
+
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const content = document.querySelector(".content");
+            const sidebarTOC = document.getElementById("dynamic-toc");
+
+            if (!content || !sidebarTOC) return;
+
+            const headings = content.querySelectorAll("h1, h2, h3");
+            if (headings.length === 0) return;
+
+            const list = document.createElement("ul");
+            list.style.listStyle = "none";
+            list.style.paddingLeft = "0";
+
+            headings.forEach((heading) => {
+                const level = parseInt(heading.tagName.substring(1));
+                const text = heading.textContent;
+                const id = heading.id || text.toLowerCase().replace(/[^\w]+/g, '-');
+
+                heading.id = id; // ensure anchor exists
+
+                const li = document.createElement("li");
+                li.style.marginLeft = `${(level - 1) * 1.2}rem`;
+
+                const a = document.createElement("a");
+                a.href = `#${id}`;
+                a.textContent = text;
+                a.style.textDecoration = "none";
+                a.style.color = "white";
+                a.style.fontSize = "0.85rem";
+
+                li.appendChild(a);
+                list.appendChild(li);
+            });
+
+            sidebarTOC.innerHTML = "<strong>On this page</strong>";
+            sidebarTOC.appendChild(list);
+        });
+    </script> -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const content = document.querySelector(".content");
+            const sidebarTOC = document.getElementById("dynamic-toc");
+
+            if (!content || !sidebarTOC) return;
+
+            const headings = content.querySelectorAll("h1, h2, h3");
+            if (headings.length === 0) return;
+
+            const list = document.createElement("ul");
+            list.style.listStyle = "disc";
+            list.style.paddingLeft = "1.5rem";
+
+            headings.forEach((heading) => {
+                const level = parseInt(heading.tagName.substring(1));
+                const text = heading.textContent;
+                const id = heading.id || text.toLowerCase().replace(/[^\w]+/g, '-');
+
+                heading.id = id; // ensure anchor exists
+
+                const li = document.createElement("li");
+                li.style.marginLeft = `${(level - 1) * 0.5}rem`; // slight indent for nested headings
+
+                const a = document.createElement("a");
+                a.href = `#${id}`;
+                a.textContent = text;
+                a.style.textDecoration = "none";
+                a.style.color = "white";
+                a.style.fontSize = "0.85rem";
+
+                li.appendChild(a);
+                list.appendChild(li);
+            });
+
+            const wrapper = document.createElement("div");
+            wrapper.style.border = "1px solid #ccc";
+            wrapper.style.padding = "0.5rem";
+            wrapper.style.marginBottom = "0.5rem";
+            wrapper.style.background = "rgba(255,255,255,0.05)";
+
+            const title = document.createElement("div");
+            title.innerHTML = "<strong><u>On this page</u></strong>";
+            wrapper.appendChild(title);
+            wrapper.appendChild(list);
+
+            sidebarTOC.innerHTML = "";
+            sidebarTOC.appendChild(wrapper);
+        });
+    </script>
+
+</body>
+
 </html>

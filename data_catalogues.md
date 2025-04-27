@@ -18,6 +18,20 @@ and accurately represented in PAN-NZ. Each catalogue entry includes basic
 metadata about the dataset, such as custodian, access method, licensing, and steps required to 
 integrate it in PAN-NZ.
 
+The Catalogues have been broken into three subsets:
+1. **[National Datasets]({{ site.baseurl }}/national_datasets_catalogue/index.html):** Protected Area datasets that cover all of New Zealand
+2. **[Parks and Reserves]({{ site.baseurl }}/parks_and_reserves_catalogue/index.html):** Local Government datasets that include 
+information of parks, such as Regional Parks.
+3. **[SNAs (Significant Natural Areas)]({{ site.baseurl }}/sna_catalogue/index.html):** Datasets from Territorial Authorities that
+   represent those areas as identified under Section 6(c) Resource Management Act 1991. 
+
+Please visit each of the relevant data catalogue pages for more details on each sub-category including:
+* The data sets we are aware of
+* How each contributes to PAN-NZ
+* limitation of each sub-category
+
+
+
 <br>
 
 # Contributing 

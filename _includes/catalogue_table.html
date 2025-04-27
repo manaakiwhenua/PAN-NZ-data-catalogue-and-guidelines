@@ -105,22 +105,34 @@
     }
 
     document.addEventListener("DOMContentLoaded", function () {
-        // Find all scroll-sync pairs
         const containers = document.querySelectorAll(".scroll-sync-container");
 
         containers.forEach(container => {
             const topScroll = container.querySelector(".scrollbar-top");
             const tableScroll = container.querySelector(".catalogue-table-container");
 
-            if (topScroll && tableScroll) {
-                topScroll.addEventListener("scroll", () => {
-                    tableScroll.scrollLeft = topScroll.scrollLeft;
-                });
+            if (!topScroll || !tableScroll) return;
 
-                tableScroll.addEventListener("scroll", () => {
-                    topScroll.scrollLeft = tableScroll.scrollLeft;
-                });
-            }
+            // Dynamically set the scrollbar-top width to match the scrollable area
+            const scrollBarSpacer = topScroll.querySelector("::before");
+            topScroll.scrollLeft = tableScroll.scrollLeft;
+
+            // Sync scroll events both ways
+            topScroll.addEventListener("scroll", () => {
+                tableScroll.scrollLeft = topScroll.scrollLeft;
+            });
+
+            tableScroll.addEventListener("scroll", () => {
+                topScroll.scrollLeft = tableScroll.scrollLeft;
+            });
+
+            // NEW: Resize observer to adjust ::before width
+            const fakeDiv = document.createElement("div");
+            fakeDiv.style.width = tableScroll.scrollWidth + "px";
+            fakeDiv.style.height = "1px";
+            topScroll.innerHTML = "";
+            topScroll.appendChild(fakeDiv);
         });
     });
+
 </script>

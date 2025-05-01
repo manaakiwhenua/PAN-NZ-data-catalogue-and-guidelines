@@ -1,5 +1,7 @@
 <!-- _includes/catalogue_table.html -->
+{% if include.title %}
 <h2>{{ include.title }}</h2>
+{% endif %}
 
 <!-- ✅ Fullscreen wrapper start -->
 <div class="fullscreen-container" id="{{ include.datafile | slugify }}-wrapper">

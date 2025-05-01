@@ -5,11 +5,18 @@ permalink: /national_datasets_catalogue/
 ---
 
 
+Below are the national level protected area datasource candidates we are aware of for compiling PAN-NZ. These dataset are 
+made available by Central government agencies as well as the Queen Elizabeth II National Trust. The 
+central government datasets are exclusively describe protections on crown and crown partnership areas. 
+
+Please ensure you use the "Fullscreen" button to best view this data 
 
 
-Below is the protected area data candidates we are aware of for compiling PAN-NZ.
-Ensure you please "Fullscreen" to view this data 
 
+<br>
+
+## National Data Sources
+---
 
 <div class="tip-box">
   <strong>Note:</strong> This catalogue is automatically rendered from 
@@ -17,13 +24,12 @@ Ensure you please "Fullscreen" to view this data
 </div>
 
 
-<div class="tip-box">
+<!-- <div class="tip-box">
   <strong>Contributing:</strong> Please see 
   <a href="{{ site.baseurl }}/contributing/index.html">Contribute / Contact</a> 
   for information on contributing and how you can update this table.
 </div>
 
+ -->
 
-
-
-  {% include catalogue_table.html title="National Data Sources" datafile="national_protected_areas" %}
+  {% include catalogue_table.html datafile="national_protected_areas" %}

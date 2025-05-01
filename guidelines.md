@@ -5,28 +5,13 @@ title: PAN-NZ Draft Data Guidelines
 ---
 
 
-
-<!-- ## Data Interoperability Principles
-Interoperability means that data should be easy to discover, access, and integrate from the 
-very first point of contact. We are not imposing rigid field names or internal database 
-changes on data providers. Instead, our focus is on ensuring that the data is shared 
-in a way that doesn't require users to dig deep, reverse-engineer formats, or 
-chase down contacts just to make use of it.
-
-To support this, we encourage the following:
-* Standard metadata to describe the dataset clearly
-* Open formats such as GeoJSON, Shapefile, or GeoPackage (GPKG)
-* Stable API endpoints, ideally using open standards like OGC WFS and OGC API
-* Clear documentation that explains field meanings and usage
-* Consistent attribute naming, where possible -->
-
  
 These guidelines outline the minimum data requirements for data holders to ensure their 
 protected areas data can be incorporated into PAN-NZ. 
 
 # Why Follow These Standards?
 ---
-Aotearoa New Zealand has a rich and diverse network of protected areas — from national parks and 
+Aotearoa New Zealand has a rich and diverse network of protected areas, from national parks and 
 reserves to QEII covenants and local council-protected sites. However, the ability to
  understand and represent these areas consistently at a national level depends on the
   quality and compatibility of the underlying data.
@@ -45,7 +30,7 @@ helping councils, developers, and infrastructure planners focus effort and inves
 
 
 The standards outlined in this document aren’t here to create extra burden, they are designed to 
-reduce duplication, streamline integration, and make it easier to update data going forward. 
+reduce duplication of effort, streamline integration, and make it easier to update data going forward. 
 In many cases, small changes to metadata or access settings can have a big impact.
 
 By aligning your datasets with these guidelines, you're not just supplying data, 
@@ -85,14 +70,16 @@ policy to release data under open terms to maximise its value and reuse.
        style="max-width: 100%; height: auto;" />
 </a>
 **Above:** An example of a protected areas source dataset with its licence clearly displayed at the point of 
-access that allow for download for reuse. Example as per [Hawke's Bay Regional Parks](https://hub.arcgis.com/datasets/658697bb70c345f48d21cc002ecc0bef_1/explore) 
+access that allows for reuse. Example as per [Hawke's Bay Regional Parks](https://hub.arcgis.com/datasets/658697bb70c345f48d21cc002ecc0bef_1/explore) 
 
 
 <br>
 
-#### Licensing conditions that exclude protected area data being included in PAN-NZ
+
+
+#### Common Licensing conditions that exclude protected area data being included in PAN-NZ
 Below are common licensing issues that prevent datasets from being included in the national PAN-NZ data layer. 
-When licensing excludes a dataset, the protected areas it contains may not appear in the national layer—limiting 
+When licensing excludes a dataset, the protected areas it contains may not appear in the national PAN-NZ layer, limiting 
 their visibility to policymakers, researchers, and the public.
 * **No License:** If no licence is provided, PAN-NZ cannot include the dataset due to the ambiguity around the 
 conditions of use.
@@ -114,10 +101,6 @@ excludes datasets from PAN-NZ
 <br>
 
 
-If your organisation uses a different licence, or if there are restrictions on reuse, please provide clear
- documentation explaining the terms. We’re happy to work with you to understand options and 
- ensure your data can be included.
-
 <br>
 ### 2. Data Access
 PAN-NZ requires source datasets to be accessible with minimal effort for both those accessing and supplying the data.
@@ -128,8 +111,8 @@ Preferred methods of access (in order of preference):
     for regular updates, ensuring the national dataset remains current and accurately reflects the latest information.
      API access includes data supplied through OGC (Open Geospatial Consortium) standards such as WFS (Web Feature Service), as well as RESTful APIs.
 
-* **Direct download:**
-    If an API is not feasible, datasets should be made available through a direct download link. This 
+* **Self-service download:**
+    If an API access is not feasible, datasets should be made available through a self-service download link. This 
     allows a PAN-NZ administrator to manually download the dataset. However,
      as it does not support automation, it is considered less efficient than API access.
 
@@ -166,10 +149,10 @@ PAN-NZ requires a minimum metadata profile with the following fields:
 <br>
 
 ### 4. Discoverability 
-To support discoverability, councils can take several simple but effective steps to ensure their 
+To support discoverability, data providers can take several simple but effective steps to ensure their 
 protected area datasets are visible and accessible to national initiatives like PAN-NZ:
 * Publish data on open data portals such as their regional open data platforms (e.g. using Koordinates or ArcGIS Online)
-These platforms are regularly indexed by search engines and commonly used by national data administrators.
+These platforms are regularly indexed by search engines.
 * Ensure datasets have clear and descriptive metadata, including titles, descriptions, 
   spatial coverage, and keywords such as “protected area,” “conservation land,” or “significant natural area.”
   Well-tagged metadata increases the likelihood that the dataset will surface in search results.
@@ -179,15 +162,17 @@ These platforms are regularly indexed by search engines and commonly used by nat
   to access and revisit the data as needed.
 * Include contact details or data stewards in metadata records. This way if there are issues in accessing the data
   the right person can be easily identified and notified. 
+* Ensuring the datasets are recorded in the [data catalogues]({{ site.baseurl }}/data_catalogues/index.html) 
+  component of this site.
 
 By taking these steps, councils can help ensure their datasets are not only accessible, but also visible and
-usable within national frameworks—contributing to a more complete and accurate picture of protected areas across Aotearoa.
+usable within national frameworks, contributing to a more complete and accurate picture of protected areas across Aotearoa.
 
 <br>
 
 ### 5. Privacy 
 PAN-NZ aims to build an open and accessible national dataset of protected areas while upholding privacy obligations under 
-the Privacy Act 2020. Data submitted for inclusion in PAN-NZ should not contain any personal or identifying 
+the Privacy Act 2020. Public facing protected areas datasets should not contain any personal or identifying 
 information about individuals, including:
 * Personal names (e.g. landowners)
 * Private addresses
@@ -212,18 +197,25 @@ The below table outlines the minimum details required for each protected area en
 While these are the minimum, it is expected other information will be provided, however
 this will not be included in the national PAN-NZ layer. 
 
+While the schema defines specific field names, it is not required that source datasets use exactly
+the same names. However, aligning with the schema is beneficial and appreciated. The key requirement is that
+ the necessary fields and their information are present. Field name mappings can be applied 
+ during the data aggregation stage to ensure compatibility.
+ 
 
 
-| Field Name                       | Description                                                                                                                           | Required |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| `persistent_id`                  | A unique and persistent identifier for the protected area.                                                                            | Yes      |
-| `name`                           | The commonly used or official name of the protected area.                                                                             | Yes      |
-| `protection_legislation_act`     | The name of the legislation under which the area is protected.                                                                        | Yes      |
-| `protection_legislation_section` | The specific section or clause of the act relevant to the protection.                                                                 | Yes      |
-| `protection_type`                | The type or category of protection (e.g., reserve, covenant, SNA).                                                                    | No       |
-| `local reserve`                  | The purpose of reserves under Section 22 (government purpose reserve) and section 23 (local purpose reserve) of the Reserved Act 1977 | No       |
 
-The sections below provide further explanation of each required attribute, outlining its purpose, associated requirements, and how it contributes to the PAN-NZ dataset.
+| Field Name            | Description                                                                                                                           | Required |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| `persistent_id`       | A unique and persistent identifier for the protected area.                                                                            | Yes      |
+| `name`                | The commonly used or official name of the protected area.                                                                             | Yes      |
+| `legislation_act`     | The name of the legislation under which the area is protected.                                                                        | Yes      |
+| `legislation_section` | The specific section or clause of the act relevant to the protection.                                                                 | Yes      |
+| `protection_type`     | The type or category of protection (e.g., reserve, covenant, national park).                                                          | No       |
+| `local reserve`       | The purpose of reserves under Section 22 (government purpose reserve) and section 23 (local purpose reserve) of the Reserved Act 1977 | No       |
+
+The sections below provide further explanation of each required attribute, outlining its purpose, 
+associated requirements, and how it contributes to the PAN-NZ dataset.
 
 <br>
 
@@ -235,7 +227,8 @@ The sections below provide further explanation of each required attribute, outli
 | ------------------ | -------- |
 | id                 | yes      |
 
-Each protected area record should ideally include a persistent, unique identifier (ID). This ensures records can be tracked across updates and matched across systems.
+Each protected area record should include a persistent, unique identifier. This ensures records 
+can be tracked across updates and matched across systems.
 
 <br>
 
@@ -245,10 +238,11 @@ Each protected area record should ideally include a persistent, unique identifie
 | ------------------ | -------------------- |
 | name               | yes - where recorded |
 
-If the managing entity assigns names to protected areas, they should be included. Providing a recognisable name helps users refer to each area via a common name, rather than relying on IDs alone.
+If the managing entity assigns names to protected areas, they should be included. Providing a recognisable name helps 
+users refer to each area via a common name, rather than relying on IDs alone.
 
-This can also be useful to relate protections to other information the uses names as a common identifier 
-such as management plans that commonly refer to protected areas by name.
+This can also assist in linking protections to other sources of information that 
+rely on names as common identifiers, such as management plans that refer to protected areas by name.
 
 <br>
 
@@ -266,7 +260,7 @@ the degree to which the areas is protected can not be communicated.
 However it is noted with some datasets the legislation is implicit and therefore this
 field is not required. For example, for a dataset named "Regional Parks"
 it may be inferred that the protected areas are under the Local Government Act 2002 
-and Section 139 Regional Park. This is the reason that required status is "yes - where not implicit"
+ Section 139 Regional Park. This is the reason that required status is "yes - where not implicit"
 
 Best practices:
 
@@ -288,13 +282,13 @@ Where applicable, include the specific section in the Act that establishes the l
 This field provides the legal context needed to confirm protection status and supports classification into IUCN categories.
 
 
-Ideally this is in the format of `S_<Section Number>_<NAME>`
+Ideally this is in the format of `S_<Section Number>_<NAME>` e.g. `S19_CONSERVATION_PARK`
 
-The below table provides an example of a subset of the legislative Acts and 
-Sections that are commonly captured by PAN-NZ 
+The below table provides an example of a subset of the legislative acts and 
+sections that are commonly captured by PAN-NZ 
 
-Note, the convention of using capitals. This due to major central government dataset applying this 
-convention to their legislation_section attribute in their data. Lowercase is also acceptable as
+Note, the convention of using capitals. This is due to major central government datasets applying this 
+convention to their legislation act and section attributes in their data. Lowercase is also acceptable as
 data pipelines can consider this information as the same. 
 
 
@@ -316,6 +310,9 @@ data pipelines can consider this information as the same.
 | RESERVES_ACT_1977                          | S17_RECREATION_RESERVE        |
 | WILDLIFE_ACT_1953                          | S14_WILDLIFE_REFUGE           |
 | WILDLIFE_ACT_1953                          | S9_WILDLIFE_SANCTUARY         |
+
+**Above Table:** The above table provides an example of a subset of protected area legislation acts and 
+sections 
 
 <br>
 
@@ -345,15 +342,38 @@ This field is not required, but some datasets include a type field that describe
  used to infer the legislative basis for the protection.
 
 While this is not the preferred approach as it can introduce ambiguity and errors
- when mapping types to legislation it may be used when no other legal context is 
+ when mapping types to legislation, it may be used when no other legal context is 
  available. 
 
 This field should describe the kind of protection conferred by the legal status.
-for example as "Scenic Reserve", "Wildlife Sanctuary ", or "Recreation Reserve".
+for example as "Scenic Reserve", "Wildlife Sanctuary", "Recreation Reserve", etc.
 
 The PAN-NZ data aggregation process will for example extract "WILDLIFE_ACT_1953
-S9_WILDLIFE_SANCTUARY" where the type is provided but no legal act or section information
+S9_WILDLIFE_SANCTUARY" where the type is "Wildlife Sanctuary" but no legal act or section information
 is available. 
+
+
+<br>
+
+
+<!-- ## A Note on Data Interoperability Principles
+---
+Data interoperability means that datasets can be easily discovered, 
+accessed, and integrated from the very first point of contact.
+
+In the PAN-NZ schema section above, we outline the minimum required 
+fields. While some data interoperability initiatives require strict 
+adherence to standardised field names, PAN-NZ instead focuses on 
+ensuring that data can be readily used without requiring users to dig deep, negotiating  access, or track down contacts for clarification.
+
+To support this, we encourage the following good practices:
+* Use of standard metadata to clearly describe the dataset
+* Open and widely supported formats such as GeoJSON, Shapefile, or GeoPackage (GPKG)
+* Stable API endpoints, ideally using open standards such as OGC WFS or OGC API
+* Clear documentation explaining field meanings and intended use
+* Consistent and intuitive attribute naming, where possible
+
+These practices help reduce barriers to integration and make it easier for others to work with your data in national and local contexts. -->
 
 
 <br>
@@ -372,7 +392,3 @@ In summary, datasets submitted for inclusion in PAN-NZ must meet the following c
 Following these guidelines ensures your protected areas data can be effectively integrated, represented, and used at the national level.
 
 
-
-### TODO - Further considerations
-- Dates (Start - End)
-- Private v Public v Maori

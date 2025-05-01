@@ -80,6 +80,9 @@ integrate local data into the national protected areas layer.
 </div> -->
 
 
+<div class="tip-box">
+  <strong>Tip:</strong> Use the Fullscreen button to view the below table
+</div>
 
 
 {% include catalogue_table.html datafile="Parks_and_Reserves" %}

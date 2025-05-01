@@ -23,6 +23,9 @@ the expectation of further updates to New Zealand’s resource management system
   <a href="_data/SNA.csv">TODO// Update link to csv once merged with master</a> .
 </div>
 
+<div class="tip-box">
+  <strong>Tip:</strong> Use the Fullscreen button to view the below table
+</div>
 
 <!-- <div class="tip-box">
   <strong>Contributing:</strong> Please see 

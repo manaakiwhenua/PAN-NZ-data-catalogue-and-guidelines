@@ -23,12 +23,22 @@ Please ensure you use the "Fullscreen" button to best view this data
   <a href="_data/national_protected_areas.csv">TODO// Update link to csv once merged with master</a> .
 </div>
 
+<div class="tip-box">
+  <strong>Tip:</strong> Use the Fullscreen button to view the below table
+</div>
 
 <!-- <div class="tip-box">
   <strong>Contributing:</strong> Please see 
   <a href="{{ site.baseurl }}/contributing/index.html">Contribute / Contact</a> 
   for information on contributing and how you can update this table.
 </div>
+
+<!-- <div class="tip-box">
+  <strong>Contributing:</strong> Please see 
+  <a href="{{ site.baseurl }}/contributing/index.html">Contribute / Contact</a> 
+  for information on contributing and how you can update this table.
+</div>
+
 
  -->
 

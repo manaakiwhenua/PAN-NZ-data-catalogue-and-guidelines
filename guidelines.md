@@ -9,6 +9,8 @@ title: PAN-NZ Draft Data Guidelines
 These guidelines outline the minimum data requirements for data holders to ensure their 
 protected areas data can be incorporated into PAN-NZ. 
 
+<br>
+
 # Why Follow These Standards?
 ---
 Aotearoa New Zealand has a rich and diverse network of protected areas, from national parks and 

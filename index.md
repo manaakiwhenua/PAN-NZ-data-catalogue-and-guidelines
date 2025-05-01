@@ -41,7 +41,8 @@ This site is hosted using [GitHub Pages](https://pages.github.com/) to support t
 collaboration, and rapid deployment. As the PAN-NZ standards and dataset catalogues are 
 still in draft form, GitHub provides a collaborative environment where contributors can 
 propose changes, raise issues, and suggest improvements via GitHub [issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues) and
-[pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests). 
+[pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests). As well as this, it creates a landing page for PAN-NZ where 
+information about upcoming releases and other details can be easily added.
 
 While this is not a full-featured data catalogue, it represents a practical and 
 scalable starting point within current resource constraints. Crucially, GitHub provides the tools

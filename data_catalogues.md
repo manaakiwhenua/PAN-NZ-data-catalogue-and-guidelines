@@ -34,7 +34,7 @@ Please visit each of the relevant data catalogue pages for more details on each 
 
 # Contributing 
 ---
-We encourage you to explore each catalogue and, if you notice missing datasets or improvements 
+We encourage you to explore each catalogue and if you notice missing datasets or improvements 
 that can be made, please see the [Contribute / Contact]({{ site.baseurl }}/contributing/index.html) 
 page for details on how to provide feedback or submit improvements. Your input directly supports 
 the completeness and accuracy of PAN-NZ.

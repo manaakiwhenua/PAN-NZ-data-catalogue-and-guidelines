@@ -4,7 +4,11 @@ title: Protected Areas Network New Zealand (PAN-NZ) Data Improvement Project
 # permalink: /
 ---
 
+<br>
+
 ## Introduction 
+---
+
 The Ministry for the Environment (MfE) and Manaaki Whenua Landcare Research (MWLR)
 are jointly developing the Protected Areas Network of New Zealand (PAN-NZ), 
 a national spatial dataset that provides a comprehensive and up-to-date 
@@ -29,10 +33,10 @@ The overarching goal is to enable an up-to-date national picture of protections 
 planning, decision-making, research, and progress tracking toward international 
 commitments such as the “30 by 30” biodiversity target.
 
-
----
+<br>
 
 ## Use of GitHub
+---
 This site is hosted using [GitHub Pages](https://pages.github.com/) to support transparency, 
 collaboration, and rapid deployment. As the PAN-NZ standards and dataset catalogues are 
 still in draft form, GitHub provides a collaborative environment where contributors can 
@@ -47,18 +51,20 @@ For more details on contributing and providing feedback, please visit
 the [Contribute / Contact]({{ site.baseurl }}/contributing/index.html) page. 
 
 
----
+<br>
 
 ## Guidelines
+---
 As part of this initiative, guidelines have been developed to define the minimum requirements 
 that protected area datasets must meet to be included in the PAN-NZ national view of legal protections.
 
 These draft guidelines can be found on the [guidelines]({{ site.baseurl }}/guidelines/index.html) page.
 
 
----
+<br>
 
 ## Data Catalogues
+---
 The data catalogues aim to capture all protected area datasets held by central and local government, 
 as well as other administering bodies such as not-for-profit organisations. The objective of these catalogues 
 is to create a comprehensive view of all protected area datasets and their status. 
@@ -72,7 +78,10 @@ These catalogues serve several purposes:
 For more on these catalogues, please visit the
 [data catalogues]({{ site.baseurl }}/data_catalogues/index.html) page.
 
+<br>
+
 ## The Categorisation of Protections
+---
 As part of PAN-NZ, we aim to support more meaningful analysis and 
 filtering of protected areas by assigning each record an IUCN protection 
 category, where possible. The International Union for Conservation of Nature

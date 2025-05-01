@@ -58,7 +58,7 @@ These draft guidelines can be found on the [guidelines]({{ site.baseurl }}/guide
 
 ---
 
-## Data catalogues
+## Data Catalogues
 The data catalogues aim to capture all protected area datasets held by central and local government, 
 as well as other administering bodies such as not-for-profit organisations. The objective of these catalogues 
 is to create a comprehensive view of all protected area datasets and their status. 

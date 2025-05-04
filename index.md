@@ -99,7 +99,7 @@ included in the PAN-NZ dataset but will be marked as unranked in the protection 
 Including a protection rank is important because it allows users to filter protected areas based on 
 the degree of protection afforded to biodiversity. This allows us to include protections in 
 PAN-NZ that may only afford a low level of protection while allowing users to 
-excluded these if they are not relevant to their needs. 
+exclude these if they are not relevant to their needs. 
 
 In parallel with this work (guidelines and the cataloguing of source data), 
 a separate project is underway to describe how New Zealand’s legislation maps to 

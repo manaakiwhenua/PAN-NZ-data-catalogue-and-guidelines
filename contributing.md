@@ -31,7 +31,7 @@ If you've identified an error, have a suggestion, or wish to discuss an improvem
 
 
 
-## Edit the Catalogue via Pull Request
+## Edit The Catalogue Via Pull Request
 ---
 
 If you are familiar with GitHub, please feel free to suggest changes directly 
@@ -54,7 +54,7 @@ We'll review and follow up with any clarifications before merging.
 
 
 
-## Or Contact Us via Email
+## Or Contact Us Via Email
 ---
 
 If you'd prefer not to use GitHub, you can email:
@@ -67,4 +67,4 @@ Please include a clear reference to the guideline section or dataset record you 
 <br>
 
 
-Thank you for helping improve the Protected Areas Network of New Zealand.
+**Thank you for helping improve the Protected Areas Network of New Zealand.**

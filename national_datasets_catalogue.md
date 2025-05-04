@@ -9,9 +9,6 @@ Below are the national level protected area datasource candidates we are aware o
 made available by Central government agencies as well as the Queen Elizabeth II National Trust. The 
 central government datasets are exclusively describe protections on crown and crown partnership areas. 
 
-Please ensure you use the "Fullscreen" button to best view this data 
-
-
 
 <br>
 

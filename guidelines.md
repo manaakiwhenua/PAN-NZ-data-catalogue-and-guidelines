@@ -11,7 +11,7 @@ protected areas data can be incorporated into PAN-NZ.
 
 <br>
 
-# Why Follow These Standards?
+# Why Follow These Guidelines?
 ---
 Aotearoa New Zealand has a rich and diverse network of protected areas, from national parks and 
 reserves to QEII covenants and local council-protected sites. However, the ability to
@@ -40,7 +40,7 @@ you're contributing to a nationally significant information layer that supports 
 stewardship across Aotearoa.
 
 <br>
-# Requirements: 
+# Requirements
 ---
 Below are the data requirements that a protected area dataset must meet to be added to the national
 PAN-NZ dataset 

@@ -43,7 +43,8 @@ nationally significant layer that supports conservation, planning, and
 transparent decision-making across Aotearoa. 
 
 <br>
-# Why Follow These Guidelines?
+
+# How to Contribute to These Guidelines? 
 ---
 
 These guidelines are currently in draft form, and we welcome your feedback. 

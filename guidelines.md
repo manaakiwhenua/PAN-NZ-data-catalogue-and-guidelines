@@ -106,9 +106,9 @@ Below are common licensing issues that prevent datasets from being included in
 the national PAN-NZ data layer. When licensing excludes a dataset, the protected
 areas it contains may not appear in the national PAN-NZ layer, limiting their
 visibility to policymakers, researchers, and the public. 
-* No License: Without a licence, the reuse conditions are unclear and the
+* **No License:** Without a licence, the reuse conditions are unclear and the
   dataset cannot be included. 
-* Restrictive licence: Licences such as [CC BY-ND (No
+* **Restrictive licence:** Licences such as [CC BY-ND (No
   Derivatives)](https://creativecommons.org/licenses/by-nd/4.0/) (see the terms
   of use in image directly below) prohibit modifications or integration with
   other datasets. Since PAN-NZ requires remixing and aggregation, such datasets
@@ -146,7 +146,7 @@ methods are listed below in order of suitability:
 * workload for both parties and limits discoverability. Datasets that are not
 * publicly visible or accessible may be missed simply because administrators do
 * not know they exist or cannot identify a contact person. 
-* 
+  
 <br>
 
 ### 3. Metadata
@@ -400,8 +400,7 @@ The protection type should describe the form of protection, such as “Scenic
 Reserve,” “Wildlife Sanctuary,” or “Recreation Reserve.” During data
 aggregation, PAN-NZ may use these values to assign likely legal categories. For
 example, if a record is typed as “Wildlife Sanctuary” but lacks legal
-references, PAN-NZ may infer it corresponds to Section 9 of the Wildlife Act
-1953. 
+references, PAN-NZ may infer it corresponds to Section 9 of the Wildlife Act 1953. 
 
 
 <br>
@@ -448,16 +447,16 @@ These practices help reduce barriers to integration and make it easier for other
 
 In summary, datasets that contribute to the PAN-NZ national layer should meet
 the following criteria: 
-* Licensing: A clearly stated open licence is required, with Creative Commons
+* **Licensing:** A clearly stated open licence is required, with Creative Commons
   Attribution 4.0 (CC BY 4.0) preferred. 
-* Data Access: Datasets must be accessible via API or direct download. 
-* Metadata: A basic metadata profile should describe the dataset’s content,
+* **Data Access:** Datasets must be accessible via API or direct download. 
+* **Metadata:** A basic metadata profile should describe the dataset’s content,
   source, and licence. 
-* Discoverability: Datasets should be hosted on open data platforms, use
+* **Discoverability:** Datasets should be hosted on open data platforms, use
   consistent naming, and provide stable URLs. 
-* Privacy: All personal or sensitive information must be removed in accordance
+* **Privacy:** All personal or sensitive information must be removed in accordance
   with the Privacy Act 2020. 
-* Attributes: The dataset must include the minimum PAN-NZ schema fields,
+* **Attributes:** The dataset must include the minimum PAN-NZ schema fields,
   including a persistent ID, protection name, and legislative references. 
 
 By meeting these requirements, data holders help ensure their protected areas

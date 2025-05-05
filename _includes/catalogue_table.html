@@ -3,17 +3,17 @@
 <h2>{{ include.title }}</h2>
 {% endif %}
 
-<!-- ✅ Fullscreen wrapper start -->
+<!--  Fullscreen wrapper start -->
 <div class="fullscreen-container" id="{{ include.datafile | slugify }}-wrapper">
 
-    <!-- ✅ Fullscreen toggle button placed above and left-aligned -->
+    <!--  Fullscreen toggle button placed above and left-aligned -->
     <div class="fullscreen-toggle-bar">
         <button class="fullscreen-toggle" onclick="toggleFullscreen('{{ include.datafile | slugify }}-wrapper')">
             🔲 Fullscreen
         </button>
     </div>
 
-    <!-- 👇 Existing content wrapped inside the fullscreen container 👇 -->
+    <!--  Existing content wrapped inside the fullscreen container  -->
     <div class="scroll-sync-container">
         <div class="scrollbar-top"></div>
         <div class="catalogue-table-container">
@@ -92,9 +92,9 @@
             </table>
         </div>
     </div>
-    <!-- 👆 End scroll-sync-container 👆 -->
+    <!--  End scroll-sync-container  -->
 </div>
-<!-- ✅ End fullscreen-container -->
+<!--  End fullscreen-container -->
 
 <!-- Fullscreen JavaScript -->
 <script>

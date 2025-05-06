@@ -143,16 +143,16 @@ table.catalogue thead th {
     z-index: 2;
 }
 
-table.catalogue td:nth-child(14),
 table.catalogue td:nth-child(15),
-table.catalogue td:nth-child(16) {
+table.catalogue td:nth-child(16),
+table.catalogue td:nth-child(17) {
     min-width: 400px;
 }
 
-table.catalogue th:nth-child(4),
 table.catalogue th:nth-child(5),
 table.catalogue th:nth-child(6),
-table.catalogue th:nth-child(7) {
+table.catalogue th:nth-child(7),
+table.catalogue th:nth-child(8) {
     min-width: 170px;
 }
 

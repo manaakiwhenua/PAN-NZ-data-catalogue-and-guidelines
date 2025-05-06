@@ -406,7 +406,7 @@ references, PAN-NZ may infer it corresponds to Section 9 of the Wildlife Act 195
 <br>
 
 ## Working with Incomplete or Partial Datasets 
-
+---
 We recognise that not all datasets will initially meet every requirement in
 these guidelines. Some datasets may be missing legal references or may be
 incomplete. These datasets are still valuable. 

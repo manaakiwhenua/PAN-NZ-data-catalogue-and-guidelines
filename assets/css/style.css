@@ -80,13 +80,15 @@ body {
     position: relative;
 }
 
-table.catalogue td:first-child,
+
+/* Freezes the first column */
+/* table.catalogue td:first-child,
 table.catalogue th:first-child {
     position: sticky;
     left: 0;
     background: #fff;
     z-index: 1;
-}
+} */
 
 .scrollbar-top {
     overflow-x: auto;

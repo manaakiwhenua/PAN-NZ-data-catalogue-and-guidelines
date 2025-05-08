@@ -80,9 +80,11 @@ The guidelines outline:
 * A minimal metadata profile 
 * Attributes that describe the protected area, including name, protection type,
   and legal basis (such as Act and section) 
-* The full draft guidelines are available here: [guidelines]({{ site.baseurl
+
+The full draft guidelines are available here: [guidelines]({{ site.baseurl
   }}/guidelines/index.html) 
-* By aligning with these standards, dataset holders can ensure their information
+  
+By aligning with these standards, dataset holders can ensure their information
   contributes meaningfully to a national understanding of protected areas. 
 
 

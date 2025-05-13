@@ -126,7 +126,7 @@ creation of a complete national protected areas dataset.
 
 <div class="tip-box">
   <strong>Note:</strong> This catalogue is automatically rendered from 
-  <a href="_data/regional_protected_areas.csv">TODO// Update link to csv once merged with master</a> .
+  <a href="https://github.com/manaakiwhenua/PANNZ-source-data/blob/main/_data/regional_protected_areas.csv"> _data/regional_protected_areas.csv</a> .
 </div>
 
 

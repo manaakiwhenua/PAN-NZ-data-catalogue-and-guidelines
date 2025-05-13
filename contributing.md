@@ -36,8 +36,8 @@ improvement, please follow the below steps:
 ---
 
 If you are familiar with GitHub, please feel free to suggest changes directly 
-to the catalogue data (e.g., [/_data/Parks_and_Reserves.csv](/_data/Parks_and_Reserves.csv))
-or guidelines via (TODO// fix link once merged to `main`) [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
+to the catalogue data (e.g., [/_data/regional_protected_areas.csv](https://github.com/manaakiwhenua/PANNZ-source-data/blob/main/_data/regional_protected_areas.csv))
+or guidelines via [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 
 This can be done by:
 

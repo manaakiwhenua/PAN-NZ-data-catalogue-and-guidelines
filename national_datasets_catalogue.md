@@ -18,7 +18,7 @@ partnership areas.
 
 <div class="tip-box">
   <strong>Note:</strong> This catalogue is automatically rendered from 
-  <a href="_data/national_protected_areas.csv">TODO// Update link to csv once merged with master</a> .
+  <a href="https://github.com/manaakiwhenua/PANNZ-source-data/blob/main/_data/national_protected_areas.csv">_data/national_protected_areas.csv</a> .
 </div>
 
 <div class="tip-box">

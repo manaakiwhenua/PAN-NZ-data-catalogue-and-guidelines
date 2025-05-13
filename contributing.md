@@ -15,12 +15,13 @@ with relevant insights, there are several ways to contribute.
 ## Via a GitHub Issue
 ---
 
-If you've identified an error, have a suggestion, or wish to discuss an improvement:
+If you've identified an error, have a suggestion, or wish to discuss an
+improvement, please follow the below steps:
 
-1. Create a [GitHub login](https://github.com/) if you do not already have one
+1. Create a [GitHub account](https://github.com/) if you do not already have one
 2. Visit our GitHub repository: [manaakiwhenua/PANNZ-source-data](https://github.com/manaakiwhenua/PANNZ-source-data)
 3. Open a new [Issue](https://github.com/manaakiwhenua/PANNZ-source-data/issues) 
-4. You will be prompted to select a "issue template" - Please select either the Guidelines or Dataset template
+4. You will be prompted to select an "issue template" - Please select either the Guidelines or Dataset template
 5. provide your feedback. 
 6. We will respond and track the discussion via the issue
 
@@ -59,7 +60,7 @@ We'll review and follow up with any clarifications before merging.
 
 If you'd prefer not to use GitHub, you can email:
 
-**bellisss@landcareresearch.co.nz**
+**pannz@landcareresearch.co.nz**
 
 Please include a clear reference to the guideline section or dataset record you are commenting on.
 

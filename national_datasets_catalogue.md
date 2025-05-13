@@ -5,12 +5,11 @@ permalink: /national_datasets_catalogue/
 ---
 
 
-Below are the national level protected area datasource candidates we are aware
-of for compiling PAN-NZ. These dataset are made available by Central government
+Below are the national-level protected area datasource candidates we are aware
+of for compiling PAN-NZ. These datasets are made available by central government
 agencies as well as the Queen Elizabeth II National Trust. The central
-government datasets are exclusively describe protections on crown and crown
+government datasets exclusively describe protections on Crown and Crown
 partnership areas. 
-
 
 <br>
 

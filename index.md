@@ -28,20 +28,20 @@ sharing.
 
 This initiative aims to improve PAN-NZ to ensure regular updates, public
 availability, and an authoritative dataset by: 
-1. Developing data standards for protected areas. 
-2. Enabling discovery and interpretation of protected area data through the
-   cataloguing of datasets. 
+* Developing data guidelines for protected area datasets
+* Enabling discovery and interpretation of protected area data through the
+  cataloguing of datasets
 
 The overarching goal is to enable an up-to-date national view of protections to
 inform conservation planning, infrastructure planning, decision-making,
-research, and progress tracking toward international commitments. 
+research, and progress tracking toward national and international commitments. 
 
 <br>
 
 ## Use of GitHub
 ---
 This site is hosted using [GitHub Pages](https://pages.github.com/) to support
-transparency, collaboration, and rapid publishing. As the PAN-NZ standards and
+transparency, collaboration, and rapid publishing. As the PAN-NZ guidelines and
 dataset catalogues are still in draft form, GitHub provides a collaborative
 environment where contributors can propose changes, raise issues, and suggest
 improvements via GitHub
@@ -63,30 +63,30 @@ For details on how to contribute or provide feedback, please see the [Contribute
 ## Guidelines
 ---
 
-As part of this initiative, we have developed a set of draft guidelines that
-define the minimum requirements for protected area datasets to be included in
-PAN-NZ. 
+As part of this initiative, we have developed draft guidelines that describe the
+key information and practices needed to support the inclusion of protected area
+datasets in PAN-NZ. 
 
-These guidelines are intended to reduce duplication and streamline integration.
-They focus on making datasets easy to access, interpret, and incorporate into a
-national view. We are not requiring rigid schema adoption. Instead, we
-prioritise clear licensing, discoverability, and the presence of key attributes
-that describe the protection. 
+These guidelines are intended to reduce duplication of effort for both protected
+area data providers and users, while also streamlining the integration of
+protected area data into national information systems. They focus on making
+datasets easy to access, interpret, and incorporate into a national view. We are
+not requiring rigid schema adoption. Instead, we prioritise clear licensing,
+discoverability, and the presence of key attributes that describe the
+protection. 
 
 The guidelines outline: 
-* The need for a clear and open licence (for example, Creative Commons
-  Attribution 4.0) 
+* The need for a clear and open licence (for example, Creative Commons Attribution 4.0) 
 * Access methods such as downloadable files or API endpoints 
 * A minimal metadata profile 
 * Attributes that describe the protected area, including name, protection type,
   and legal basis (such as Act and section) 
 
 The full draft guidelines are available here: [guidelines]({{ site.baseurl
-  }}/guidelines/index.html) 
-  
-By aligning with these standards, dataset holders can ensure their information
-  contributes meaningfully to a national understanding of protected areas. 
+}}/guidelines/index.html) 
 
+By aligning with these guidelines, dataset holders can ensure their information
+contributes meaningfully to a national understanding of protected areas. 
 
 <br>
 
@@ -103,10 +103,9 @@ coordination and helps data holders understand what is already available and
 where improvements may be needed. 
 
 The catalogues serve several purposes: 
-* Provide a clear picture of all datasets that describe protected areas across
-  Aotearoa 
+* Provide a clear picture of all datasets that describe protected areas across Aotearoa 
 * Support the process of compiling a national protected areas dataset 
-* Identify missing or incomplete datasets 
+* Identify missing or incomplete datasets
 * Help data holders understand the steps required for inclusion 
 
 We encourage all data holders to check the catalogue entries relevant to their
@@ -121,23 +120,23 @@ You can view the catalogues on the [data catalogues]({{ site.baseurl
 
 ## The Categorisation of Protections
 ---
-To support a more consistent and useful national dataset, PAN-NZ aims to assign
-each protected area an IUCN protection category, where the source information
-allows. The IUCN framework is a widely recognised international standard that
-describes the level and purpose of protection. Assigning IUCN categories helps
-users compare protections across regions and supports applications such as
-conservation planning, reporting, and biodiversity assessments. 
+PAN-NZ aims to assign each protected area an IUCN protection category, where the
+source information allows. The IUCN framework is a widely recognised
+international standard that describes the level and purpose of protection.
+Assigning IUCN categories helps users compare protections across regions and
+supports applications such as conservation planning, reporting, and biodiversity
+assessments. 
 
-Where datasets include the legal act and section under which an area is
-protected, PAN-NZ will use this information to determine the most appropriate
-IUCN category. If this information is missing or unclear, the protection will
-still be included in the national dataset but marked as unranked in the
-protection category field. 
+Where datasets include the legislative act and corresponding section under
+which an area is legally protected, PAN-NZ will use this information to
+determine the most appropriate IUCN category. If this information is missing or
+unclear, the protection will still be included in the national dataset but
+marked as unranked in the protection category field. 
 
 Including a protection rank allows users to filter the dataset based on the
 strength of protection. For example, a user may choose to focus only on areas
 that offer the highest level of legal protection to biodiversity, while others
-may wish to see all sites regardless of rank. 
+may wish to see all areas regardless of rank. 
 
 Alongside the main PAN-NZ workstreams, a parallel effort is underway to map New
 Zealand's legislation to IUCN categories in a consistent and transparent way.

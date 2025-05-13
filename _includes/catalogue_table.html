@@ -22,7 +22,8 @@
                     <tr>
                         <th>Custodian Code</th>
                         <th>Custodian Name</th>
-                        <th>Dataset name</th>
+                        <th>Dataset Type</th>
+                        <th>Dataset Name</th>
                         <th>License</th>
                         <th>WebMap</th>
                         <th>Download URL</th>
@@ -44,6 +45,7 @@
                     <tr>
                         <td>{{ item.["Custodian code"]}}</td>
                         <td>{{ item.["Custodian name"]}}</td>
+                        <td>{{ item.["Dataset type"]}}</td>
                         <td>{{ item["Dataset name"] }}</td>
                         <td>{{ item.License | markdownify }}</td>
                         <td>

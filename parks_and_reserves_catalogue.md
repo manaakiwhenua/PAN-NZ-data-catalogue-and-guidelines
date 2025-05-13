@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Local Government Parks and Reserves Data Sources
-permalink: /parks_and_reserves_catalogue/
+title: Regional Data Sources
+permalink: /regional_datasets_catalogue/
 ---
 
-
+Two catalogues exist on this page. 
 This catalogue documents datasets that include protections on local government
 managed land. 
 
@@ -73,7 +73,7 @@ protected areas layer.
 
 <br>
 
-## Parks and Reserves Datasets
+## Regional Datasources
 ---
 
 <div class="tip-box">
@@ -96,3 +96,25 @@ protected areas layer.
 
 {% include catalogue_table.html datafile="Parks_and_Reserves" %}
 
+
+
+
+## SNA Data sources
+
+<div class="tip-box">
+  <strong>Note:</strong> This catalogue is automatically rendered from 
+  <a href="_data/SNA.csv">TODO// Update link to csv once merged with master</a>.
+</div>
+
+<div class="tip-box">
+  <strong>Tip:</strong> Use the Fullscreen button to view the below table
+</div>
+
+<!-- <div class="tip-box">
+  <strong>Contributing:</strong> Please see 
+  <a href="{{ site.baseurl }}/contributing/index.html">Contribute / Contact</a> 
+  for information on contributing and how you can update this table.
+</div> -->
+
+
+{% include catalogue_table.html  datafile="SNAs" %}

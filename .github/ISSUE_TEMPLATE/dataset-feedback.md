@@ -1,5 +1,5 @@
 ---
-name: Dataset Feedback
+name: 💾 Dataset Catalogue Feedback
 about: Report errors or provide suggestions for improving a dataset in the PAN-NZ catalogue
 title: "[Dataset Feedback] <Your Title Here>"
 labels: feedback, dataset

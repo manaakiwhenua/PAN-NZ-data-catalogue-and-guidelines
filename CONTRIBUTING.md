@@ -14,7 +14,7 @@ Before you can serve the site locally, make sure you have the following installe
 
 ### Clone this repository 
 e.g. 
-`git clone git@github.com:manaakiwhenua/PANNZ-source-data.git`
+`git clone git@github.com:manaakiwhenua/PAN-NZ-data-catalogue-and-guidelines.git`
 
 and then checkout a new branch if intending to make changes
 

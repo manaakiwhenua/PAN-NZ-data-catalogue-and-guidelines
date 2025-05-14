@@ -90,7 +90,7 @@ release of public data to maximise value and reuse.
 
 <br>
 
-<a href="https://raw.githubusercontent.com/manaakiwhenua/PANNZ-source-data/main/IMG/example_licensing.png" target="_blank">
+<a href="https://raw.githubusercontent.com/manaakiwhenua/PAN-NZ-data-catalogue-and-guidelines/main/IMG/example_licensing.png" target="_blank">
   <img src="{{ site.baseurl }}/IMG/example_licensing.png"
        alt="PAN-NZ Diagram"
        style="max-width: 100%; height: auto;" />

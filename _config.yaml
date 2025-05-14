@@ -1,6 +1,6 @@
 #title: PAN-NZ Protected Area Catalogue
 #description: fixed sidebar theme for Jekyll
-baseurl: /PANNZ-source-data
+baseurl: /PAN-NZ-data-catalogue-and-guidelines
 url: https://manaakiwhenua.github.io/
 
 theme: minima

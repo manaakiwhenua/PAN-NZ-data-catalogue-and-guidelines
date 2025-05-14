@@ -9,7 +9,7 @@ All information is stored in this GitHub repository and is also presented as a G
 The dataset catalogues are managed as .csv files to allow for straightforward editing and ongoing updates. This format also enables better visibility of what source datasets exist, and what may be missing or incomplete.
 
 You can browse the live site at:
-👉 https://manaakiwhenua.github.io/PANNZ-source-data/
+👉 https://manaakiwhenua.github.io/PAN-NZ-data-catalogue-and-guidelines/
 
 
 Thank you for contributing to this important data layer that supports a national understanding of protected areas across Aotearoa New Zealand.
@@ -17,4 +17,4 @@ Thank you for contributing to this important data layer that supports a national
 
 ### Contributing
 For contributing to the project please see
-[CONTRIBUTING.md](CONTRIBUTING.md) and [https://manaakiwhenua.github.io/PANNZ-source-data/contributing/index.html](https://manaakiwhenua.github.io/PANNZ-source-data/contributing/index.html)
+[CONTRIBUTING.md](CONTRIBUTING.md) and [https://manaakiwhenua.github.io/PAN-NZ-data-catalogue-and-guidelines/contributing/index.html](https://manaakiwhenua.github.io/PAN-NZ-data-catalogue-and-guidelines/contributing/index.html)

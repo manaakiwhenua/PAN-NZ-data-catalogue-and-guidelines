@@ -44,5 +44,3 @@ the GitHub remote.
 
 
 
-Edit pages inside the pages/, index.md, or _layouts/, _includes/, and _data/ folders.
-

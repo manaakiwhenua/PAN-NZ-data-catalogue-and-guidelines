@@ -28,12 +28,12 @@ in PAN-NZ.
 The catalogues are grouped into two categories: 
 
 1. **[National Datasets]({{ site.baseurl
-   }}/national_datasets_catalogue/index.html):** Protected Area datasets that
+   }}/national_datasets_catalogue/index.html):** Protected area datasets that
    cover all of New Zealand.
 2. **[Regional Datasets]({{ site.baseurl
 }}/regional_datasets_catalogue/index.html):**  Datasets managed at a regional
 level, typically by local government. These include data describing locally
-administer reserves and Regional Parks. 
+administered reserves and regional parks. 
  
 
 Please see each of the relevant data catalogue pages for more details. 

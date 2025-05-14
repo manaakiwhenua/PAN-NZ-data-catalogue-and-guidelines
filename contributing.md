@@ -32,7 +32,7 @@ improvement, please follow the below steps:
 
 
 
-## Edit The Catalogue Via Pull Request
+## Edit the Catalogue via Pull Request
 ---
 
 If you are familiar with GitHub, please feel free to suggest changes directly 
@@ -43,7 +43,7 @@ This can be done by:
 
 1. Clone the [repository](https://github.com/manaakiwhenua/PANNZ-source-data)
 2. Edit the relevant CSV file in `_data/` (These csv files are served to the data catalogues and 
-   thus all edits should be made here.
+   thus all edits should be made here
 3. Submit a Pull Request with a summary of your changes
 
 We'll review and follow up with any clarifications before merging.
@@ -58,7 +58,7 @@ We'll review and follow up with any clarifications before merging.
 ## Or Contact Us Via Email
 ---
 
-If you'd prefer not to use GitHub, you can email:
+If you prefer, you can email:
 
 **pannz@landcareresearch.co.nz**
 

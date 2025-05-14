@@ -80,7 +80,7 @@ Government Act 2002.
 
 Despite these limitations, PAN-NZ may include such datasets where they provide
 the only available spatial representation of regionally or nationally
-significant areas. For example this is the case with the Auckland Park Extents dataset,
+significant areas. For example, this is the case with the Auckland Park Extents dataset,
 which currently serves as the only spatial representation of Auckland’s regional
 parks we are aware of.
 
@@ -116,7 +116,7 @@ body.
 
 <br>
 
-## Regional Datasources
+## Regional Data Sources
 ---
 The table below is the regional dataset catalogue. It includes the datasets we
 are currently aware of, along with their known status. Some entries are

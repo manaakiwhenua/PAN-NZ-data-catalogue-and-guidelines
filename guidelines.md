@@ -51,7 +51,7 @@ transparent decision-making across Aotearoa.
 # How to Contribute to These Guidelines? 
 ---
 
-These guidelines are currently in draft form, and we welcome your feedback. 
+These guidelines are currently in draft form and we welcome your feedback. 
 
 If you have suggestions, corrections, or would like to propose improvements,
 please see the [Contribute / Contact]({{ site.baseurl }}/contributing/index.html)
@@ -79,7 +79,7 @@ Open licensing enables datasets to be used nationally without legal uncertainty.
 It allows PAN-NZ to be openly published, shared, and integrated with other
 public data. 
 
-Each dataset must have a clearly stated data licence that permits reuse and
+Each dataset must have a clearly stated data licence that permits reuse and 
 redistribution in derivative form. The preferred licence is [Creative Commons
 Attribution 4.0 (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). The
 licence should be included in the dataset’s metadata and clearly visible at the
@@ -109,7 +109,7 @@ Below are common licensing issues that prevent datasets from being included in
 the national PAN-NZ data layer. When licensing excludes a dataset, the protected
 areas it contains may not appear in the national PAN-NZ layer, limiting their
 visibility to policymakers, researchers, and the public. 
-* **No License:** Without a licence, the reuse conditions are unclear and the dataset cannot be included. 
+* **No Licence:** Without a licence, the reuse conditions are unclear and the dataset cannot be included. 
 * **Restrictive licence:** Licences such as [CC BY-ND (No
   Derivatives)](https://creativecommons.org/licenses/by-nd/4.0/) (see the CC BY-ND terms
   of use in image directly below) prohibit modifications or integration with
@@ -122,8 +122,8 @@ visibility to policymakers, researchers, and the public.
 <img src="IMG/cc-by-40-ND.png" alt="PAN-NZ Diagram" width="500" style="border: 1px solid #ccc; padding: 4px;"/>
 </div>
 
-**Above:** The [CC BY-ND (No Derivatives)](https://creativecommons.org/licenses/by-nd/4.0/) license which excludes
-derivatives as a result of remixing, transforming or building upon the original data. Such licenses
+**Above:** The [CC BY-ND (No Derivatives)](https://creativecommons.org/licenses/by-nd/4.0/) licence which excludes
+derivatives as a result of remixing, transforming or building upon the original data. Such licences
 excludes datasets from PAN-NZ    
 <br>
 
@@ -301,7 +301,7 @@ protected areas by name.
 Datasets should specify the legislative Act under which each area is protected.
 This field provides the legal context needed to confirm protection status and
 supports classification into IUCN categories. Without this information the
-degree to which the areas is protected can not be communicated. 
+degree to which the area is protected can not be communicated. 
 
 In some cases, however, the legislation may be implied from the
 dataset context. For example, a dataset titled “Regional Parks” may be
@@ -460,7 +460,7 @@ In terms of spatial data, PAN-NZ requires the following:
 
 <br>
 
-## Working with Incomplete or Partial Datasets 
+## Working With Incomplete or Partial Datasets 
 ---
 We recognise that not all datasets will initially meet every requirement in
 these guidelines. Some datasets may be missing legal references or may be

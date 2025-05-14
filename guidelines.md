@@ -20,18 +20,18 @@ national dataset.
 # Why Follow These Guidelines?
 ---
 Aotearoa New Zealand has a rich and diverse network of protected areas,
-including national parks, scenic reserves, QEII covenants, and council-managed
-green spaces. Representing these areas consistently at a national level depends
+including national parks, scenic reserves, QEII covenants, and local government-managed
+reserves. Representing these areas consistently at a national level depends
 on the quality and compatibility of the source data. 
 
 PAN-NZ is a national initiative that brings together datasets from local and
-central government, iwi, and NGOs. By providing your data in a consistent and
+central government and NGOs. By providing your data in a consistent and
 accessible format, you can help to: 
 * Improve the national visibility of protected areas in your region 
 * Strengthen environmental reporting, both within New Zealand and under
   international frameworks such as the IUCN and the Kunming-Montreal 30x30
   target 
-* Support councils, communities, and planners with reliable spatial information 
+* Support councils, communities, researchers, reporters and planners with reliable spatial information 
 * Enable more effective land-use planning and biodiversity protection across
   regional boundaries 
 * Increase economic efficiency by identifying areas where development may be
@@ -63,7 +63,7 @@ applicable across Aotearoa.
 <br>
 # Requirements
 ---
-Below are the minimum requirements that a protected area dataset must meet to be
+Below are the minimum requirements that a protected area dataset should meet to be
 included in the national PAN-NZ dataset. 
 
 <br>
@@ -137,11 +137,6 @@ methods are listed below in order of suitability:
 * **Self-service download:** If API access is not feasible, datasets should be made
   available through a direct download link. This enables a PAN-NZ administrator
   to manually retrieve the data. 
-
-  Both API and download options support discoverability, as these services are
-  typically indexed by search engines. This makes them easier for PAN-NZ
-  administrators to locate when searching for protected area data sources. 
-
 * **Email request:** If neither of the above options is available, data may be
   provided by email. However, this approach increases the workload for both
   the parties requesting and supplying the data and limits discoverability. Datasets
@@ -298,7 +293,7 @@ protected areas by name.
 | legislation_act    | yes - where not implicit |
 
 
-Datasets should specify the legislative Act under which each area is protected.
+Datasets should specify the legislative act under which each area is protected.
 This field provides the legal context needed to confirm protection status and
 supports classification into IUCN categories. Without this information the
 degree to which the area is protected cannot be communicated. 
@@ -309,13 +304,13 @@ understood to refer to areas protected under Section 139 of the Local Government
 Act 2002. For this reason, this field is marked as required where not implicit. 
 
 Best practices: 
-* Use the full name of the Act (e.g. Reserves Act 1977), not abbreviations like
+* Use the full name of the act (e.g. Reserves Act 1977), not abbreviations like
   “RA77”. 
-* Each spatial extent should correspond to a single legislative Act. If multiple
+* Each spatial extent should correspond to a single legislative act. If multiple
   acts apply, separate spatial features should be created for each. 
 
 Examples of common protected area related legislation can be found in the below
-section 
+section.
 
 <br>
 
@@ -325,7 +320,7 @@ section
 | ------------------- | ------------------------ |
 | legislation_section | yes - where not implicit |
 
-Where applicable, include the specific section in the Act that establishes the
+Where applicable, include the specific section in the act that establishes the
 legal protection. This field provides the legal context needed to confirm
 protection status and supports classification into IUCN categories. 
 
@@ -336,7 +331,7 @@ The below table provides an example of a subset of the legislative acts and
 sections that are commonly captured by PAN-NZ 
 
 
-| Legislation Act                            | Legislation Section           |
+| legislative act                            | legislative section           |
 | :----------------------------------------- | :---------------------------- |
 | Conservation Act 1987                      | S19 Conservation Park         |
 | Conservation Act 1987                      | S20 Wilderness Area           |
@@ -356,7 +351,7 @@ sections that are commonly captured by PAN-NZ
 | Wildlife Act 1953                          | S9 Wildlife Sanctuary         |
 
 **Above Table:** The above table provides an example of a subset of protected
-area legislation acts and sections 
+area legislative acts and sections 
 
 <br>
 
@@ -376,7 +371,7 @@ this information is important for understanding the role and significance of
 each protected area within the national context. 
 
 The reserve purpose text should be formatted in title case (e.g., Wetland
-Management, River Bank Protection) and should not include the Act name or
+Management, River Bank Protection) and should not include the act name or
 section number. This ensures consistency across datasets and allows the purpose
 to be clearly understood without repeating legal references already captured in
 other fields. 
@@ -390,7 +385,7 @@ other fields.
 | protection_type    | No       |
 
 This field is not mandatory, but some datasets include a type attribute that
-describes the nature of the protection. When legal Act and section details are
+describes the nature of the protection. When legal act and section details are
 missing, this field can help infer the legislative basis for protection. 
 
 Using this field alone is not the preferred method, as it can introduce
@@ -399,7 +394,7 @@ when no formal legal references are available.
 
 The protection type should describe the form of protection, such as “Scenic
 Reserve,” “Wildlife Sanctuary,” or “Recreation Reserve.” During data
-aggregation, PAN-NZ may use these values to assign likely legal Act and section. For
+aggregation, PAN-NZ may use these values to assign likely legal act and section. For
 example, if a record is typed as “Wildlife Sanctuary” but lacks legal
 references, PAN-NZ may infer it corresponds to Section 9 of the Wildlife Act 1953. 
 
@@ -462,9 +457,9 @@ In terms of spatial data, PAN-NZ requires the following:
 
 ## Working With Incomplete or Partial Datasets 
 ---
-We recognise that not all datasets will initially meet every requirement in
-these guidelines. Some datasets may be missing legal references or may be
-incomplete. These datasets are still valuable. 
+We recognise that not all datasets will initially meet all aspects of these
+guidelines. Some datasets may be missing legal references or may be incomplete.
+These datasets are still valuable. 
 
 Even if your data is not yet fully compliant, we encourage you to share it with
 us. Early contribution allows us to: 
@@ -485,7 +480,7 @@ In summary, datasets that contribute to the PAN-NZ national layer should meet
 the following criteria: 
 * **Licensing:** A clearly stated open licence is required, with Creative Commons
   Attribution 4.0 (CC BY 4.0) preferred. 
-* **Data Access:** Datasets must be accessible via API or direct download. 
+* **Data Access:** Datasets should be accessible via API or direct download. 
 * **Metadata:** A basic metadata profile should describe the dataset’s content,
   source, and licence. 
 * **Discoverability:** Datasets should be hosted on open data platforms, use

@@ -5,7 +5,7 @@ permalink: /contributing/
 ---
 
 We welcome feedback and contributions to improve both the [guidelines]({{ site.baseurl }}/guidelines/index.html) and 
-the [data_catalogues]({{ site.baseurl }}/data_catalogues/index.html). If you're a data custodian or anyone 
+the [data catalogues]({{ site.baseurl }}/data_catalogues/index.html). If you're a data custodian or anyone 
 with relevant insights, there are several ways to contribute.
 
 <br>

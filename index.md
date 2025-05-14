@@ -33,8 +33,8 @@ availability, and an authoritative dataset by:
   cataloguing of datasets
 
 The overarching goal is to enable an up-to-date national view of protections to
-inform conservation planning, infrastructure planning, decision-making,
-research, and progress tracking toward national and international commitments. 
+inform planning, decision-making, research, and progress tracking toward
+national and international commitments. 
 
 <br>
 
@@ -49,11 +49,9 @@ improvements via GitHub
 and [pull
 requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 GitHub also acts as a central landing page for PAN-NZ, where updates, draft
-guidance, and related materials can be easily published and shared. 
-
-While this is not a full-featured data catalogue, it provides a lightweight and
-scalable way to coordinate feedback and track progress. It also allows us to
-manage contributions efficiently within current resource constraints. 
+guidance, and related materials can be easily published and shared. While this
+is not a full-featured data catalogue, it provides a lightweight and scalable
+way to share information, coordinate feedback and track progress. 
 
 For details on how to contribute or provide feedback, please see the [Contribute
 / Contact]({{ site.baseurl }}/contributing/index.html) page. 
@@ -83,7 +81,7 @@ The guidelines outline:
   and legal basis (such as Act and section) 
 
 The full draft guidelines are available here: [guidelines]({{ site.baseurl
-}}/guidelines/index.html) 
+}}/guidelines.html) 
 
 By aligning with these guidelines, dataset holders can ensure their information
 contributes meaningfully to a national understanding of protected areas. 
@@ -103,25 +101,27 @@ coordination and helps data holders understand what is already available and
 where improvements may be needed. 
 
 The catalogues serve several purposes: 
-* Provide a clear picture of all datasets that describe protected areas across Aotearoa 
-* Support the process of compiling a national protected areas dataset 
-* Identify missing or incomplete datasets
-* Help data holders understand the steps required for inclusion 
+* Provides a clear picture of all datasets that describe protected areas across
+  Aotearoa New Zealand
+* Supports the process of compiling a national protected areas dataset 
+* Identifies missing or incomplete datasets
+* Helps data holders understand the steps required for inclusion 
 
 We encourage all data holders to check the catalogue entries relevant to their
 organisation. If your dataset is not yet included, or if updates are needed,
 please contact the PAN-NZ team through the [Contribute / Contact]({{
 site.baseurl }}/contributing/index.html) page. 
 
-You can view the catalogues on the [data catalogues]({{ site.baseurl
-}}/data_catalogues/index.html) page. 
+You can view the catalogues via the [data catalogues]({{ site.baseurl
+}}/data_catalogues.html) page. 
 
 <br>
 
 ## The Categorisation of Protections
 ---
-PAN-NZ aims to assign each protected area an IUCN protection category, where the
-source information allows. The IUCN framework is a widely recognised
+PAN-NZ aims to assign each protected area an [IUCN protected area
+category](https://en.wikipedia.org/wiki/IUCN_protected_area_categories), where
+the source information allows. The IUCN framework is a widely recognised
 international standard that describes the level and purpose of protection.
 Assigning IUCN categories helps users compare protections across regions and
 supports applications such as conservation planning, reporting, and biodiversity

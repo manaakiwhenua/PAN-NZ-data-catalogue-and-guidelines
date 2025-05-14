@@ -38,7 +38,7 @@ and amenity purposes, and may include:
 
 <br>
 
-### 2. SNA Data sources
+### 2. SNA Data Sources
 This catalogue documents datasets relating to Significant Natural Areas (SNAs)
 as identified under Section 6(c) of the Resource Management Act 1991, which
 requires all territorial authorities to map and protect areas of significant

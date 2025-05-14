@@ -124,7 +124,7 @@ visibility to policymakers, researchers, and the public.
 
 **Above:** The [CC BY-ND (No Derivatives)](https://creativecommons.org/licenses/by-nd/4.0/) licence which excludes
 derivatives as a result of remixing, transforming or building upon the original data. Such licences
-excludes datasets from PAN-NZ    
+exclude datasets from PAN-NZ    
 <br>
 
 
@@ -301,7 +301,7 @@ protected areas by name.
 Datasets should specify the legislative Act under which each area is protected.
 This field provides the legal context needed to confirm protection status and
 supports classification into IUCN categories. Without this information the
-degree to which the area is protected can not be communicated. 
+degree to which the area is protected cannot be communicated. 
 
 In some cases, however, the legislation may be implied from the
 dataset context. For example, a dataset titled “Regional Parks” may be
@@ -419,7 +419,7 @@ Including this field helps users understand the duration and history of the
 protection, which is useful for reporting, legal validation, and historical
 analysis. 
 
-The start date format should be as defined by ISO 8601 (i.e YYYY-MM-DD)
+The start date format should be as defined by ISO 8601 (i.e. YYYY-MM-DD)
 
  
 
@@ -437,7 +437,7 @@ the protection is still active or intended to be permanent, this field should be
 left blank. Including an end date supports reporting and analysis
 of historical protections. 
 
-The end date format should be as defined by ISO 8601 (i.e YYYY-MM-DD)
+The end date format should be as defined by ISO 8601 (i.e. YYYY-MM-DD)
  
 ### 10. Spatial Information  
 

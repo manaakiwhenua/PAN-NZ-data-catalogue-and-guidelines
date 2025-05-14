@@ -87,7 +87,7 @@ parks we are aware of.
 That said, we encourage administering bodies to enhance their existing parks and
 reserves datasets by including information about the legal protection status of
 each site. Adding relevant legislative and administrative details, such as the
-Act and section under which an area is protected. This greatly improves PAN-NZ’s
+act and section under which an area is protected. This greatly improves PAN-NZ’s
 ability to accurately classify and integrate local data into the national
 protected areas layer.
 

@@ -78,7 +78,7 @@ The guidelines outline:
 * Access methods such as downloadable files or API endpoints 
 * A minimal metadata profile 
 * Attributes that describe the protected area, including name, protection type,
-  and legal basis (such as Act and section) 
+  and legal basis (such as act and section) 
 
 The full draft guidelines are available here: [guidelines]({{ site.baseurl
 }}/guidelines.html) 

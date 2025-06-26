@@ -23,3 +23,7 @@ understanding of protected areas across Aotearoa New Zealand.
 ### Contributing
 For contributing to the project please see
 [CONTRIBUTING.md](CONTRIBUTING.md) and [https://manaakiwhenua.github.io/PAN-NZ-data-catalogue-and-guidelines/contributing/index.html](https://manaakiwhenua.github.io/PAN-NZ-data-catalogue-and-guidelines/contributing/index.html)
+
+## Disclaimer
+
+Development of this GitHub pages site was supported by contract 27406 with the Ministry for the Environment (Protected areas network New Zealand metadata catalogue). MfE endorses hosting of content generated via this contract on this GitHub pages site, but reserves the right to require its removal at any time.

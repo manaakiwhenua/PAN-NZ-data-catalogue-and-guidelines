@@ -4,3 +4,6 @@ _includes/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+
+# Lock files
+_data/.~lock.*.csv#

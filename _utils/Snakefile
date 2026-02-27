@@ -1,0 +1,145 @@
+import csv
+import re
+from pathlib import Path
+
+configfile: "config.yaml"
+
+WORKFLOW_DIR = Path(workflow.basedir)
+PROJECT_ROOT = WORKFLOW_DIR.parent
+DATA_DIR = PROJECT_ROOT / "_data"
+OUTPUT_ROOT = WORKFLOW_DIR / config.get("output_root", "downloads")
+LOG_DIR = WORKFLOW_DIR / "logs"
+
+CSV_FILES = sorted(DATA_DIR.glob("*.csv"))
+
+
+def normalize(value):
+    if value is None:
+        return None
+    stripped = value.strip()
+    return None if stripped in {"", "-"} else stripped
+
+
+def slugify(value):
+    lowered = value.lower().strip()
+    lowered = re.sub(r"[^a-z0-9]+", "_", lowered)
+    return lowered.strip("_") or "dataset"
+
+
+def sanitize_path_component(value):
+    if value is None:
+        return "Unknown Custodian"
+    cleaned = value.strip()
+    cleaned = re.sub(r"[\\/]+", "_", cleaned)
+    return cleaned or "Unknown Custodian"
+
+
+def resolve_scope(dataset_type, csv_path):
+    dataset_type_lower = (dataset_type or "").lower()
+    csv_name_lower = csv_path.name.lower()
+    if "national" in dataset_type_lower or "national" in csv_name_lower:
+        return "National"
+    return "Regional"
+
+
+def load_datasets():
+    datasets = []
+    seen_ids = set()
+    seen_slugs_per_scope = {}
+
+    for csv_path in CSV_FILES:
+        with csv_path.open("r", encoding="utf-8-sig", newline="") as handle:
+            reader = csv.DictReader(handle)
+            for index, row in enumerate(reader, start=1):
+                dataset_name = normalize(row.get("Dataset name"))
+                if not dataset_name:
+                    continue
+
+                scope = resolve_scope(normalize(row.get("Dataset type")), csv_path)
+                custodian_name = sanitize_path_component(normalize(row.get("Custodian name")))
+                slug = slugify(dataset_name)
+                dataset_id = f"{scope.lower()}_{slug}"
+
+                if dataset_id in seen_ids:
+                    dataset_id = f"{dataset_id}_{index}"
+
+                seen_ids.add(dataset_id)
+
+                slug_key = (scope, custodian_name, slug)
+                slug_count = seen_slugs_per_scope.get(slug_key, 0)
+                seen_slugs_per_scope[slug_key] = slug_count + 1
+
+                slug_dir = slug if slug_count == 0 else f"{slug}_{slug_count + 1}"
+
+                dataset_dir = OUTPUT_ROOT / scope / custodian_name / slug_dir
+                datasets.append(
+                    {
+                        "id": dataset_id,
+                        "custodian_name": custodian_name,
+                        "slug_dir": slug_dir,
+                        "dataset_name": dataset_name,
+                        "scope": scope,
+                        "api_type": normalize(row.get("API Type")),
+                        "api_url": normalize(row.get("API URL")),
+                        "download_url": normalize(row.get("Download URL")),
+                        "source_csv": str(csv_path),
+                        "status_path": str(dataset_dir / "status.json"),
+                        "log_path": str(dataset_dir / "download.log"),
+                    }
+                )
+
+    return datasets
+
+
+DATASETS = load_datasets()
+DATASET_BY_KEY = {
+    (dataset["scope"], dataset["custodian_name"], dataset["slug_dir"]): dataset for dataset in DATASETS
+}
+STATUS_PATHS = [dataset["status_path"] for dataset in DATASETS]
+SUMMARY_REPORT = str(LOG_DIR / "download_summary.json")
+
+
+rule all:
+    input:
+        str(LOG_DIR / "schema_validation.json"),
+        SUMMARY_REPORT,
+        STATUS_PATHS,
+
+
+rule validate_schema:
+    input:
+        csvs=[str(path) for path in CSV_FILES]
+    output:
+        report=str(LOG_DIR / "schema_validation.json")
+    conda:
+        "envs/workflow.yml"
+    script:
+        "scripts/validate_schema.py"
+
+
+rule download_dataset:
+    input:
+        schema_report=str(LOG_DIR / "schema_validation.json"),
+        csv_file=lambda wildcards: DATASET_BY_KEY[(wildcards.scope, wildcards.custodian_name, wildcards.dataset_slug)]["source_csv"]
+    output:
+        status=str(OUTPUT_ROOT / "{scope}" / "{custodian_name}" / "{dataset_slug}" / "status.json")
+    log:
+        str(OUTPUT_ROOT / "{scope}" / "{custodian_name}" / "{dataset_slug}" / "download.log")
+    params:
+        entry=lambda wildcards: DATASET_BY_KEY[(wildcards.scope, wildcards.custodian_name, wildcards.dataset_slug)],
+        target_crs=config.get("target_crs", "EPSG:2193")
+    conda:
+        "envs/workflow.yml"
+    script:
+        "scripts/download_dataset.py"
+
+
+rule summarize_downloads:
+    input:
+        statuses=STATUS_PATHS
+    output:
+        report=SUMMARY_REPORT
+    conda:
+        "envs/workflow.yml"
+    script:
+        "scripts/summarize_downloads.py"

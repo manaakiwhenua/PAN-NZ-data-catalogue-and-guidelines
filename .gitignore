@@ -7,3 +7,8 @@ _includes/
 
 # Lock files
 _data/.~lock.*.csv#
+_utils/.snakemake
+_utils/logs
+_utils/downloads
+_utils/.env
+_utils/scripts/__pycache__

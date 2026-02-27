@@ -1,0 +1,14 @@
+name: pan-nz-download-workflow
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - snakemake-minimal>=8
+  - pandas>=2.2
+  - geopandas>=1.0
+  - pyogrio>=0.9
+  - requests>=2.32
+  - python-dotenv>=1.0
+  - fiona>=1.9
+  - shapely>=2.0
+  - pyproj>=3.6

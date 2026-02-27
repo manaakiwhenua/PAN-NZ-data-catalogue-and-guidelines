@@ -1,0 +1,5 @@
+target_crs: "EPSG:2193"
+output_root: "downloads"
+null_markers:
+  - "-"
+  - ""

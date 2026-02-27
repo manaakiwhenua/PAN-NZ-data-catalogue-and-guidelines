@@ -1,157 +1,157 @@
 Custodian code,Custodian name,Dataset type,Dataset name,License,WebMap,Download URL,API Type,API URL,ID,Name Field,legislative act,legislative section,Protection Type,Reserve Purpose,Comment,Stated Restrictions,Action Required
-1,Northland Regional Council ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,NA – No Regional Parks - Focus on TA data
-1,Northland Regional Council ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-1,Far North District Council ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-1,Far North District Council ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-2,Whangarei District Council ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-2,Whangarei District Council ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-3,Kaipara District Council ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-3,Kaipara District Council ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-2/76,Auckland Council ,Parks and Reserves,Park Extents,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://data-aucklandcouncil.opendata.arcgis.com/datasets/park-extents/explore,https://data-aucklandcouncil.opendata.arcgis.com/datasets/park-extents/explore,ArcGIS REST Feature Service,https://services1.arcgis.com/n4yPwebTjJCmXB6W/arcgis/rest/services/Park_Extents/FeatureServer,OBJECTID,Site Description,-,-,AssetGroup,-,field “AssetGroup” has the following values: Park;Holiday;Stormwater;Regional;Active Cemetery;Owned NotMaint. This allows the extraction of regional parks but is not fine enough detail for mapping to other legislation types,as per metadata:  The boundaries drawn in this dataset are NOT legal boundaries; rather these 4 boundaries represent the areas or sites that Auckland Council maintains through its full facility contractors. Also this dataset DOES NOT represent the legal status of the land i.e. whether the land is gazetted under the Reserve Act subject under the Local Government Act or other statutory provisions. The polygons represent the maintenance extent on the land.,Can this data be made more descriptive else is there a dataset that can be made available that list local government parks and reserves?
-2/76,Auckland Council ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-3,Waikato Regional Council ,Parks and Reserves,Reserve,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://data-waikatolass.opendata.arcgis.com/datasets/60f870473c8a4b119a71a032f80c848a_0,https://data-waikatolass.opendata.arcgis.com/datasets/60f870473c8a4b119a71a032f80c848a_0/explore?location=-38.083192%2C176.081183%2C12.38,ArcGIS REST Feature Service,https://services3.arcgis.com/Oou6z70yKcGvIDxP/arcgis/rest/services/Reserve/FeatureServer/0,-,-,-,-,-,-,An aggregated LASS dataset. Note the lack of attributtes,-,NA – No Regional Parks - Focus on TA data
-3,Waikato Regional Council ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-11,Thames-Coromandel District Council ,Parks and Reserves,TCDC Parks and Reserves,-,https://tcdc.maps.arcgis.com/apps/webappviewer/index.html?id=ff2144b9abfc4ded8fa86a7f320386bd,-,,,Reserve ID,Reserve name,-,-,-,-,Only a GIS viewer. No Download facility ,-,Request data
-11,Thames-Coromandel District Council ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-12,Hauraki District Council ,Parks and Reserves,Reserve Boundary,-,https://data-waikatolass.opendata.arcgis.com/datasets/60f870473c8a4b119a71a032f80c848a_0,https://data-waikatolass.opendata.arcgis.com/datasets/fc938517a2d348c5988b58135d5ed4f5_0/explore,ArcGIS REST Feature Service,https://services9.arcgis.com/ph39VKR5KFKf0WbU/arcgis/rest/services/Reserve_Boundary/FeatureServer/0,FID,name,-,-,-,-,1 - Open license required. 2- Legal details required,-,Request license inclusion. Request Legislative Details
-12,Hauraki District Council ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-13,Waikato District Council ,Parks and Reserves,Reserve (Operative - April 2013),[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://data.waikatodistrict.govt.nz/layer/115910-reserve-operative-april-2013/,https://data.waikatodistrict.govt.nz/layer/115910-reserve-operative-april-2013/,OGC WFS,https://data.waikatodistrict.govt.nz/services;key=<YOUR API>/wfs/layer-115910/?service=WFS&request=GetCapabilities,pol_id,Policy_SubCat,-,-,Description,-,Distinct description values: REC RES - GAZ 80-2706 (0.43 in rec res);VACANT;NULL;REC RES - GAZ 80-2705 (2.76 in rec res);SCENIC RESERVE (3.78 km from SH1);REC RES?;Road Reserve;CROWN RES - LINZ;REC RES /ESP;REC RES - GAZ 1981-2586;REC RES - GAZ 1980 p 3080;Road Reserve (CRS Road Parcel);Domain;REC RES (grazed);REC RES - GAZ 80/757;REC RES (0.1463??+0.1184);REC RES (carpark);LP RES (ECOL MGMT);REC RES - GAZ 75-1203;LP RES - COMMUNITY USE;LP RES - Utility - access;CROWN RES - DOC;REC RES /Access;REC RES (0.4395);REC RES - GAZ 80-2705;REC RES - GAZ 80-2705 (2.0 in rec res);REC RES - GAZ 83/495;LP RES;REC RES;REC RES (0.1966 ?? + 0.1463);REC RES /ACCESS;CROWN REC RES - DOC;LP RES - Baths;REC RES (0.1184??+0.0885);LP RES - COMMUNITY;ESP RES;HISTORICAL RES;Lake bed;Privately owned,,Request Legislative Details
-13,Waikato District Council ,SNA,Significant Natural Area (Decisions),[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://data.waikatodistrict.govt.nz/layer/107126-significant-natural-area-decisions/,https://data.waikatodistrict.govt.nz/layer/107126-significant-natural-area-decisions/,OGC WFS,https://data.waikatodistrict.govt.nz/services;key=[api_token]/wfs/layer-107126/?service=WFS&request=GetCapabilities,polid,-,-,-,-,-,,This data is provided for use in the District Plan only.,-
-15,Matamata-Piako District Council ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-15,Matamata-Piako District Council ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-16,Hamilton City Council ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-16,Hamilton City Council ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-17,Waipa District Council ,Parks and Reserves,Parks and Community Assets - Areas,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://data-waikatolass.opendata.arcgis.com/datasets/c72e3140d32b49f3b2e3c38074b04007_0/explore,https://data-waikatolass.opendata.arcgis.com/datasets/c72e3140d32b49f3b2e3c38074b04007_0/explore,ArcGIS REST Feature Service,https://services9.arcgis.com/OsxSXqmTWVTZQ9ie/arcgis/rest/services/Community_Assets_Areas/FeatureServer/0/,FID,descriptio,-,-,Category,-,-,-,Request Legislative Details
-17,Waipa District Council ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+1,Northland Regional Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,NA – No Regional Parks - Focus on TA data
+1,Northland Regional Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+1,Far North District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+1,Far North District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+2,Whangarei District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+2,Whangarei District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+3,Kaipara District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+3,Kaipara District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+2/76,Auckland Council,Parks and Reserves,Park Extents,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://data-aucklandcouncil.opendata.arcgis.com/datasets/park-extents/explore,https://data-aucklandcouncil.opendata.arcgis.com/datasets/park-extents/explore,ArcGIS REST Feature Service,https://services1.arcgis.com/n4yPwebTjJCmXB6W/arcgis/rest/services/Park_Extents/FeatureServer/0,OBJECTID,Site Description,-,-,AssetGroup,-,"field “AssetGroup” has the following values: Park, holiday, stormwater, regional, active, cemetery, owned, NotMaint. This allows the extraction of regional parks but is not fine enough detail for mapping to other legislation types","This polygon feature class contains all lands that are owned and/or maintained by Auckland Council Community Facilities (CF) Department, and in some cases by other Council-owned and controlled organisations, that are generally parks and open spaces. These include Pocket Parks, Neighbourhood Parks, Suburb Parks, Destination Parks, Connection and Linkage Open Space, Civic Space, Conservation Open Space and Organised Sports Open Space. Also included are cemeteries, and other reserve lands that are used for stormwater, esplanade reserves, etc. The boundaries drawn in this dataset are NOT legal boundaries; rather these boundaries represent the areas or sites that Auckland Council maintains through its full facility contractors. Also, this dataset DOES NOT represent the legal status of the land, i.e. whether the land is gazetted under the Reserve Act, subject under the Local Government Act or other statutory provisions. The polygons represent the maintenance extent on the land.",Can this data be made more descriptive else is there a dataset that can be made available that list local government parks and reserves?
+2/76,Auckland Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+3,Waikato Regional Council,Parks and Reserves,Reserve,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://data-waikatolass.opendata.arcgis.com/datasets/60f870473c8a4b119a71a032f80c848a_0,https://data-waikatolass.opendata.arcgis.com/datasets/60f870473c8a4b119a71a032f80c848a_0/explore?location=-38.083192%2C176.081183%2C12.38,ArcGIS REST Feature Service,https://services3.arcgis.com/Oou6z70yKcGvIDxP/arcgis/rest/services/Reserve/FeatureServer/0,-,-,-,-,-,-,An aggregated LASS dataset. Note the lack of attributtes,-,NA – No Regional Parks - Focus on TA data
+3,Waikato Regional Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+11,Thames-Coromandel District Council,Parks and Reserves,TCDC Parks and Reserves,-,https://tcdc.maps.arcgis.com/apps/webappviewer/index.html?id=ff2144b9abfc4ded8fa86a7f320386bd,-,,,Reserve ID,Reserve name,-,-,-,-,Only a GIS viewer. No Download facility,-,Request data
+11,Thames-Coromandel District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+12,Hauraki District Council,Parks and Reserves,Reserve Boundary,-,https://data-waikatolass.opendata.arcgis.com/datasets/60f870473c8a4b119a71a032f80c848a_0,https://data-waikatolass.opendata.arcgis.com/datasets/fc938517a2d348c5988b58135d5ed4f5_0/explore,ArcGIS REST Feature Service,https://services9.arcgis.com/ph39VKR5KFKf0WbU/arcgis/rest/services/Reserve_Boundary/FeatureServer/0,FID,name,-,-,-,-,1 - Open license required. 2- Legal details required,-,Request license inclusion. Request Legislative Details
+13,Waikato District Council,Parks and Reserves,Reserve (Operative - April 2013),[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://data.waikatodistrict.govt.nz/layer/115910-reserve-operative-april-2013/,https://data.waikatodistrict.govt.nz/layer/115910-reserve-operative-april-2013/,OGC WFS,"https://data.waikatodistrict.govt.nz/services;key=<WAIKATO_RC_API_KEY>/wfs/layer-115910",pol_id,Policy_SubCat,-,-,-,Description,-,Request Legislative Details
+13,Waikato District Council,SNA,Significant Natural Area (Decisions),[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://data.waikatodistrict.govt.nz/layer/107126-significant-natural-area-decisions/,https://data.waikatodistrict.govt.nz/layer/107126-significant-natural-area-decisions/,OGC WFS,"https://data.waikatodistrict.govt.nz/services;key=<WAIKATO_RC_API_KEY>/wfs/layer-107126",polid,-,-,-,-,-,-,This data is provided for use in the District Plan only.
+15,Matamata-Piako District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+15,Matamata-Piako District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+16,Hamilton City Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+16,Hamilton City Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+17,Waipa District Council,Parks and Reserves,Parks and Community Assets - Areas,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://data-waikatolass.opendata.arcgis.com/datasets/c72e3140d32b49f3b2e3c38074b04007_0/explore,https://data-waikatolass.opendata.arcgis.com/datasets/c72e3140d32b49f3b2e3c38074b04007_0/explore,ArcGIS REST Feature Service,https://services9.arcgis.com/OsxSXqmTWVTZQ9ie/arcgis/rest/services/Community_Assets_Areas/FeatureServer/0,FID,descriptio,-,-,Category,-,-,-,Request Legislative Details
+17,Waipa District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 18,Ōtorohanga District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
 18,Ōtorohanga District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-19,South Waikato District Council  ,Parks and Reserves,ReserveAreasSouthWaikato,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://southwaikatodc-open-data-portal-southwaikatodc.opendata.arcgis.com/datasets/0cdbcf77df5049b1999fa683ac36e928/explore,https://southwaikatodc-open-data-portal-southwaikatodc.opendata.arcgis.com/datasets/0cdbcf77df5049b1999fa683ac36e928/explore,ArcGIS REST Feature Service,https://services9.arcgis.com/pQ2VGNXWHZ4WkdmW/arcgis/rest/services/ReserveAreasSouthWaikato/FeatureServer/0,FID,-,Reserve Type,Reserve Type,-,-,Reserve type includes type act and section e.g Conservation Park - s.19 Conservation Act 1987,-,None (High Quality Dataset) - We can map the combined legislation IUCN categories
-19,South Waikato District Council  ,SNA,SignificantNaturalAreasSouthWaikato,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://southwaikatodc-open-data-portal-southwaikatodc.opendata.arcgis.com/datasets/583f8bbf5d3147449d49e5c044c30c17/explore?layer=1,-,ArcGIS REST Feature Service,https://services9.arcgis.com/pQ2VGNXWHZ4WkdmW/arcgis/rest/services/Significant_Natural_Areas/FeatureServer/1/,FID,-,-,-,-,-,-,-,-
-20,Waitomo District Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-20,Waitomo District Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-21,Taupō District Council,Parks and Reserves,Reserve,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://hub.arcgis.com/datasets/50797c9071f147b09827ad6bfdc91976/explore,https://hub.arcgis.com/datasets/50797c9071f147b09827ad6bfdc91976/explore,ArcGIS REST Feature Service,https://maps.taupodc.govt.nz/server/rest/services/property/Reserve/FeatureServer/,asset_id,name,-,-,-,-,-,-,Request Legislative Details
-21,Taupō District Council,SNA,Significant Natural Area,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://www.arcgis.com/home/item.html?id=3f727fabd18b4185a3fcd2f927144b0d,-,-,-,OBJECTID,DBS_Name,-,-,-,-,“District Council and clearly state that your work is a derivative and not the authoritative data source”,-,-
-4,Bay of Plenty Regional Council  ,Parks and Reserves,BOPRC Regional Parks,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://maps.boprc.govt.nz/datasets/BOPRC::boprc-regional-parks/explore,https://maps.boprc.govt.nz/datasets/BOPRC::boprc-regional-parks/explore,ArcGIS REST Feature Service,https://gis.boprc.govt.nz/server2/rest/services/BayOfPlentyMaps/Boundaries/MapServer/15/,OBJECTID,Name,Implicit,Implicit,Implicit,-,No licence details provided / Legal status implicit,-,-
-4,Bay of Plenty Regional Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-22,Western Bay of Plenty District Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-22,Western Bay of Plenty District Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-23,Tauranga City Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-23,Tauranga City Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-24,Rotorua Lakes Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-24,Rotorua Lakes Council  ,SNA,Significant Natural Area,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://data-waikatolass.opendata.arcgis.com/datasets/f6d7eac945974ec18b42ad0e3c310726_0/explore,https://data-waikatolass.opendata.arcgis.com/datasets/f6d7eac945974ec18b42ad0e3c310726_0/explore,ArcGIS REST Feature Service,https://services6.arcgis.com/NIWVPpy3nWPIOE2J/arcgis/rest/services/Significant_Natural_Area/FeatureServer/0,OBJECT_ID_1,Site_Name,-,-,-,-,-,-,-
+19,South Waikato District Council,Parks and Reserves,ReserveAreasSouthWaikato,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://southwaikatodc-open-data-portal-southwaikatodc.opendata.arcgis.com/datasets/0cdbcf77df5049b1999fa683ac36e928/explore,https://southwaikatodc-open-data-portal-southwaikatodc.opendata.arcgis.com/datasets/0cdbcf77df5049b1999fa683ac36e928/explore,ArcGIS REST Feature Service,https://services9.arcgis.com/pQ2VGNXWHZ4WkdmW/arcgis/rest/services/ReserveAreasSouthWaikato/FeatureServer/0,FID,-,Reserve Type,Reserve Type,-,-,Reserve type includes type act and section e.g Conservation Park - s.19 Conservation Act 1987,-,None (High Quality Dataset) - We can map the combined legislation IUCN categories
+19,South Waikato District Council,SNA,SignificantNaturalAreasSouthWaikato,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://southwaikatodc-open-data-portal-southwaikatodc.opendata.arcgis.com/datasets/583f8bbf5d3147449d49e5c044c30c17/explore?layer=1,-,ArcGIS REST Feature Service,https://services9.arcgis.com/pQ2VGNXWHZ4WkdmW/arcgis/rest/services/Significant_Natural_Areas/FeatureServer/1,FID,-,-,-,-,-,-,-,-
+20,Waitomo District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+20,Waitomo District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+21,Taupō District Council,Parks and Reserves,Reserve,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://hub.arcgis.com/datasets/50797c9071f147b09827ad6bfdc91976/explore,https://hub.arcgis.com/datasets/50797c9071f147b09827ad6bfdc91976/explore,ArcGIS REST Feature Service,https://maps.taupodc.govt.nz/server/rest/services/property/Reserve/FeatureServer/0,asset_id,name,-,-,-,-,-,-,Request Legislative Details
+21,Taupō District Council,Parks and Reserves,Reserves - DP,-,-,-,ArcGIS REST Feature Service,https://services7.arcgis.com/S7DHOirgbYgdtrbR/ArcGIS/rest/services/Reserves__DP_/FeatureServer/0,OBJECTID,Site_Name,-,-,Category,Purpose,-,-,License; Request Legislative Details
+21,Taupō District Council,SNA,Significant Natural Area,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://www.arcgis.com/home/item.html?id=3f727fabd18b4185a3fcd2f927144b0d,-,ArcGIS REST Feature Service,https://services7.arcgis.com/S7DHOirgbYgdtrbR/ArcGIS/rest/services/Significant_Natural_Area/FeatureServer/19,OBJECTID,DBS_Name,-,-,-,-,“Deprecated.”,-,-
+4,Bay of Plenty Regional Council,Parks and Reserves,BOPRC Regional Parks,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://maps.boprc.govt.nz/datasets/BOPRC::boprc-regional-parks/explore,https://maps.boprc.govt.nz/datasets/BOPRC::boprc-regional-parks/explore,ArcGIS REST Feature Service,https://gis.boprc.govt.nz/server2/rest/services/BayOfPlentyMaps/Boundaries/MapServer/15,OBJECTID,Name,Implicit,Implicit,Implicit,-,No licence details provided / Legal status implicit,-,-
+4,Bay of Plenty Regional Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+22,Western Bay of Plenty District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+22,Western Bay of Plenty District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+23,Tauranga City Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+23,Tauranga City Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+24,Rotorua Lakes Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+24,Rotorua Lakes Council,SNA,Significant Natural Area,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://data-waikatolass.opendata.arcgis.com/datasets/f6d7eac945974ec18b42ad0e3c310726_0/explore,https://data-waikatolass.opendata.arcgis.com/datasets/f6d7eac945974ec18b42ad0e3c310726_0/explore,ArcGIS REST Feature Service,https://services6.arcgis.com/NIWVPpy3nWPIOE2J/arcgis/rest/services/Significant_Natural_Area/FeatureServer/0,OBJECT_ID_1,Site_Name,-,-,-,-,-,-,-
 25,Whakatāne District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
 25,Whakatāne District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-26,Kawerau District Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-26,Kawerau District Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+26,Kawerau District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+26,Kawerau District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 27,Ōpōtiki District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
 27,Ōpōtiki District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-04/28,Gisborne District Council ,Parks and Reserves,Recreation Reserves,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://geoportal-gizzy.opendata.arcgis.com/datasets/gizzy::parks-and-reserves/explore?layer=3,https://geoportal-gizzy.opendata.arcgis.com/datasets/gizzy::parks-and-reserves/explore?layer=3,ArcGIS REST Feature Service,https://services7.arcgis.com/8G10QCd84QpdcTJ9/arcgis/rest/services/parks_reserves/FeatureServer/3/,OBJECTID,NAME,-,-,-,-,-,-,Request info: are these all recreation reserves as under the reserves act?
-04/28,Gisborne District Council ,Parks and Reserves,Neighbourhood Reserves,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://geoportal-gizzy.opendata.arcgis.com/datasets/gizzy::parks-and-reserves/explore?layer=2,https://geoportal-gizzy.opendata.arcgis.com/datasets/gizzy::parks-and-reserves/explore?layer=2,ArcGIS REST Feature Service,https://services7.arcgis.com/8G10QCd84QpdcTJ9/arcgis/rest/services/parks_reserves/FeatureServer/2/,OBJECTID,NAME,-,-,-,-,-,-,Request Legislative Details
-04/28,Gisborne District Council ,Parks and Reserves,Amenity Reserves,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://geoportal-gizzy.opendata.arcgis.com/datasets/gizzy::parks-and-reserves/explore?layer=0,https://geoportal-gizzy.opendata.arcgis.com/datasets/gizzy::parks-and-reserves/explore?layer=0,ArcGIS REST Feature Service,https://services7.arcgis.com/8G10QCd84QpdcTJ9/arcgis/rest/services/parks_reserves/FeatureServer/0/,OBJECTID,NAME,-,-,-,-,-,-,Request Legislative Details
-04/28,Gisborne District Council ,Parks and Reserves,Heritage Reserves,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://geoportal-gizzy.opendata.arcgis.com/datasets/gizzy::parks-and-reserves/explore?layer=1,https://geoportal-gizzy.opendata.arcgis.com/datasets/gizzy::parks-and-reserves/explore?layer=1,ArcGIS REST Feature Service,https://services7.arcgis.com/8G10QCd84QpdcTJ9/arcgis/rest/services/parks_reserves/FeatureServer/1/,OBJECTID,NAME,-,-,-,-,-,-,Request Legislative Details
-04/28,Gisborne District Council ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-6,Hawke's Bay Regional Council  ,Parks and Reserves,Hawke's Bay Regional Parks,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://hub.arcgis.com/datasets/658697bb70c345f48d21cc002ecc0bef_1/explore,https://hub.arcgis.com/datasets/658697bb70c345f48d21cc002ecc0bef_1/explore,ArcGIS REST Feature Service,https://gis.hbrc.govt.nz/server/rest/services/ExternalServices/Recreational/MapServer/1/,OBJECTID,Name,Implicit,Implicit,Implicit,-,-,-,None - Dataset meets basic requirements 
-29,Wairoa District Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-29,Wairoa District Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-30,Hastings District Council  ,Parks and Reserves,Hastings DC Parks and Reserves,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://hastings-dc-open-data-hdcgis.hub.arcgis.com/datasets/22de4770a29043d1873b91fa9ae60d86_0/explore,https://hastings-dc-open-data-hdcgis.hub.arcgis.com/datasets/22de4770a29043d1873b91fa9ae60d86_0/explore,ArcGIS REST Feature Service,https://services1.arcgis.com/8L3DQUzjrkgEmDpQ/arcgis/rest/services/OpenData_ParksReserves/FeatureServer/0,OBJECTID,Reserve_Name,-,-,Category,-,Distinct Category: LinkageUrban;SportRecreation;CivicSpace;Community;OpenSpaceMaintained;Cultural;PublicGardens;LinkageEcological;OpenSpaceNatural,-,Request Legislative Details
-30,Hastings District Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-31,Napier City Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-31,Napier City Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-32, Central Hawke's Bay District Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-32, Central Hawke's Bay District Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-7,Taranaki Regional Council  ,Parks and Reserves,-,-,https://maps.trc.govt.nz/LocalMapsViewer/?map=8c336441e5d44a699354ef777d8ac868,-,-,-,-,-,-,-,-,-,This webmap viewer includes a protected areas layer. This is not publically downloadable. This layer appears to not add any new information on to of the central government datasets (in fact it may be one of these),-,NA – No Regional Parks - Focus on TA data
-7,Taranaki Regional Council  ,SNA,Untitled map,-,https://www.arcgis.com/apps/mapviewer/index.html?layers=c9367dee1f964234bcdfc113037ef836,-,ArcGIS REST Feature Service,https://services.arcgis.com/MMPHUPU6MnEt0lEK/arcgis/rest/services/Significant_Natural_Area_Polygon/FeatureServer/3,OBJECTID,NAME,-,-,-,-,-,-,Request License
-33,New Plymouth District Council  ,Parks and Reserves,NPDC Infrastructure : Parks - Reserve,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),-,https://arc-gis-hub-home-arcgishub.hub.arcgis.com/datasets/8db10ed20467482ba215074cefa1bf89_0/explore,ArcGIS REST Feature Service,https://services2.arcgis.com/JthOmqz8HxPqljUO/arcgis/rest/services/OpenData_Infrastructure_Parks/FeatureServer/0,OBJECTID,-,-,-,RESTYPE,-,RESTYPE has only two distinct values: : NOT;OWN,-,request information as to how areas are protected
-33,New Plymouth District Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-34,Stratford District Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request Legislative Details
-34,Stratford District Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-35,South Taranaki District Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-35,South Taranaki District Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-8,Manawatū-Whanganui Regional Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,NA – No Regional Parks - Focus on TA data
-8,Manawatū-Whanganui Regional Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-36,Ruapehu District Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-36,Ruapehu District Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-37,Whanganui District Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-37,Whanganui District Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-38,Rangitīkei District Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-38,Rangitīkei District Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+04/28,Gisborne District Council,Parks and Reserves,Recreation Reserves,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://geoportal-gizzy.opendata.arcgis.com/datasets/gizzy::parks-and-reserves/explore?layer=3,https://geoportal-gizzy.opendata.arcgis.com/datasets/gizzy::parks-and-reserves/explore?layer=3,ArcGIS REST Feature Service,https://services7.arcgis.com/8G10QCd84QpdcTJ9/arcgis/rest/services/parks_reserves/FeatureServer/3,OBJECTID,NAME,-,-,-,-,-,-,Request info: are these all recreation reserves as under the reserves act?
+04/28,Gisborne District Council,Parks and Reserves,Neighbourhood Reserves,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://geoportal-gizzy.opendata.arcgis.com/datasets/gizzy::parks-and-reserves/explore?layer=2,https://geoportal-gizzy.opendata.arcgis.com/datasets/gizzy::parks-and-reserves/explore?layer=2,ArcGIS REST Feature Service,https://services7.arcgis.com/8G10QCd84QpdcTJ9/arcgis/rest/services/parks_reserves/FeatureServer/2,OBJECTID,NAME,-,-,-,-,-,-,Request Legislative Details
+04/28,Gisborne District Council,Parks and Reserves,Amenity Reserves,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://geoportal-gizzy.opendata.arcgis.com/datasets/gizzy::parks-and-reserves/explore?layer=0,https://geoportal-gizzy.opendata.arcgis.com/datasets/gizzy::parks-and-reserves/explore?layer=0,ArcGIS REST Feature Service,https://services7.arcgis.com/8G10QCd84QpdcTJ9/arcgis/rest/services/parks_reserves/FeatureServer/0,OBJECTID,NAME,-,-,-,-,-,-,Request Legislative Details
+04/28,Gisborne District Council,Parks and Reserves,Heritage Reserves,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://geoportal-gizzy.opendata.arcgis.com/datasets/gizzy::parks-and-reserves/explore?layer=1,https://geoportal-gizzy.opendata.arcgis.com/datasets/gizzy::parks-and-reserves/explore?layer=1,ArcGIS REST Feature Service,https://services7.arcgis.com/8G10QCd84QpdcTJ9/arcgis/rest/services/parks_reserves/FeatureServer/1,OBJECTID,NAME,-,-,-,-,-,-,Request Legislative Details
+04/28,Gisborne District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+6,Hawke's Bay Regional Council,Parks and Reserves,Hawke's Bay Regional Parks,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://hub.arcgis.com/datasets/658697bb70c345f48d21cc002ecc0bef_1/explore,https://hub.arcgis.com/datasets/658697bb70c345f48d21cc002ecc0bef_1/explore,ArcGIS REST Feature Service,https://gis.hbrc.govt.nz/server/rest/services/ExternalServices/Recreational/MapServer/1,OBJECTID,Name,Implicit,Implicit,Implicit,-,-,-,None - Dataset meets basic requirements 
+29,Wairoa District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+29,Wairoa District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+30,Hastings District Council,Parks and Reserves,Hastings DC Parks and Reserves,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://hastings-dc-open-data-hdcgis.hub.arcgis.com/datasets/22de4770a29043d1873b91fa9ae60d86_0/explore,https://hastings-dc-open-data-hdcgis.hub.arcgis.com/datasets/22de4770a29043d1873b91fa9ae60d86_0/explore,ArcGIS REST Feature Service,https://services1.arcgis.com/8L3DQUzjrkgEmDpQ/arcgis/rest/services/OpenData_ParksReserves/FeatureServer/2,OBJECTID,Reserve_Name,-,-,Category,-,"Distinct Category: LinkageUrban, SportRecreation, CivicSpace, Community, OpenSpaceMaintained, Cultural, PublicGardens, Linkage, Ecological,OpenSpace, Natural",-,Request Legislative Details
+30,Hastings District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+31,Napier City Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+31,Napier City Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+32, Central Hawke's Bay District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+32, Central Hawke's Bay District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+7,Taranaki Regional Council,Parks and Reserves,-,-,https://maps.trc.govt.nz/LocalMapsViewer/?map=8c336441e5d44a699354ef777d8ac868,-,-,-,-,-,-,-,-,-,This webmap viewer includes a protected areas layer. This is not publically downloadable. This layer appears to not add any new information on to of the central government datasets (in fact it may be one of these),-,NA – No Regional Parks - Focus on TA data
+7,Taranaki Regional Council,SNA,Untitled map,-,https://www.arcgis.com/apps/mapviewer/index.html?layers=c9367dee1f964234bcdfc113037ef836,-,ArcGIS REST Feature Service,https://services.arcgis.com/MMPHUPU6MnEt0lEK/arcgis/rest/services/Significant_Natural_Area_Polygon/FeatureServer/3,OBJECTID,NAME,-,-,-,-,-,-,Request License
+33,New Plymouth District Council,Parks and Reserves,NPDC Infrastructure : Parks - Reserve,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),-,https://arc-gis-hub-home-arcgishub.hub.arcgis.com/datasets/8db10ed20467482ba215074cefa1bf89_0/explore,ArcGIS REST Feature Service,https://services2.arcgis.com/JthOmqz8HxPqljUO/arcgis/rest/services/OpenData_Infrastructure_Parks/FeatureServer/0,OBJECTID,-,-,-,RESTYPE,-,"RESTYPE has only two distinct values: : NOT, OWN",-,request information as to how areas are protected
+33,New Plymouth District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+34,Stratford District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request Legislative Details
+34,Stratford District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+35,South Taranaki District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+35,South Taranaki District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+8,Manawatū-Whanganui Regional Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,NA – No Regional Parks - Focus on TA data
+8,Manawatū-Whanganui Regional Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+36,Ruapehu District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+36,Ruapehu District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+37,Whanganui District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+37,Whanganui District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+38,Rangitīkei District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+38,Rangitīkei District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 39,Manawatū District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
 39,Manawatū District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-40, Palmerston North City Council  ,Parks and Reserves,PNCC Parks & Reserves,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://data-pncc.opendata.arcgis.com/datasets/PNCC::pncc-parks-reserves/explore,https://data-pncc.opendata.arcgis.com/datasets/PNCC::pncc-parks-reserves/explore,ArcGIS REST Feature Service,-,OBJECTID,RESERVE_NAME,-,-,USE_CLASS_DESC,-,USE_CLASS_DESC distinct values: DOG CONTROL;ROAD;SPORTS;NULL;SEWAGE TREATMENT;LEASED GOLF;LEASED;CAMPING;CEMETERY;LEASED BOWLING;DRAINAGE;LEASED HOUSING;ESPLANADE STRIP;LEASED PLAYCENTRE;LEASED TENNIS;RECREATION;LEASED SCOUTS;LEASED WALKWAY;NONE;LEASED CANINE;LEASED GRAZING;FORMAL,-,Request Legislative Details
-40, Palmerston North City Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-41,Tararua District Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-41,Tararua District Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-9,Greater Wellington Regional Council  ,Parks and Reserves,GWRC Regional Parks,[CC-BY-NC-4.0](https://creativecommons.org/licenses/by-nc/4.0/),https://data-gwrc.opendata.arcgis.com/datasets/3321c0687e614838b77641e604a0c9a4_21/explore,https://data-gwrc.opendata.arcgis.com/datasets/3321c0687e614838b77641e604a0c9a4_21/explore,ArcGIS REST Feature Service,https://mapping.gw.govt.nz/arcgis/rest/services/GW/Parks_P/MapServer/21/,OBJECTID,NAME,Implicit,-,-,-,non-commercial licence. As we intend to supply PAN-NZ under cc-by-40 we can not include this,-,Request more permissive licence
-9,Greater Wellington Regional Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-9,Greater Wellington Regional Council  ,Parks and Reserves,Managed Open Space,[CC-BY-ND-4.0](https://creativecommons.org/licenses/by-nd/4.0/),https://data-gwrc.opendata.arcgis.com/datasets/9b431d9ca2db4ebfabb8dbf5c4d0b6c7_34/explore,https://data-gwrc.opendata.arcgis.com/datasets/9b431d9ca2db4ebfabb8dbf5c4d0b6c7_34/explore,ArcGIS REST Feature Service,https://mapping.gw.govt.nz/arcgis/rest/services/GW/The_Region_P/MapServer/34/,OBJECTID,Open_Space_Name,-,-,Primary_Function,-,(no longer open data recently placed behind admin login) Primary Function distinct values Organised Sports/Activities - Informal Rec/Leisure;Enviro/Heritage;Other;N/A;Informal Recreation/Leisure;Informal Recreation/Leisure - Enviro/Heritage;Organised Sports/Activities,-,Request data
-9,Greater Wellington Regional Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-42,Horowhenua District Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-42,Horowhenua District Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+40, Palmerston North City Council,Parks and Reserves,PNCC Parks & Reserves,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://geohub.pncc.govt.nz/datasets/56e9f634f5134f00a4acd734de236dd0_0/explore,https://geohub.pncc.govt.nz/datasets/56e9f634f5134f00a4acd734de236dd0_0/explore,ArcGIS REST Feature Service,https://services.arcgis.com/Fv0Tvc98QEDvQyjL/arcgis/rest/services/PARKS_Reserves/FeatureServer/0,OBJECTID,RESERVE_NAME,-,-,USE_CLASS_DESC,-,"USE_CLASS_DESC distinct values: DOG CONTROL, ROAD, SPORTS, NULL, SEWAGE TREATMENT, LEASED GOLF, LEASED, CAMPING, CEMETERY, LEASED BOWLING, DRAINAGE, LEASED HOUSING, ESPLANADE STRIP, LEASED PLAYCENTRE, LEASED TENNIS, RECREATION, LEASED SCOUTS, LEASED WALKWAY, NONE, LEASED CANINE, LEASED GRAZING, FORMAL",-,Request Legislative Details
+40, Palmerston North City Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+41,Tararua District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+41,Tararua District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+9,Greater Wellington Regional Council,Parks and Reserves,Regional Parks and Forests,[CC-BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/),https://data-gwrc.opendata.arcgis.com/datasets/3321c0687e614838b77641e604a0c9a4_21/explore,https://data-gwrc.opendata.arcgis.com/datasets/3321c0687e614838b77641e604a0c9a4_21/explore,ArcGIS REST Feature Service,https://mapping.gw.govt.nz/arcgis/rest/services/GW/Parks_P/MapServer/26,OBJECTID,Name,Implicit,-,-,-,non-commercial licence. As we intend to supply PAN-NZ under CC-BY 4.0 we can not include this,-,Request more permissive licence
+9,Greater Wellington Regional Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+9,Greater Wellington Regional Council,Parks and Reserves,Managed Open Space,[CC-BY-ND-4.0](https://creativecommons.org/licenses/by-nd/4.0/),https://data-gwrc.opendata.arcgis.com/datasets/9b431d9ca2db4ebfabb8dbf5c4d0b6c7_34/explore,https://data-gwrc.opendata.arcgis.com/datasets/9b431d9ca2db4ebfabb8dbf5c4d0b6c7_34/explore,ArcGIS REST Feature Service,https://mapping.gw.govt.nz/arcgis/rest/services/GW/The_Region_P/MapServer/34,OBJECTID,Open_Space_Name,-,-,Primary_Function,-,"(no longer open data recently placed behind admin login) Primary Function distinct values Organised Sports/Activities - Informal Rec/Leisure, Enviro/Heritage, Other, N/A, Informal Recreation/Leisure, Informal Recreation/Leisure – Enviro/Heritage, Organised Sports/Activities",-,Request data
+9,Greater Wellington Regional Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+42,Horowhenua District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+42,Horowhenua District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 43,Kāpiti Coast District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
 43,Kāpiti Coast District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-44,Porirua City Council  ,Parks and Reserves,Reserves,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://data-pcc.opendata.arcgis.com/maps/dfdf2ccd9a4a415c815d8cda85006bb6/about,-,-,-,-,-,-,-,-,-,Error now returned when accessing this data (Service status unknown),-,Request data
-44,Porirua City Council  ,SNA,Significant Natural Areas (Variation 1),-,https://data-pcc.opendata.arcgis.com/datasets/significant-natural-areas-variation-1/explore,https://data-pcc.opendata.arcgis.com/datasets/significant-natural-areas-variation-1/explore,ArcGIS REST Feature Service,https://services1.arcgis.com/kIwRm3UCyRHYbM8a/arcgis/rest/services/Significant_Natural_Areas_Variation_1/FeatureServer/0,Site ID,Site Name,-,-,-,-,-,-,Request licence
-45,Upper Hutt City Council ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-45,Upper Hutt City Council ,SNA,DRAFT Significant Natural Areas & Landscape Areas Viewer,-,https://uhcc.maps.arcgis.com/apps/webappviewer/index.html?id=f9c096b90a5a49e58f658ad460fa503d,-,-,-,-,-,-,-,-,-,Draft SNAs,Draft SNAs,Request licence / Request Data
-46,Lower Hutt City Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-46,Lower Hutt City Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-47,Wellington City Council  ,Parks and Reserves,WCC Parks and Reserves,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://data-wcc.opendata.arcgis.com/datasets/wcc-parks-and-reserves/explore?location=-41.341541%2C174.784555%2C13.71,https://data-wcc.opendata.arcgis.com/datasets/wcc-parks-and-reserves/explore?location=-41.341541%2C174.784555%2C13.71,ArcGIS REST Feature Service,https://gis.wcc.govt.nz/arcgis/rest/services/Parks/ParksReserves/MapServer/2,OBJECTID,name_,-,-,sitetypeid,-,sitetype has the follow distinct values:  L6;L5;L7;L12;L1;L3;L9;L10;L2,-,Request Legislative Details
-47,Wellington City Council  ,SNA,Significant Natural Areas - Draft District Plan (DDP),-,https://data-wcc.opendata.arcgis.com/datasets/420153583b1d4889b4be4dc76b7fe6ac,https://data-wcc.opendata.arcgis.com/datasets/420153583b1d4889b4be4dc76b7fe6ac,ArcGIS REST Feature Service,https://gis.wcc.govt.nz/arcgis/rest/services/DraftDistrictPlan/DraftDistrictPlan/MapServer/46/,OBJECTID_1,NEW_Sitename,-,-,-,-,-,-,Request licence
-48,Masterton District Council  ,Parks and Reserves,Parks and Reserves,-,https://www.arcgis.com/home/webmap/viewer.html?url=https%3A%2F%2Fgis.mstn.govt.nz%2Farcgis%2Frest%2Fservices%2FParksAndRecreation%2FParksReservesPublic%2FMapServer&source=sd,-,ArcGIS REST Feature Service,https://gis.mstn.govt.nz/arcgis/rest/services/ParksAndRecreation/ParksReservesPublic/MapServer,NEWID,NAME,-,-,PURPOSE,-,-,-,Request Legislative Details and Open Licence
-48,Masterton District Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-49,Carterton District Council ,Parks and Reserves,Parks and Reserves,-,https://www.arcgis.com/home/webmap/viewer.html?url=https%3A%2F%2Fgis.mstn.govt.nz%2Farcgis%2Frest%2Fservices%2FParksAndRecreation%2FParksReservesPublic%2FMapServer&source=sd,-,ArcGIS REST Feature Service,https://gis.mstn.govt.nz/arcgis/rest/services/ParksAndRecreation/ParksReservesPublic/MapServer,NEWID,NAME,-,-,PURPOSE,-,-,-,Request Legislative Details and Open Licence
-49,Carterton District Council ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-50,South Wairarapa District Council ,Parks and Reserves,South Wairarapa Parks & Reserves,-,https://www.arcgis.com/home/webmap/viewer.html?url=https%3A%2F%2Fgis.mstn.govt.nz%2Farcgis%2Frest%2Fservices%2FParksAndRecreation%2FParksReservesPublic%2FMapServer&source=sd,-,ArcGIS REST Feature Service,https://gis.mstn.govt.nz/arcgis/rest/services/ParksAndRecreation/ParksReservesPublic/MapServer/0,UNIQUEID,Name,-,-,Type,-,-,-,Request Legislative Details and Open Licence
-50,South Wairarapa District Council ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-13,West Coast Regional Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,NA – No Regional Parks - Focus on TA data
-13,West Coast Regional Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-55,Buller District Council ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-55,Buller District Council ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-56,Grey District Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-56,Grey District Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-57,Westland District Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-57,Westland District Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-13,Canterbury Regional Council  ,Parks and Reserves,Parks,[CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/),https://opendata.canterburymaps.govt.nz/datasets/ecan::parks/explore,https://opendata.canterburymaps.govt.nz/datasets/ecan::parks/explore,OGC WFS,https://gis.ecan.govt.nz/arcgis/services/Public/Canterbury_Maps/MapServer/WFSServer?request=GetCapabilities&service=WFS,ID,Common Name,-,-,Park_Type,-,distinct Park_types Botanic;Reserve;Community;Other;Sports ground;Regional,-,Request Legislative Details
-13,Canterbury Regional Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+44,Porirua City Council,Parks and Reserves,Reserves,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://data-pcc.opendata.arcgis.com/maps/dfdf2ccd9a4a415c815d8cda85006bb6/about,-,-,-,-,-,-,-,-,-,Error now returned when accessing this data (Service status unknown),-,Request data
+44,Porirua City Council,SNA,Significant Natural Areas (Variation 1),-,https://data-pcc.opendata.arcgis.com/datasets/significant-natural-areas-variation-1/explore,https://data-pcc.opendata.arcgis.com/datasets/significant-natural-areas-variation-1/explore,ArcGIS REST Feature Service,https://services1.arcgis.com/kIwRm3UCyRHYbM8a/arcgis/rest/services/Significant_Natural_Areas_Variation_1/FeatureServer/0,Site ID,Site Name,-,-,-,-,-,-,Request licence
+45,Upper Hutt City Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+45,Upper Hutt City Council,SNA,DRAFT Significant Natural Areas & Landscape Areas Viewer,-,https://uhcc.maps.arcgis.com/apps/webappviewer/index.html?id=f9c096b90a5a49e58f658ad460fa503d,-,-,-,-,-,-,-,-,-,Draft SNAs,Draft SNAs,Request licence / Request Data
+46,Lower Hutt City Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+46,Lower Hutt City Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+47,Wellington City Council,Parks and Reserves,WCC Parks and Reserves,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://data-wcc.opendata.arcgis.com/datasets/wcc-parks-and-reserves/explore?location=-41.341541%2C174.784555%2C13.71,https://data-wcc.opendata.arcgis.com/datasets/wcc-parks-and-reserves/explore?location=-41.341541%2C174.784555%2C13.71,ArcGIS REST Feature Service,https://gis.wcc.govt.nz/arcgis/rest/services/Parks/ParksReserves/MapServer/2,OBJECTID,name_,-,-,sitetypeid,-,"sitetype has the follow distinct values: L6, L5, L7, L12, L1, L3, L9, L10, L2",-,Request Legislative Details
+47,Wellington City,SNA,Significant Natural Areas - Draft District Plan (DDP),-,https://data-wcc.opendata.arcgis.com/datasets/420153583b1d4889b4be4dc76b7fe6ac,https://data-wcc.opendata.arcgis.com/datasets/420153583b1d4889b4be4dc76b7fe6ac,ArcGIS REST Feature Service,https://gis.wcc.govt.nz/arcgis/rest/services/DraftDistrictPlan/DraftDistrictPlan/MapServer/46,OBJECTID_1,NEW_Sitename,-,-,-,-,-,-,Request licence
+48,Masterton District Council,Parks and Reserves,Parks and Reserves,-,https://www.arcgis.com/home/webmap/viewer.html?url=https%3A%2F%2Fgis.mstn.govt.nz%2Farcgis%2Frest%2Fservices%2FParksAndRecreation%2FParksReservesPublic%2FMapServer&source=sd,-,ArcGIS REST Feature Service,https://gis.mstn.govt.nz/arcgis/rest/services/ParksAndRecreation/ParksReservesPublic/MapServer/1,NEWID,NAME,-,-,PURPOSE,-,-,-,Request Legislative Details and Open Licence
+48,Masterton District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+49,Carterton District Council,Parks and Reserves,Parks and Reserves,-,https://www.arcgis.com/home/webmap/viewer.html?url=https%3A%2F%2Fgis.mstn.govt.nz%2Farcgis%2Frest%2Fservices%2FParksAndRecreation%2FParksReservesPublic%2FMapServer&source=sd,-,ArcGIS REST Feature Service,https://gis.mstn.govt.nz/arcgis/rest/services/ParksAndRecreation/ParksReservesPublic/MapServer/1,NEWID,NAME,-,-,PURPOSE,-,-,-,Request Legislative Details and Open Licence
+49,Carterton District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+50,South Wairarapa District Council,Parks and Reserves,South Wairarapa Parks & Reserves,-,https://www.arcgis.com/home/webmap/viewer.html?url=https%3A%2F%2Fgis.mstn.govt.nz%2Farcgis%2Frest%2Fservices%2FParksAndRecreation%2FParksReservesPublic%2FMapServer&source=sd,-,ArcGIS REST Feature Service,https://gis.mstn.govt.nz/arcgis/rest/services/ParksAndRecreation/ParksReservesPublic/MapServer/0,UNIQUEID,Name,-,-,Type,-,-,-,Request Legislative Details and Open Licence
+50,South Wairarapa District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+13,West Coast Regional Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,NA – No Regional Parks - Focus on TA data
+13,West Coast Regional Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+55,Buller District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+55,Buller District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+56,Grey District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+56,Grey District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+57,Westland District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+57,Westland District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+13,Canterbury Regional Council,Parks and Reserves,Parks,[CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/),https://opendata.canterburymaps.govt.nz/datasets/ecan::parks/explore,https://opendata.canterburymaps.govt.nz/datasets/ecan::parks/explore,ArcGIS REST Feature Service,https://gis.ecan.govt.nz/arcgis/rest/services/Public/Canterbury_Maps/MapServer/26,ID,COMMON_NAME,-,-,PARK_TYPE,-,"distinct Park_types Botanic, Reserve, Community, Other, Sports ground, Regional",-,Request Legislative Details
+13,Canterbury Regional Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 54,Kaikōura District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
 54,Kaikōura District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-58,Hurunui District Council ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-58,Hurunui District Council ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-59,Waimakariri District Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-59,Waimakariri District Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-60,Christchurch City Council ,Parks and Reserves,Parks (Open Data),[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://opendata-christchurchcity.hub.arcgis.com/datasets/8c5082665bbc4b1c84e5cb51efbe1d05_12,-,ArcGIS REST Feature Service,https://gis.ccc.govt.nz/server/rest/services/OpenData/GreenAsset/FeatureServer/12/,Park ID,Park Name,-,-,Type,-,distinct Type values: Regional Park;Residential Red Zone;Plant Nursery;Utility Park;Cemetery;Local/Community Park;Garden & Heritage Park;Sports Park,-,Request Legislative Details
-60,Christchurch City Council ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-62,Selwyn District Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,,Request data
-62,Selwyn District Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-63,Ashburton District Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,,Request data
-63,Ashburton District Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-64,Timaru District Council ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,,Request data
-64,Timaru District Council ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-65,Mackenzie District Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,,Request data
-65,Mackenzie District Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-66,Waimate District Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,,Request data
-66,Waimate District Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-70,Queenstown-Lakes District Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-70,Queenstown-Lakes District Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-71,Dunedin City Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-71,Dunedin City Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-72,Clutha District Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-72,Clutha District Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-15,Southland Regional Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-15,Southland Regional Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-73,Southland District Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-73,Southland District Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-74,Gore District Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-74,Gore District Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-75,Invercargill City Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-75,Invercargill City Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-16,Tasman District Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-16,Tasman District Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-51,Tasman District Council ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-51,Tasman District Council ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-52,Nelson City Council  ,Parks and Reserves,Council Reserve,-,https://arc-gis-hub-home-arcgishub.hub.arcgis.com/datasets/NelsonCity::tasman-and-nelson-region-map-viewer-wfl1-1/explore?layer=7,https://arc-gis-hub-home-arcgishub.hub.arcgis.com/datasets/NelsonCity::tasman-and-nelson-region-map-viewer-wfl1-1/explore?layer=7&location=-41.290012%2C173.638024%2C9.81,ArcGIS REST Feature Service,https://services1.arcgis.com/Y4k7lyf2XTGeQC6V/arcgis/rest/services/Tasman_and_Nelson_Region___Map_Viewer_WFL1/FeatureServer/7/,OID,ReserveName,-,-,Reserve type,-,Distinct ReserveType:  Conservation Reserve;Urban Open Space/Amenity Reserve;NULL;Proposed Local Purpose Reserve;Local Purpose Reserve;Rural Recreation and Esplanade Reserve;Recreation Reserve;Scenic Reserve;Esplanade Reserve;Walkway Reserve;Landscape Reserve;Public Garden;Easement;Sportsground;Local Purpose;Unclassified;Neighbourhood Park;Esplanade Foreshore Reserve,-,Request licence / Request Legislative Details
-52,Nelson City Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-18,Marlborough District Council  ,Parks and Reserves,Parks and Open Spaces,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://data-marlborough.opendata.arcgis.com/datasets/parks-and-open-spaces-1/explore,https://data-marlborough.opendata.arcgis.com/datasets/parks-and-open-spaces-1/explore,OGC WFS,https://gis.marlborough.govt.nz/server/services/OpenData/OpenData2/MapServer/WFSServer?request=GetCapabilities&service=WFS,-,ReserveName,-,-,Type,-,Distinct Type: Reserve/Sports Park;Reserve;Skate Park;Sports Park,-,Request Legislative Details
-18,Marlborough District Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-67,Chatham Islands Council  ,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
-67,Chatham Islands Council  ,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+58,Hurunui District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+58,Hurunui District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+59,Waimakariri District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+59,Waimakariri District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+60,Christchurch City Council,Parks and Reserves,Parks (Open Data),[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://opendata-christchurchcity.hub.arcgis.com/datasets/8c5082665bbc4b1c84e5cb51efbe1d05_12,-,ArcGIS REST Feature Service,https://gis.ccc.govt.nz/server/rest/services/OpenData/GreenAsset/FeatureServer/12,Park ID,Park Name,-,-,Type,-,"distinct Type values: Regional Park, Residential, Red Zone, Plant Nursery, Utility, Park, Cemetery, Local/Community Park, Garden & Heritage Park, Sports Park",-,Request Legislative Details
+60,Christchurch City Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+62,Selwyn District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,,Request data
+62,Selwyn District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+63,Ashburton District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,,Request data
+63,Ashburton District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+64,Timaru District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,,Request data
+64,Timaru District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+65,Mackenzie District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,,Request data
+65,Mackenzie District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+66,Waimate District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,,Request data
+66,Waimate District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+70,Queenstown-Lakes District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+70,Queenstown-Lakes District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+71,Dunedin City Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+71,Dunedin City Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+72,Clutha District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+72,Clutha District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+15,Southland Regional Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+15,Southland Regional Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+73,Southland District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+73,Southland District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+74,Gore District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+74,Gore District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+75,Invercargill City Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+75,Invercargill City Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+16,Tasman District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+16,Tasman District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+51,Tasman District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+51,Tasman District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+52,Nelson City Council,Parks and Reserves,Council Reserve,-,https://arc-gis-hub-home-arcgishub.hub.arcgis.com/datasets/NelsonCity::tasman-and-nelson-region-map-viewer-wfl1-1/explore?layer=7,https://arc-gis-hub-home-arcgishub.hub.arcgis.com/datasets/NelsonCity::tasman-and-nelson-region-map-viewer-wfl1-1/explore?layer=7&location=-41.290012%2C173.638024%2C9.81,ArcGIS REST Feature Service,https://services1.arcgis.com/Y4k7lyf2XTGeQC6V/arcgis/rest/services/Tasman_and_Nelson_Region___Map_Viewer_WFL1/FeatureServer/7,OID,ReserveName,-,-,Reserve type,-,"Distinct ReserveType:  Conservation Reserve, Urban Open Space/Amenity Reserve, NULL, Proposed Local Purpose Reserve, Local Purpose Reserve, Rural Recreation and Esplanade Reserve, Recreation Reserve, Scenic Reserve, Esplanade Reserve, Walkway Reserve, Landscape Reserve, Public Garden Easement, Sportsground, Local Purpose, Unclassified, Neighbourhood Park, Esplanade, Foreshore Reserve ",-,Request licence / Request Legislative Details
+52,Nelson City Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+18,Marlborough District Council,Parks and Reserves,Parks and Open Spaces,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://data-marlborough.opendata.arcgis.com/datasets/parks-and-open-spaces-1/explore,https://data-marlborough.opendata.arcgis.com/datasets/parks-and-open-spaces-1/explore,ArcGIS REST Feature Service,https://gis.marlborough.govt.nz/server/rest/services/OpenData/OpenData2/MapServer/16,-,ReserveName,-,-,Type,-,"Distinct Type: Reserve/Sports Park, Reserve, Skate Park, Sports Park ",-,Request Legislative Details
+18,Marlborough District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
+67,Chatham Islands Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+67,Chatham Islands Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-

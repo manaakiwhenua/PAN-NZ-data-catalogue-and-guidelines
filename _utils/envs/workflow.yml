@@ -1,6 +1,7 @@
 name: pan-nz-download-workflow
 channels:
   - conda-forge
+  - bioconda
 dependencies:
   - python=3.11
   - snakemake-minimal>=8

@@ -3,7 +3,7 @@ Custodian code,Custodian name,Dataset type,Dataset name,License,WebMap,Download 
 1,Northland Regional Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 1,Far North District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
 1,Far North District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-2,Whangarei District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+2,Whangarei District Council,Parks and Reserves,Open Space and Recreation Zones,-,-,-,ArcGIS REST Feature Service,https://geo.wdc.govt.nz/server/rest/services/District_Plan_Area_Specific_Matters/MapServer/19,-,-,-,-,-,-,-,-,
 2,Whangarei District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 3,Kaipara District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
 3,Kaipara District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
@@ -35,11 +35,11 @@ Custodian code,Custodian name,Dataset type,Dataset name,License,WebMap,Download 
 4,Bay of Plenty Regional Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 22,Western Bay of Plenty District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
 22,Western Bay of Plenty District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-23,Tauranga City Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+23,Tauranga City Council,Parks and Reserves,Parks/Reserves,-,-,-,Static vector file,-,-,-,-,-,-,-,-,-,Request data
 23,Tauranga City Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 24,Rotorua Lakes Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
 24,Rotorua Lakes Council,SNA,Significant Natural Area,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://data-waikatolass.opendata.arcgis.com/datasets/f6d7eac945974ec18b42ad0e3c310726_0/explore,https://data-waikatolass.opendata.arcgis.com/datasets/f6d7eac945974ec18b42ad0e3c310726_0/explore,ArcGIS REST Feature Service,https://services6.arcgis.com/NIWVPpy3nWPIOE2J/arcgis/rest/services/Significant_Natural_Area/FeatureServer/0,OBJECT_ID_1,Site_Name,-,-,-,-,-,-,-
-25,Whakatāne District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+25,Whakatāne District Council,Parks and Reserves,Parks/Reserves,-,-,-,Static vector file,-,-,-,-,-,-,-,-,-,Request data
 25,Whakatāne District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 26,Kawerau District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
 26,Kawerau District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
@@ -55,7 +55,7 @@ Custodian code,Custodian name,Dataset type,Dataset name,License,WebMap,Download 
 29,Wairoa District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 30,Hastings District Council,Parks and Reserves,Hastings DC Parks and Reserves,[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/),https://hastings-dc-open-data-hdcgis.hub.arcgis.com/datasets/22de4770a29043d1873b91fa9ae60d86_0/explore,https://hastings-dc-open-data-hdcgis.hub.arcgis.com/datasets/22de4770a29043d1873b91fa9ae60d86_0/explore,ArcGIS REST Feature Service,https://services1.arcgis.com/8L3DQUzjrkgEmDpQ/arcgis/rest/services/OpenData_ParksReserves/FeatureServer/2,OBJECTID,Reserve_Name,-,-,Category,-,"Distinct Category: LinkageUrban, SportRecreation, CivicSpace, Community, OpenSpaceMaintained, Cultural, PublicGardens, Linkage, Ecological,OpenSpace, Natural",-,Request Legislative Details
 30,Hastings District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-31,Napier City Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+31,Napier City Council,Parks and Reserves,Parks and Reserves,Permission to use ,-,-,ArcGIS REST Feature Service,https://spatial.napier.govt.nz/server/rest/services/NapierMaps/Assets/MapServer/26,-,-,-,-,-,-,-,-,Request data
 31,Napier City Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 32, Central Hawke's Bay District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
 32, Central Hawke's Bay District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
@@ -112,9 +112,9 @@ Custodian code,Custodian name,Dataset type,Dataset name,License,WebMap,Download 
 57,Westland District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 13,Canterbury Regional Council,Parks and Reserves,Parks,[CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/),https://opendata.canterburymaps.govt.nz/datasets/ecan::parks/explore,https://opendata.canterburymaps.govt.nz/datasets/ecan::parks/explore,ArcGIS REST Feature Service,https://gis.ecan.govt.nz/arcgis/rest/services/Public/Canterbury_Maps/MapServer/26,ID,COMMON_NAME,-,-,PARK_TYPE,-,"distinct Park_types Botanic, Reserve, Community, Other, Sports ground, Regional",-,Request Legislative Details
 13,Canterbury Regional Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-54,Kaikōura District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+54,Kaikōura District Council,Parks and Reserves,KDC Reserves,Permission to use ,-,-,ArcGIS REST Feature Service,https://services7.arcgis.com/9otVSwXYLNcB5m8L/arcgis/rest/services/KDC_Reserves/FeatureServer/0,-,-,-,-,-,-,-,-,Request data
 54,Kaikōura District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-58,Hurunui District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+58,Hurunui District Council,Parks and Reserves,HDC Reserves,Permission to use ,-,-,ArcGIS REST Feature Service,https://services.arcgis.com/yz3Bly07x1dczMks/arcgis/rest/services/HDC_Reserves_WFL1/FeatureServer/4,-,-,-,-,-,-,-,-,Request data
 58,Hurunui District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 59,Waimakariri District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
 59,Waimakariri District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
@@ -128,13 +128,13 @@ Custodian code,Custodian name,Dataset type,Dataset name,License,WebMap,Download 
 64,Timaru District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 65,Mackenzie District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,,Request data
 65,Mackenzie District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-66,Waimate District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,,Request data
+66,Waimate District Council,Parks and Reserves,Parks/Reserves,-,-,-,Static vector file,-,-,-,-,-,-,-,-,,Request data
 66,Waimate District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 70,Queenstown-Lakes District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
 70,Queenstown-Lakes District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 71,Dunedin City Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
 71,Dunedin City Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
-72,Clutha District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
+72,Clutha District Council,Parks and Reserves,District Plan Reserves,-,-,-,Static vector file,-,-,-,-,-,-,-,-,-,Request data
 72,Clutha District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-
 15,Southland Regional Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data
 15,Southland Regional Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-

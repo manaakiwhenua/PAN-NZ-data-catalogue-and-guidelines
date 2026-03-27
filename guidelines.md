@@ -331,24 +331,25 @@ The below table provides an example of a subset of the legislative acts and
 sections that are commonly captured by PAN-NZ 
 
 
-| legislative act                            | legislative section           |
-| :----------------------------------------- | :---------------------------- |
-| Conservation Act 1987                      | S19 Conservation Park         |
-| Conservation Act 1987                      | S20 Wilderness Area           |
-| Conservation Act 1987                      | S21 Ecological Area           |
-| Conservation Act 1987                      | S22 Sanctuary Area            |
-| Conservation Act 1987                      | S23a Amenity Area             |
-| Conservation Act 1987                      | S23b Wildlife Management Area |
-| Conservation Act 1987                      | S25 Stewardship Area          |
-| Local Government Act 2002                  | S139 Regional Park            |
-| Queen Elizabeth II National Trust Act 1977 | S22 QEII Open Space Covenant  |
-| Reserves Act 1977                          | S17 Recreation Reserve        |
-| Reserves Act 1977                          | S19-1a Scenic Reserve         |
-| Reserves Act 1977                          | S19-1b Scenic Reserve         |
-| Reserves Act 1977                          | S23 Local Purpose Reserve     |
-| Reserves Act 1977                          | S17 Recreation Reserve        |
-| Wildlife Act 1953                          | S14 Wildlife Refuge           |
-| Wildlife Act 1953                          | S9 Wildlife Sanctuary         |
+| legislative act                            | legislative section              |
+| :----------------------------------------- | :------------------------------- |
+| Conservation Act 1987                      | S19 Conservation Park            |
+| Conservation Act 1987                      | S20 Wilderness Area              |
+| Conservation Act 1987                      | S21 Ecological Area              |
+| Conservation Act 1987                      | S22 Sanctuary Area               |
+| Conservation Act 1987                      | S23a Amenity Area                |
+| Conservation Act 1987                      | S23b Wildlife Management Area    |
+| Conservation Act 1987                      | S25 Stewardship Area             |
+| Local Government Act 2002                  | S139 Regional Park               |
+| Queen Elizabeth II National Trust Act 1977 | S22 QEII Open Space Covenant     |
+| Reserves Act 1977                          | S17 Recreation Reserve           |
+| Reserves Act 1977                          | S19-1a Scenic Reserve            |
+| Reserves Act 1977                          | S19-1b Scenic Reserve            |
+| Reserves Act 1977                          | S23 Local Purpose Reserve        |
+| Reserves Act 1977                          | S17 Recreation Reserve           |
+| Wildlife Act 1953                          | S14 Wildlife Refuge              |
+| Wildlife Act 1953                          | S9 Wildlife Sanctuary            |
+| Wildlife Act 1953                          | S14A Wildlife Management Reserve |
 
 **Above Table:** The above table provides an example of a subset of protected
 area legislative acts and sections 

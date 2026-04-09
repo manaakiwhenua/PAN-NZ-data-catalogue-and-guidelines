@@ -84,3 +84,4 @@ Each dataset folder contains:
 - ArcGIS REST uses paged requests (`resultOffset` / `resultRecordCount`).
 - Target CRS is configured in `_utils/config.yaml` (`target_crs`, default `EPSG:2193`).
 - Placeholders are generic (`<TOKEN>`) and are substituted from `_utils/.env`.
+- Copy data up to NeSI or similar like: `rsync -av ./downloads/ lawr@nesi:/nesi/nobackup/landcare03352/protected_area_aggregator/source_data/PANNZ-SOURCE-20260312/`

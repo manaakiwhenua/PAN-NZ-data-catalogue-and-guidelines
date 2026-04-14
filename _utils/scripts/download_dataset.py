@@ -146,13 +146,13 @@ def download_arcgis_geojson(url: str, target_crs: str, logger: logging.Logger):
     query_url = url.rstrip("/")
     if not query_url.lower().endswith("/query"):
         query_url = f"{query_url}/query"
-    logger.info(query_url)
+
     session = requests.Session()
     layer_metadata = get_arcgis_layer_metadata(query_url, session, logger)
     all_features = []
     offset = 0
     max_record_count = layer_metadata.get("max_record_count")
-    page_size = int(max_record_count) if max_record_count else 1000
+    page_size = min(1000, int(max_record_count) if max_record_count else 1000) # Some ArcGIS servers claim higher max record counts but fail on large requests, so we use 1000 as the upper bound for batching.
     source_crs = None
 
     object_ids = fetch_arcgis_object_ids(query_url, session, logger)

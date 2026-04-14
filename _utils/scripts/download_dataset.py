@@ -146,7 +146,7 @@ def download_arcgis_geojson(url: str, target_crs: str, logger: logging.Logger):
     query_url = url.rstrip("/")
     if not query_url.lower().endswith("/query"):
         query_url = f"{query_url}/query"
-
+    logger.info(query_url)
     session = requests.Session()
     layer_metadata = get_arcgis_layer_metadata(query_url, session, logger)
     all_features = []

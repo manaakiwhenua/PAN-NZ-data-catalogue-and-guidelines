@@ -21,6 +21,8 @@ REQUIRED_COLUMNS = [
     "Comment",
     "Stated Restrictions",
     "Action Required",
+    "STATUS",
+    "STATUS update",
 ]
 
 NULL_MARKERS = {"", "-"}

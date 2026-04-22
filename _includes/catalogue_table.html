@@ -6,8 +6,18 @@
 <!--  Fullscreen wrapper start -->
 <div class="fullscreen-container" id="{{ include.datafile | slugify }}-wrapper">
 
-    <!--  Fullscreen toggle button placed above and left-aligned -->
-    <div class="fullscreen-toggle-bar">
+
+    <!-- Filter and fullscreen controls -->
+    <div class="fullscreen-toggle-bar" style="display: flex; align-items: center; gap: 1em;">
+        <label for="status-filter-{{ include.datafile | slugify }}">Filter by Status:</label>
+        <select id="status-filter-{{ include.datafile | slugify }}" onchange="filterStatusRows('{{ include.datafile | slugify }}-wrapper')">
+            <option value="">All</option>
+            <option value="integrated">INTEGRATED</option>
+            <option value="ignored">IGNORED</option>
+            <option value="pending">PENDING</option>
+            <option value="absent">ABSENT</option>
+            <option value="available">AVAILABLE</option>
+        </select>
         <button class="fullscreen-toggle" onclick="toggleFullscreen('{{ include.datafile | slugify }}-wrapper')">
             🔲 Fullscreen
         </button>
@@ -38,11 +48,14 @@
                         <th>Comment</th>
                         <th>Stated Restrictions</th>
                         <th>Action Required</th>
+                        <th>Status</th>
+                        <th>Status updated</th>
                     </tr>
                 </thead>
                 <tbody>
                     {% for item in site.data[include.datafile] %}
-                    <tr>
+                    {% assign status = item["STATUS"] | downcase %}
+                    <tr class="status-{{ status }}">
                         <td>{{ item.["Custodian code"]}}</td>
                         <td>{{ item.["Custodian name"]}}</td>
                         <td>{{ item.["Dataset type"]}}</td>
@@ -88,6 +101,8 @@
                         <td>{{ item.Comment }}</td>
                         <td>{{ item["Stated Restrictions"] }}</td>
                         <td>{{ item["Action Required"] }}</td>
+                        <td>{{ item["STATUS"] }}</td>
+                        <td>{{ item["STATUS update"] }}</td>
                     </tr>
                     {% endfor %}
                 </tbody>
@@ -98,47 +113,51 @@
 </div>
 <!--  End fullscreen-container -->
 
-<!-- Fullscreen JavaScript -->
+<!-- Fullscreen and Filter JavaScript -->
 <script>
     function toggleFullscreen(id) {
         const el = document.getElementById(id);
         el.classList.toggle('fullscreen-active');
-
         const btn = el.querySelector('.fullscreen-toggle');
         btn.textContent = el.classList.contains('fullscreen-active')
             ? '❌ Exit Fullscreen'
             : '🔲 Fullscreen';
     }
 
+    function filterStatusRows(wrapperId) {
+        const wrapper = document.getElementById(wrapperId);
+        const select = wrapper.querySelector('select[id^="status-filter-"]');
+        const value = select.value;
+        const rows = wrapper.querySelectorAll('tbody tr');
+        rows.forEach(row => {
+            if (!value) {
+                row.style.display = '';
+            } else {
+                row.style.display = row.classList.contains('status-' + value) ? '' : 'none';
+            }
+        });
+    }
+
     document.addEventListener("DOMContentLoaded", function () {
         const containers = document.querySelectorAll(".scroll-sync-container");
-
         containers.forEach(container => {
             const topScroll = container.querySelector(".scrollbar-top");
             const tableScroll = container.querySelector(".catalogue-table-container");
-
             if (!topScroll || !tableScroll) return;
-
             // Dynamically set the scrollbar-top width to match the scrollable area
-            const scrollBarSpacer = topScroll.querySelector("::before");
-            topScroll.scrollLeft = tableScroll.scrollLeft;
-
-            // Sync scroll events both ways
-            topScroll.addEventListener("scroll", () => {
-                tableScroll.scrollLeft = topScroll.scrollLeft;
-            });
-
-            tableScroll.addEventListener("scroll", () => {
-                topScroll.scrollLeft = tableScroll.scrollLeft;
-            });
-
-            // NEW: Resize observer to adjust ::before width
             const fakeDiv = document.createElement("div");
             fakeDiv.style.width = tableScroll.scrollWidth + "px";
             fakeDiv.style.height = "1px";
             topScroll.innerHTML = "";
             topScroll.appendChild(fakeDiv);
+            // Sync scroll events both ways
+            topScroll.scrollLeft = tableScroll.scrollLeft;
+            topScroll.addEventListener("scroll", () => {
+                tableScroll.scrollLeft = topScroll.scrollLeft;
+            });
+            tableScroll.addEventListener("scroll", () => {
+                topScroll.scrollLeft = tableScroll.scrollLeft;
+            });
         });
     });
-
 </script>

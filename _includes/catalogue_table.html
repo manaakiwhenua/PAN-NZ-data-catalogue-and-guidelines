@@ -10,7 +10,7 @@
     <!-- Filter and fullscreen controls -->
     <div class="fullscreen-toggle-bar" style="display: flex; align-items: center; gap: 1em;">
         <label for="status-filter-{{ include.datafile | slugify }}">Filter by Status:</label>
-        <select id="status-filter-{{ include.datafile | slugify }}" onchange="filterStatusRows('{{ include.datafile | slugify }}-wrapper')">
+        <select id="status-filter-{{ include.datafile | slugify }}" onchange="filterRows('{{ include.datafile | slugify }}-wrapper')">
             <option value="">All</option>
             <option value="integrated">INTEGRATED</option>
             <option value="ignored">IGNORED</option>
@@ -18,6 +18,8 @@
             <option value="absent">ABSENT</option>
             <option value="available">AVAILABLE</option>
         </select>
+        <label for="custodian-filter-{{ include.datafile | slugify }}">Custodian:</label>
+        <input type="text" id="custodian-filter-{{ include.datafile | slugify }}" placeholder="Type to filter..." oninput="filterRows('{{ include.datafile | slugify }}-wrapper')" style="min-width: 120px;" />
         <span id="status-count-{{ include.datafile | slugify }}" class="status-count"></span>
         <button class="fullscreen-toggle" onclick="toggleFullscreen('{{ include.datafile | slugify }}-wrapper')">
             🔲 Fullscreen
@@ -126,18 +128,22 @@
     }
 
 
-    function filterStatusRows(wrapperId) {
+    function filterRows(wrapperId) {
         const wrapper = document.getElementById(wrapperId);
         const select = wrapper.querySelector('select[id^="status-filter-"]');
-        const value = select.value;
+        const statusValue = select.value;
+        const custodianInput = wrapper.querySelector('input[id^="custodian-filter-"]');
+        const custodianValue = custodianInput.value.trim().toLowerCase();
         const rows = wrapper.querySelectorAll('tbody tr');
         let visible = 0;
         let total = rows.length;
         rows.forEach(row => {
-            if (!value) {
-                row.style.display = '';
-                visible++;
-            } else if (row.classList.contains('status-' + value)) {
+            // Find the custodian name cell (second cell)
+            const custodianCell = row.cells[1];
+            const custodianText = custodianCell ? custodianCell.textContent.trim().toLowerCase() : '';
+            const statusMatch = !statusValue || row.classList.contains('status-' + statusValue);
+            const custodianMatch = !custodianValue || custodianText.includes(custodianValue);
+            if (statusMatch && custodianMatch) {
                 row.style.display = '';
                 visible++;
             } else {
@@ -146,7 +152,7 @@
         });
         // Update count display
         const countSpan = wrapper.querySelector('.status-count');
-        if (value) {
+        if (statusValue || custodianValue) {
             countSpan.textContent = visible + '/' + total + ' shown';
         } else {
             countSpan.textContent = total + ' total';
@@ -177,7 +183,7 @@
         // Initialize count display for all tables
         document.querySelectorAll('.fullscreen-container').forEach(wrapper => {
             if (wrapper.querySelector('select[id^="status-filter-"]')) {
-                filterStatusRows(wrapper.id);
+                filterRows(wrapper.id);
             }
         });
     });

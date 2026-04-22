@@ -18,6 +18,7 @@
             <option value="absent">ABSENT</option>
             <option value="available">AVAILABLE</option>
         </select>
+        <span id="status-count-{{ include.datafile | slugify }}" class="status-count"></span>
         <button class="fullscreen-toggle" onclick="toggleFullscreen('{{ include.datafile | slugify }}-wrapper')">
             🔲 Fullscreen
         </button>
@@ -124,18 +125,32 @@
             : '🔲 Fullscreen';
     }
 
+
     function filterStatusRows(wrapperId) {
         const wrapper = document.getElementById(wrapperId);
         const select = wrapper.querySelector('select[id^="status-filter-"]');
         const value = select.value;
         const rows = wrapper.querySelectorAll('tbody tr');
+        let visible = 0;
+        let total = rows.length;
         rows.forEach(row => {
             if (!value) {
                 row.style.display = '';
+                visible++;
+            } else if (row.classList.contains('status-' + value)) {
+                row.style.display = '';
+                visible++;
             } else {
-                row.style.display = row.classList.contains('status-' + value) ? '' : 'none';
+                row.style.display = 'none';
             }
         });
+        // Update count display
+        const countSpan = wrapper.querySelector('.status-count');
+        if (value) {
+            countSpan.textContent = visible + '/' + total + ' shown';
+        } else {
+            countSpan.textContent = total + ' total';
+        }
     }
 
     document.addEventListener("DOMContentLoaded", function () {
@@ -158,6 +173,12 @@
             tableScroll.addEventListener("scroll", () => {
                 topScroll.scrollLeft = tableScroll.scrollLeft;
             });
+        });
+        // Initialize count display for all tables
+        document.querySelectorAll('.fullscreen-container').forEach(wrapper => {
+            if (wrapper.querySelector('select[id^="status-filter-"]')) {
+                filterStatusRows(wrapper.id);
+            }
         });
     });
 </script>

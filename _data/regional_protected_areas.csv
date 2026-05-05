@@ -81,7 +81,7 @@ Custodian code,Custodian name,Dataset type,Dataset name,License,WebMap,Download 
 40, Palmerston North City Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,PENDING,2026-04-07
 41,Tararua District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data,PENDING,2026-04-07
 41,Tararua District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,PENDING,2026-04-07
-9,Greater Wellington Regional Council,Parks and Reserves,Regional Parks and Forests,[CC-BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/),https://gwrc-open-data-11-1-gwrc.hub.arcgis.com/datasets/GWRC::greater-wellington-regional-parks-and-forests-boundaries/explore,https://mapping.gw.govt.nz/arcgis/rest/services/GW/Parks_P/MapServer/26,ArcGIS REST Feature Service,https://mapping.gw.govt.nz/arcgis/rest/services/GW/Parks_P/MapServer/26,OBJECTID,Name,Implicit,-,-,-,-,-,-,INTEGRATED,2026-04-07
+9,Greater Wellington Regional Council,Parks and Reserves,Regional Parks and Forests,[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/),https://gwrc-open-data-11-1-gwrc.hub.arcgis.com/datasets/GWRC::greater-wellington-regional-parks-and-forests-boundaries/explore,https://mapping.gw.govt.nz/arcgis/rest/services/GW/Parks_P/MapServer/26,ArcGIS REST Feature Service,https://mapping.gw.govt.nz/arcgis/rest/services/GW/Parks_P/MapServer/26,OBJECTID,Name,Implicit,-,-,-,-,-,-,INTEGRATED,2026-04-07
 9,Greater Wellington Regional Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,PENDING,2026-04-07
 42,Horowhenua District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data,PENDING,2026-04-07
 42,Horowhenua District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,PENDING,2026-04-07

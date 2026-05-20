@@ -143,8 +143,8 @@ Custodian code,Custodian name,Dataset type,Dataset name,License,WebMap,Download 
 74,Gore District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,ABSENT,2026-04-07
 75,Invercargill City Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data,ABSENT,2026-04-07
 75,Invercargill City Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,ABSENT,2026-04-07
-16,Tasman District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data,PENDING,2026-04-07
-16,Tasman District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,PENDING,2026-04-07
+68,Waitaki District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data,PENDING,2026-04-07
+68,Waitaki District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,PENDING,2026-04-07
 51,Tasman District Council,Parks and Reserves,-,-,-,-,-,-,-,-,-,-,-,-,-,-,Request data,PENDING,2026-04-07
 51,Tasman District Council,SNA,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,PENDING,2026-04-07
 52,Nelson City Council,Parks and Reserves,Council Reserve,-,https://arc-gis-hub-home-arcgishub.hub.arcgis.com/datasets/NelsonCity::tasman-and-nelson-region-map-viewer-wfl1-1/explore?layer=7,https://arc-gis-hub-home-arcgishub.hub.arcgis.com/datasets/NelsonCity::tasman-and-nelson-region-map-viewer-wfl1-1/explore?layer=7&location=-41.290012%2C173.638024%2C9.81,ArcGIS REST Feature Service,https://services1.arcgis.com/Y4k7lyf2XTGeQC6V/arcgis/rest/services/Tasman_and_Nelson_Region___Map_Viewer_WFL1/FeatureServer/7,OID,ReserveName,-,-,Reserve type,-,"Distinct ReserveType:  Conservation Reserve, Urban Open Space/Amenity Reserve, NULL, Proposed Local Purpose Reserve, Local Purpose Reserve, Rural Recreation and Esplanade Reserve, Recreation Reserve, Scenic Reserve, Esplanade Reserve, Walkway Reserve, Landscape Reserve, Public Garden Easement, Sportsground, Local Purpose, Unclassified, Neighbourhood Park, Esplanade, Foreshore Reserve ",-,Request licence / Request Legislative Details,PENDING,2026-04-20
